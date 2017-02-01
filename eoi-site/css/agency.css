@@ -637,13 +637,20 @@ footer span.copyright {
 }
 footer ul.quicklinks {
   margin-bottom: 0;
-  line-height: 40px;
+  line-height: 30px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
 }
+footer .footer-col {
+  padding-top: 15px;
+}
+footer address {
+  margin-top: 4px;
+}
 ul.social-buttons {
   margin-bottom: 0;
+  padding-top: 10px;
 }
 ul.social-buttons li a {
   display: block;
