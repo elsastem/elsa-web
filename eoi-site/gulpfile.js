@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
 var sass = require('gulp-sass');
+var data = require('gulp-data');
+var nunjucksRender = require('gulp-nunjucks-render');
 var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
@@ -16,6 +18,19 @@ var banner = ['/*!\n',
     ' */\n',
     ''
 ].join('');
+
+//Setup nunjucks
+gulp.task('nunjucks', function() {
+  return gulp.src('pages/**/*.+(html|nunjucks)')
+    // Adding data to Nunjucks
+    .pipe(data(function() {
+      return require('./data.json')
+    }))
+    .pipe(nunjucksRender({
+      path: ['templates']
+    }))
+    .pipe(gulp.dest('.'))
+});
 
 // Compile LESS files from /less into /css
 gulp.task('less', function() {
@@ -71,7 +86,7 @@ gulp.task('copy', function() {
 })
 
 // Run everything
-gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['nunjucks', 'less', 'minify-css', 'minify-js', 'copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -83,10 +98,12 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
+gulp.task('dev', ['browserSync', 'nunjucks', 'less', 'minify-css', 'minify-js'], function() {
     gulp.watch('less/*.less', ['less']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
+    gulp.watch('pages/**/*.+(html|nunjucks)', ['nunjucks'])
+    gulp.watch('templates/**/*.nunjucks', ['nunjucks'])
     // Reloads the browser whenever HTML or JS files change
     gulp.watch('*.html', browserSync.reload);
     gulp.watch('js/**/*.js', browserSync.reload);

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include 'partials/head.nunjucks' %}
+        {% block head %} {% endblock %} 
+    </head>
+
+    <body id="page-top" class="index">
+        {% block content %} {% endblock %} 
+    
+        {% block footer %} 
+            {% include 'partials/footer.nunjucks'%}
+        {% endblock %} 
+
+        {% include 'partials/scripts.nunjucks' %}    
+    </body>Ï
+</html>

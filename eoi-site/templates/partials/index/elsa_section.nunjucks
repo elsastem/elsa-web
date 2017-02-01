@@ -1,0 +1,41 @@
+<section id="elsa">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">ELSA</h2>
+                <h3 class="section-subheading text-muted">Early Learning STEM Australia</h3>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-flash fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">About the Program</h4>
+                <p class="text-muted">Early Learning STEM Australia (ELSA) is a play-based digital learning program for children in preschool.
+                    To explore Science, Technology, Engineering and Maths (STEM).</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">Digitally Assisted</h4>
+                <p class="text-muted">ELSA apps will go beyond the screen to encourage active play that supports STEM practices. Our apps support
+                    learning through play, and act as a springboard for children to explore the natural world as they
+                    play with sand, leaves, blocks and water.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">Pilot Study</h4>
+                <p class="text-muted">This new program is being developed with educators in 2017, and will be rolled out to 100 centres nationally
+                    for a pilot program in 2018. Express your interest in the pilot before 10 April for a chance to be
+                    involved with this innovative learning program. </p>
+            </div>
+        </div>
+    </div>
+</section>

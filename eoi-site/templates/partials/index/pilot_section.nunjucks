@@ -1,0 +1,70 @@
+    <section id="pilot">
+        <!-- class="bg-light-gray" -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Pilot Program</h2>
+                    <h3 class="section-subheading text-muted">Help us forge Australia's STEM learning stratergies.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/people-circle.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Starting in 2018</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">A hundred centres across Australia will take part in the ELSA Pilot. These centres will
+                                        be the first to try the ELSA apps, and receive free workshops and resources about
+                                        incorporating STEM into their preschool program. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/kids-floor.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Applying is easy</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Simply send in details about your centre, and we will let you know if you are successful.
+                                        We are looking for a diverse range of centres, to mimic the diversity found across
+                                        Australia. So whether you are urban, regional or remote, large or small, government,
+                                        community, independent, Catholic, or anything else, we want to include you. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/small-ipad-carer.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Eligibility</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">The only thing you need is a tablet device, such as an iPad, that your preschool children
+                                        can play with. If you don’t have one yet, you can commit to purchasing one before
+                                        October if you are selected. There is no cost for ELSA, but ELSA does not provide
+                                        funding for devices.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Register
+                                    <br>Now</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
