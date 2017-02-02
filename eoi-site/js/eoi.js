@@ -126,7 +126,7 @@ var FormWizard = function () {
                     nextSelector: ".button-next",
                     previousSelector: ".button-previous",
                     onTabClick: function (e, r, t, i) {
-                        return false
+                        return false;
                     },
                     onNext: function (e, a, n) {
                         return i.hide(), t.hide(), 0 == r.valid() ? false : void o(e, a, n)
@@ -150,9 +150,9 @@ var FormWizard = function () {
                     alert("Finished! Hope you like it :)");
                 }).hide();
 
-                $("#country_list", r).change(function () {
-                    r.validate().element($(this))
-                })
+                // $("#country_list", r).change(function () {
+                //     r.validate().element($(this))
+                // })
             }
         }
     }
