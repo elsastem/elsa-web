@@ -114,11 +114,11 @@ var FormWizard = function () {
                         o = t + 1;
                     $(".step-title", $("#eoi-form-wizard")).text("Step " + (t + 1) + " of " + i);
                     jQuery("li", $("#eoi-form-wizard")).removeClass("done");
-                    for (var n = r.find("li"), s = 0; t > s; s++) 
+                    for (var n = r.find("li"), s = 0; t > s; s++)
                         jQuery(n[s]).addClass("done");
 
                     1 == o ? $("#eoi-form-wizard").find(".button-previous").hide() : $("#eoi-form-wizard").find(".button-previous").show(), o >= i ? ($("#eoi-form-wizard").find(".button-next").hide(), $("#eoi-form-wizard").find(".button-submit").show(), a()) : ($("#eoi-form-wizard").find(".button-next").show(), $("#eoi-form-wizard").find(".button-submit").hide());
-                    
+
                     // App.scrollTo($(".page-title"))
                 };
 
@@ -143,16 +143,34 @@ var FormWizard = function () {
                         })
                     }
                 });
-                
+
                 $("#eoi-form-wizard").find(".button-previous").hide();
-                
+
                 $("#eoi-form-wizard .button-submit").click(function () {
                     alert("Finished! Hope you like it :)");
                 }).hide();
 
+                $("#provide_primary").change(function () {
+                    if (this.checked) {
+                        $('#primary_contact').removeClass('hide');
+                    } else {
+                        $('#primary_contact').addClass('hide');
+                    }
+                });
+
+                $("#provide_secondary").change(function () {
+                    if (this.checked) {
+                        $('#secondary_contact').removeClass('hide');
+                    } else {
+                        $('#secondary_contact').addClass('hide');
+                    }
+                });
+
                 // $("#country_list", r).change(function () {
                 //     r.validate().element($(this))
                 // })
+
+                $('#eoi-form-wizard').bootstrapWizard('show', 2);
             }
         }
     }

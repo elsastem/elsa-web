@@ -1,3 +1,5 @@
+{% import 'macros/form_macros.nunjucks' as form  %}
+
 <div id="eoi-form-wizard">
     <form class="form-horizontal" action="#" id="eoi_form" method="POST" novalidate="novalidate">
         <div class="form-wizard">
@@ -278,57 +280,30 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="tab3">
-                        <h3 class="block">Provide your billing and credit card details</h3>
+                        <h3 class="block">Contact Details</h3>
+                        <p>These details help us make sure we’re talking to the right person.</p>
+                        {{ form.person_fields('director', name_field='Director / Manager') }}
                         <div class="form-group">
-                            <label class="control-label col-md-3">Card Holder Name
-                                <span class="required" aria-required="true"> * </span>
+                            <label class="control-label col-md-3">
                             </label>
                             <div class="col-md-4">
-                                <input type="text" class="form-control" name="card_name">
-                                <span class="help-block"> </span>
+                                    <input type="checkbox" id="provide_primary" value="true" > Provide Primary Contact
                             </div>
+                        </div>
+                        <div id="primary_contact" class="hide">
+                        {{ form.person_fields('primary', name_field='Primary Contact') }}
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Card Number
-                                <span class="required" aria-required="true"> * </span>
+                            <label class="control-label col-md-3">
                             </label>
                             <div class="col-md-4">
-                                <input type="text" class="form-control" name="card_number">
-                                <span class="help-block"> </span>
+                                    <input type="checkbox" id="provide_secondary" value="true" > Provide Secondary Contact
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">CVC
-                                <span class="required" aria-required="true"> * </span>
-                            </label>
-                            <div class="col-md-4">
-                                <input type="text" placeholder="" class="form-control" name="card_cvc">
-                                <span class="help-block"> </span>
-                            </div>
+                        <div id="secondary_contact" class="hide">
+                        {{ form.person_fields('secondary', name_field='Secondary Contact') }}
                         </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Expiration(MM/YYYY)
-                                <span class="required" aria-required="true"> * </span>
-                            </label>
-                            <div class="col-md-4">
-                                <input type="text" placeholder="MM/YYYY" maxlength="7" class="form-control" name="card_expiry_date">
-                                <span class="help-block"> e.g 11/2020 </span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Payment Options
-                                <span class="required" aria-required="true"> * </span>
-                            </label>
-                            <div class="col-md-4">
-                                <div class="checkbox-list">
-                                    <label>
-                                        <input type="checkbox" name="payment[]" value="1" data-title="Auto-Pay with this Credit Card."> Auto-Pay with this Credit Card </label>
-                                    <label>
-                                        <input type="checkbox" name="payment[]" value="2" data-title="Email me monthly billing."> Email me monthly billing </label>
-                                </div>
-                                <div id="form_payment_error"> </div>
-                            </div>
-                        </div>
+
                     </div>
                     <div class="tab-pane" id="tab4">
                         <h3 class="block">Confirm your account</h3>
