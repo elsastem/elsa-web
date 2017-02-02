@@ -166,11 +166,20 @@ var FormWizard = function () {
                     }
                 });
 
+                $('#eoi-form-wizard input[name=other_ella]').on('change', function () {
+                    var val = $('input[name=other_ella]:checked', '#eoi-form-wizard').val();
+                    if (val == 'yes') {
+                        $('#ella-details').removeClass('hide');
+                    } else {
+                        $('#ella-details').addClass('hide');
+                    }
+                });
+
                 // $("#country_list", r).change(function () {
                 //     r.validate().element($(this))
                 // })
 
-                $('#eoi-form-wizard').bootstrapWizard('show', 2);
+                // $('#eoi-form-wizard').bootstrapWizard('show', 3);
             }
         }
     }

@@ -287,111 +287,146 @@
                             <label class="control-label col-md-3">
                             </label>
                             <div class="col-md-4">
-                                    <input type="checkbox" id="provide_primary" value="true" > Provide Primary Contact
+                                <input type="checkbox" id="provide_primary" value="true" > Provide Primary Contact
                             </div>
                         </div>
                         <div id="primary_contact" class="hide">
-                        {{ form.person_fields('primary', name_field='Primary Contact') }}
+                            {{ form.person_fields('primary', name_field='Primary Contact') }}
                         </div>
                         <div class="form-group">
                             <label class="control-label col-md-3">
                             </label>
                             <div class="col-md-4">
-                                    <input type="checkbox" id="provide_secondary" value="true" > Provide Secondary Contact
+                                <input type="checkbox" id="provide_secondary" value="true" > Provide Secondary Contact
                             </div>
                         </div>
                         <div id="secondary_contact" class="hide">
-                        {{ form.person_fields('secondary', name_field='Secondary Contact') }}
+                            {{ form.person_fields('secondary', name_field='Secondary Contact') }}
                         </div>
 
                     </div>
                     <div class="tab-pane" id="tab4">
-                        <h3 class="block">Confirm your account</h3>
-                        <h4 class="form-section">Account</h4>
+                        <h3 class="block">Other Information</h3>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Username:</label>
+                            <label class="control-label col-md-3">How did you hear about ELSA?
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
                             <div class="col-md-4">
-                                <p class="form-control-static" data-display="username"> </p>
+                                <input type="text" class="form-control" name="other_discover">
+                                <span class="help-block">Newspaper, radio, website (which website text field), e-newsletter (which e-newsletter text field), email (who sent the email), word of mouth, parent recommended it</span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Email:</label>
+                            <label class="control-label col-md-3">Number of children?
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
                             <div class="col-md-4">
-                                <p class="form-control-static" data-display="email"> </p>
-                            </div>
-                        </div>
-                        <h4 class="form-section">Profile</h4>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Fullname:</label>
-                            <div class="col-md-4">
-                                <p class="form-control-static" data-display="fullname"> </p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Gender:</label>
-                            <div class="col-md-4">
-                                <p class="form-control-static" data-display="gender"> </p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Phone:</label>
-                            <div class="col-md-4">
-                                <p class="form-control-static" data-display="phone"> </p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Address:</label>
-                            <div class="col-md-4">
-                                <p class="form-control-static" data-display="address"> </p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">City/Town:</label>
-                            <div class="col-md-4">
-                                <p class="form-control-static" data-display="city"> </p>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="other_count" value="0-25"> 
+                                        Less than 25 
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="other_count" value="25-59"> 
+                                        25-59 
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="other_count" value="60-80"> 
+                                        60-80 
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="other_count" value="81+"> 
+                                        81 or more 
+                                    </label>
+                                </div>
+                                <span class="help-block">How many children do you have in a preschool program in the year before school?</span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Country:</label>
+                            <label class="control-label col-md-3">We would like to include a range of services that support Aboriginal and Torres Strait Islander communities. Please select checkboxes or use the text box to describe how your service is involved.
+                            </label>
                             <div class="col-md-4">
-                                <p class="form-control-static" data-display="country"> </p>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="other_atsi_owned"> 
+                                        Owned by an Aboriginal and Torres Strait Islander business
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="other_atsi_director"> 
+                                        Director or educators are Aboriginal and Torres Strait Islander people
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="other_atsi_enrolled"> 
+                                        Many Aboriginal and Torres Strait Islander families enroll at the service
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="other_atsi_engage"> 
+                                        Works with an Aboriginal and Torres Strait Islander elder or community member to provide learning opportunities
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="other_atsi_activities"> 
+                                        Regularly includes Aboriginal and Torres cultural activities as part of the preschool program
+                                    </label>
+                                </div>
+                                <span class="help-block"></span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Remarks:</label>
+                            <label class="control-label col-md-3">Has the preschool participated in the Early Learning Languages Australia trial (ELLA)?
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
                             <div class="col-md-4">
-                                <p class="form-control-static" data-display="remarks"> </p>
+                                 <div class="radio-list">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="other_ella" value="yes" data-title="Yes"> 
+                                        Yes 
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="other_ella" value="no" data-title="No"> 
+                                        No 
+                                    </label>
+                                </div>
+                                <span class="help-block">Early Learning Languages Australia is a tablet-based learning program, which uses a game known as The Polyglots.</span>
                             </div>
                         </div>
-                        <h4 class="form-section">Billing</h4>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Card Holder Name:</label>
+                        <div id="ella-details" class="form-group hide">
+                            <label class="control-label col-md-3">In which year(s) did you participate?
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
                             <div class="col-md-4">
-                                <p class="form-control-static" data-display="card_name"> </p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Card Number:</label>
-                            <div class="col-md-4">
-                                <p class="form-control-static" data-display="card_number"> </p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">CVC:</label>
-                            <div class="col-md-4">
-                                <p class="form-control-static" data-display="card_cvc"> </p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Expiration:</label>
-                            <div class="col-md-4">
-                                <p class="form-control-static" data-display="card_expiry_date"> </p>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label col-md-3">Payment Options:</label>
-                            <div class="col-md-4">
-                                <p class="form-control-static" data-display="payment[]"> </p>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="other_ella_2017" value="2017"> 
+                                        2017
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="other_ella_2016" value="2016"> 
+                                        2016
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="other_ella_2015" value="2015"> 
+                                        2015
+                                    </label>
+                                </div>
+                                <span class="help-block"></span>
                             </div>
                         </div>
                     </div>
