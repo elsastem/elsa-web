@@ -14,7 +14,7 @@
 
     {% include 'partials/index/faq_section.nunjucks' %}
 
-    {% include 'partials/index/contact_section.nunjucks' %}
+    {#{% include 'partials/index/contact_section.nunjucks' %}#}
 
     {#{% include 'partials/index/partners_section.nunjucks' %}#}
 
