@@ -106,28 +106,35 @@
                         <a href="#tab1" data-toggle="tab" class="step" aria-expanded="true">
                             <span class="number"> 1 </span>
                             <span class="desc">
-                                <i class="fa fa-check"></i> Account Setup </span>
+                                <i class="fa fa-check"></i> Preschool </span>
                         </a>
                     </li>
                     <li>
                         <a href="#tab2" data-toggle="tab" class="step">
                             <span class="number"> 2 </span>
                             <span class="desc">
-                                <i class="fa fa-check"></i> Profile Setup </span>
+                                <i class="fa fa-check"></i> Eligibility </span>
                         </a>
                     </li>
                     <li>
                         <a href="#tab3" data-toggle="tab" class="step active">
                             <span class="number"> 3 </span>
                             <span class="desc">
-                                <i class="fa fa-check"></i> Billing Setup </span>
+                                <i class="fa fa-check"></i> Contact </span>
                         </a>
                     </li>
                     <li>
                         <a href="#tab4" data-toggle="tab" class="step">
                             <span class="number"> 4 </span>
                             <span class="desc">
-                                <i class="fa fa-check"></i> Confirm </span>
+                                <i class="fa fa-check"></i> Other </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab5" data-toggle="tab" class="step">
+                            <span class="number"> 5 </span>
+                            <span class="desc">
+                                <i class="fa fa-check"></i> Declaration </span>
                         </a>
                     </li>
                 </ul>
@@ -135,48 +142,163 @@
                     <div class="progress-bar progress-bar-success" style="width: 25%;"> </div>
                 </div>
                 <div class="tab-content">
-                    <div class="alert alert-danger display-none text-danger">
+                    <div class="alert alert-danger display-none">
                         <button class="close" data-dismiss="alert"></button> You have some form errors. Please check below. </div>
                     <div class="alert alert-success display-none">
                         <button class="close" data-dismiss="alert"></button> Your form validation is successful! </div>
                     <div class="tab-pane active" id="tab1">
-                        <h3 class="block">Provide your account details</h3>
+                        <h3 class="block">Preschool Details</h3>
+                        <p>Details of the preschool service that is interested in taking part in the 2018 ELSA pilot program.</p>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Username
+                            <label class="control-label col-md-3">Preschool Name
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                <input type="text" class="form-control" name="username">
-                                <span class="help-block"> Provide your username </span>
+                                <input type="text" class="form-control" name="preschool_name">
+                                <span class="help-block"> Provide the name of the preschool</span>
                             </div>
                         </div>
+                        <legend>Address Details</legend>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Password
+                            <label class="control-label col-md-3">Line 1
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                <input type="password" class="form-control" name="password" id="submit_form_password">
-                                <span class="help-block"> Provide your password. </span>
+                                <div>
+                                    <input type="text" placeholder="Address Line 1" class="form-control" name="preschool_address_line1">
+                                </div>
+                                <span class="help-block"></span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Confirm Password
-                                <span class="required" aria-required="true"> * </span>
+                            <label class="control-label col-md-3">Line 2
                             </label>
                             <div class="col-md-4">
-                                <input type="password" class="form-control" name="rpassword">
-                                <span class="help-block"> Confirm your password </span>
+                                <input type="text" placeholder="Address Line 2" class="form-control" name="preschool_address_line2">
+                                <span class="help-block"></span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Email
+                            <label class="control-label col-md-3">Suburb
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                <input type="text" class="form-control" name="email">
-                                <span class="help-block"> Provide your email address </span>
+                                <input type="text" placeholder="Suburb" class="form-control" name="preschool_address_suburb">
+                                <span class="help-block"></span>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">State
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-4">
+                                <input type="text" placeholder="State" class="form-control" name="preschool_address_state">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Postcode
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-4">
+                                <input type="number" placeholder="Postcode" class="form-control" name="preschool_address_postcode">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                        <legend>Preschool Attributes</legend>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Suburb Categorisation
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-4">
+                                 <div class="radio-list">
+                                    <label>
+                                        <input type="radio" name="preschool_category" value="city" data-title="Major City"> 
+                                        City 
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="preschool_category" value="inner" data-title="Inner Regional"> 
+                                        Inner Regional 
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="preschool_category" value="outer" data-title="Outer Regional"> 
+                                        Outer Regional 
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="preschool_category" value="remote" data-title="Remote"> 
+                                        Remote 
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="preschool_category" value="very_remote" data-title="Very Remote"> 
+                                        Very Remote 
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="preschool_category" value="unsure" data-title="Unsure"> 
+                                        Unsure 
+                                    </label>
+                                </div>
+                                <div id="preschool_category_error"></div>
+                                <span class="help-block">Find your category by searching by suburb name or postcode at <a href="http://www.doctorconnect.gov.au/locator" target="_blank">http://www.doctorconnect.gov.au/locator</a></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Service Approval Number
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-4">
+                                <input type="number" placeholder="Service Approval Number" class="form-control" name="preschool_service_number">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Provider Name
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-4">
+                                <input type="text" placeholder="Provider Name" class="form-control" name="preschool_provider_name">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Provider Approval Number
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-4">
+                                <input type="text" placeholder="Service Approval Number" class="form-control" name="preschool_provider_number">
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Overall NQS Rating
+                            </label>
+                            <div class="col-md-4">
+                                <select name="preschool_rating" class="form-control">
+                                    <option value="0">Unknown</option>
+                                    <option value="1">Working towards NQS</option>
+                                    <option value="2">Significant Improvement</option>
+                                    <option value="3">Meeting NQS</option>
+                                    <option value="4">Exceeding NQS</option>
+                                    <option value="5">Excellent rating</option>
+                                </select>
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                       <div class="form-group">
+                            <label class="control-label col-md-3">Service Type
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-4">
+                                <select name="preschool_type" class="form-control">
+                                    <option value="long_gov">Long day care (Government)</option>
+                                    <option value="long_non">Long day care (non-Government)</option>
+                                    <option value="standalone">Standalone preschool</option>
+                                    <option value="school_gov">School-based preschool (Government)</option>
+                                    <option value="school_non">School-based preschool (non-Government)</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="help-block"></span>
+                            </div>
+                        </div>        
                     </div>
                     <div class="tab-pane" id="tab2">
                         <h3 class="block">Provide your profile details</h3>
@@ -619,6 +741,26 @@
                             <label class="control-label col-md-3">Payment Options:</label>
                             <div class="col-md-4">
                                 <p class="form-control-static" data-display="payment[]"> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab5">
+                        <h3 class="block">Statement of Declaration</h3>
+                        <p>Please read and agree to the following</p>
+                        <ul>
+                            <li>I attest that I am authorised to act for the preschool listed in this application</li>
+                            <li>All information provided on this form is true and correct</li>
+                            <li>I have read and understdood the Participation Requirements and Program Information</li>
+                            <li>If this application is successful, I agree to implement the ELSA program at the preschool in accordance with the Participation Requirements</li>
+                            <li>I consent to the information provided in this form being disclosed to relevant regulatory authorities or government departments or agencies</li>
+                        </ul>
+                        <p><br/></p>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">
+                                <span class="required" aria-required="true"></span>
+                            </label>
+                            <div class="col-md-4">
+                                    <input type="checkbox" name="declaration" value="agree" > Yes, I agree
                             </div>
                         </div>
                     </div>

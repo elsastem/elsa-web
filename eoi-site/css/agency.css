@@ -879,6 +879,11 @@ body {
   border-color: #fbe1e3;
   color: #e74c3c;
 }
+@media (max-width: 768px) {
+  .form-wizard .steps > li > a {
+    text-align: left;
+  }
+}
 .btn-outline {
   background-color: transparent;
   color: #fed136;
