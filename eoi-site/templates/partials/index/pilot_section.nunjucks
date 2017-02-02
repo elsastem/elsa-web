@@ -58,10 +58,12 @@
                             </div>
                         </li>
                         <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Register
-                                    <br>Now</h4>
-                            </div>
+                            <a href="register.html">
+                                <div class="timeline-image">
+                                    <h4>Register
+                                        <br>Now</h4>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>

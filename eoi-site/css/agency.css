@@ -622,7 +622,7 @@ section#contact :-ms-input-placeholder {
   font-weight: 700;
   color: #eeeeee;
 }
-section#contact .text-danger {
+.text-danger {
   color: #e74c3c;
 }
 footer {
@@ -775,4 +775,119 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+.form-wizard .steps > li > a.step > .desc {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+}
+.form-wizard .steps > li > a.step > .number {
+  -moz-border-radius: 50%!important;
+  -webkit-border-radius: 50%!important;
+  background-color: #eeeeee;
+  border-radius: 50%!important;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  height: 45px;
+  margin-right: 10px;
+  padding: 11px 15px 13px;
+  text-align: center!important;
+  width: 45px;
+}
+.form-wizard .steps {
+  background-color: #ffffff;
+  background-image: none;
+  border: 0;
+  box-shadow: none;
+  filter: none;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+.form-wizard .steps > li > a.step {
+  background-color: #ffffff;
+  background-image: none;
+  border: 0;
+  box-shadow: none;
+  filter: none;
+}
+.form-wizard .steps > li > a.step:hover {
+  background: 0 0;
+}
+.form-wizard .progress {
+  margin-bottom: 30px;
+}
+.form-wizard .steps > li > a.step > .desc > i {
+  display: none;
+}
+.form-wizard .steps > li.active > a.step .number {
+  background-color: #36c6d3;
+  color: #ffffff;
+}
+.form-wizard .steps > li.active > a.step .desc {
+  color: #333333;
+}
+.form-wizard .steps > li.done > a.step .number {
+  background-color: #f1c40f;
+  color: #ffffff;
+}
+.form-wizard .steps > li.done > a.step .desc {
+  color: #333333;
+}
+.form-wizard .steps > li.done > a.step .desc i {
+  color: #999999;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+}
+.form-wizard .display-none {
+  display: none;
+}
+.form-wizard .progress-bar {
+  background-color: #36c6d3;
+}
+.form-wizard .has-success .control-label,
+.form-wizard .has-success .help-block,
+.form-wizard .has-success .form-control-feedback {
+  color: #36c6d3;
+}
+.form-wizard .has-success .form-control {
+  border-color: #36c6d3;
+}
+.form-wizard .has-success .form-control:focus {
+  border-color: #1d7d86;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.form-wizard .has-error .control-label,
+.form-wizard .has-error .help-block,
+.form-wizard .has-error .form-control-feedback {
+  color: #e74c3c;
+}
+.form-wizard .has-error .form-control {
+  border-color: #e74c3c;
+}
+.form-wizard .has-error .form-control:focus {
+  border-color: #a82315;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.form-wizard .alert-danger {
+  background-color: #fbe1e3;
+  border-color: #fbe1e3;
+  color: #e74c3c;
+}
+.btn-outline {
+  background-color: transparent;
+  color: #fed136;
+  transition: all .5s;
+}
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+  color: #fff;
 }

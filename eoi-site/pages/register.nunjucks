@@ -1,0 +1,36 @@
+{% extends 'layout.nunjucks' %}
+
+{% block content %}
+
+    {% include 'partials/nav.nunjucks' %}
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+            </div>
+        </div>
+    </header>
+
+    <section id="register">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Join the Program</h2>
+                    <h3 class="section-subheading text-muted">Lodge your care facility's details for a chance to be part of the ELSA pilot.</h3>
+                </div>
+            </div>
+            <div class="row text-muted">
+                <div class="col-md-12">
+                   {% include 'partials/eoi-form.nunjucks' %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block scripts %} 
+    {{ super() }}
+    <script src="js/eoi.js"></script>
+{% endblock %} 

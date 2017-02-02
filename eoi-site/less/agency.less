@@ -598,9 +598,9 @@ section#contact {
        font-weight: 700;
        color: @gray-lighter;
     }
-    .text-danger {
-        color: @theme-danger;
-    }
+}
+.text-danger {
+    color: @theme-danger;
 }
 
 // Footer
@@ -766,6 +766,7 @@ body {
 
 //ELSA Extras
 
+
 .stem-img {
     height: 100%;
     // width: 100%;
@@ -775,3 +776,160 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
+
+//form-wizard - http://keenthemes.com/preview/metronic/theme/admin_2/form_wizard.html
+// Color variables (appears count calculates by raw css)
+@color0: #ffffff; // Appears 30 times
+@color1: #eeeeee; // Appears 15 times
+@color2: #333333; // Appears 14 times
+@color3: #e7ecf1; // Appears 9 times
+@color4: #4b8df8; // Appears 9 times
+@color5: #36c6d3; // Appears 7 times
+@color6: #666666; // Appears 7 times
+@color7: #c2cad8; // Appears 7 times
+@color8: #dddddd; // Appears 5 times
+@color9: #f9e491; // Appears 5 times
+@color10: #aaaaaa; // Appears 5 times
+@color11: #abe7ed; // Appears 5 times
+@color12: #000000; // Appears 5 times
+@color13: #fbe1e3; // Appears 5 times
+@color14: #999999; // Appears 4 times
+@color15: #f1c40f; // Appears 4 times
+@color16: #efefef; // Appears 3 times
+@color17: #e1e1e1; // Appears 3 times
+@color18: #ed6b75; // Appears 3 times
+@color19: #337ab7; // Appears 3 times
+@color20: #659be0; // Appears 3 times
+@color21: #bbbbbb; // Appears 3 times
+@color22: #e5e5e5; // Appears 3 times
+@color23: #fbfcfd; // Appears 2 times
+@color24: #3f444a; // Appears 2 times
+@color25: #496375; // Appears 2 times
+@color26: #e8eaef; // Appears 2 times
+@color27: #2678fc; // Appears 2 times
+@color28: #444444; // Appears 2 times
+@color29: #93a1bb; // Appears 2 times
+
+.form-wizard {
+	.steps>li>a.step>.desc {
+		display:inline-block;
+		font-size:16px;
+		font-weight:300;
+	}
+	.steps>li>a.step>.number {
+		-moz-border-radius:50%!important;
+		-webkit-border-radius:50%!important;
+		background-color:@color1;
+		border-radius:50%!important;
+		display:inline-block;
+		font-size:16px;
+		font-weight:300;
+		height:45px;
+		margin-right:10px;
+		padding:11px 15px 13px;
+		text-align:center!important;
+		width:45px;
+	}
+	.steps {
+		background-color:@color0;
+		background-image:none;
+		border:0;
+		box-shadow:none;
+		filter:none;
+		margin-bottom:15px;
+		padding:10px 0;
+	}
+	.steps>li>a.step {
+		background-color:@color0;
+		background-image:none;
+		border:0;
+		box-shadow:none;
+		filter:none;
+		&:hover {
+			background:0 0;
+		}
+	}
+	.progress {
+		margin-bottom:30px;
+	}
+	.steps>li>a.step>.desc>i {
+		display:none;
+	}
+	.steps>li.active>a.step {
+		.number {
+			background-color:@color5;
+			color:@color0;
+		}
+		.desc {
+			color:@color2;
+		}
+	}
+	.steps>li.done>a.step {
+		.number {
+			background-color:@color15;
+			color:@color0;
+		}
+		.desc {
+			color:@color2;
+			i {
+				color:@color14;
+				display:inline-block;
+				font-size:12px;
+				font-weight:400;
+			}
+		}
+	}
+    .display-none {
+        display: none;
+    }
+    .progress-bar {
+        background-color: @color5
+    }
+    .has-success {
+        .control-label, .help-block, .form-control-feedback{
+            color: @color5; //@theme-success;
+        }
+        .form-control {
+            border-color: @color5;      
+            &:focus {
+                border-color: darken(@color5, 20%);      
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+            }      
+        }
+    }
+    .has-error {
+        .control-label, .help-block, .form-control-feedback{
+            color: @theme-danger;
+        }
+        .form-control {
+            border-color: @theme-danger;            
+            &:focus {
+                border-color: darken(@theme-danger, 20%);      
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                box-shadow: none;
+            }      
+        }
+    }
+    .alert-danger {
+        background-color: #fbe1e3;
+        border-color: #fbe1e3;
+        .text-danger;
+    }
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: @theme-primary;
+    transition: all .5s;
+}
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}
+

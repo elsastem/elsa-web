@@ -12,6 +12,8 @@
             {% include 'partials/footer.nunjucks'%}
         {% endblock %} 
 
-        {% include 'partials/scripts.nunjucks' %}    
+        {% block scripts %} 
+            {% include 'partials/scripts.nunjucks' %}    
+        {% endblock %} 
     </body>Ï
 </html>

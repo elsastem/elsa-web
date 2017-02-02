@@ -74,6 +74,15 @@ gulp.task('copy', function() {
     gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
         .pipe(gulp.dest('vendor/jquery'))
 
+    gulp.src(['node_modules/jquery-validation/dist/jquery.validate.js', 'node_modules/jquery-validation/dist/jquery.validate.min.js'])
+        .pipe(gulp.dest('vendor/jquery-validation'))
+
+    gulp.src(['node_modules/twitter-bootstrap-wizard/jquery.bootstrap.wizard.js', 'node_modules/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js'])
+        .pipe(gulp.dest('vendor/twitter-bootstrap-wizard'))
+
+    gulp.src(['node_modules/select2/dist/**'])
+        .pipe(gulp.dest('vendor/select2'))
+
     gulp.src([
             'node_modules/font-awesome/**',
             '!node_modules/font-awesome/**/*.map',

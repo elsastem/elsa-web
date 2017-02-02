@@ -21,7 +21,10 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^1.5.4",
-    "jquery": "^1.11.3"
+    "jquery": "^1.11.3",
+    "jquery-validation": "^1.16.0",
+    "select2": "^4.0.3",
+    "twitter-bootstrap-wizard": "^1.2.0"
   },
   "repository": {
     "type": "git",
