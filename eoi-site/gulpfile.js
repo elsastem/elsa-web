@@ -10,6 +10,8 @@ var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
 
+var BUILD_DIR = "./build"
+
 // Set the banner content
 var banner = ['/*!\n',
     ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
@@ -29,7 +31,7 @@ gulp.task('nunjucks', function() {
     .pipe(nunjucksRender({
       path: ['templates']
     }))
-    .pipe(gulp.dest('.'))
+    .pipe(gulp.dest(BUILD_DIR))
 });
 
 // Compile LESS files from /less into /css
@@ -37,7 +39,7 @@ gulp.task('less', function() {
     return gulp.src('less/agency.less')
         .pipe(less())
         .pipe(header(banner, { pkg: pkg }))
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest(`${BUILD_DIR}/css`))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -45,10 +47,10 @@ gulp.task('less', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function() {
-    return gulp.src('css/agency.css')
+    return gulp.src(`${BUILD_DIR}/css/*.css`)
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest(`${BUILD_DIR}/css`))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -56,11 +58,11 @@ gulp.task('minify-css', ['less'], function() {
 
 // Minify JS
 gulp.task('minify-js', function() {
-    return gulp.src('js/agency.js')
+    return gulp.src('js/*.js')
         .pipe(uglify())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('js'))
+        .pipe(gulp.dest(`${BUILD_DIR}/js/`))
         .pipe(browserSync.reload({
             stream: true
         }))
@@ -68,20 +70,23 @@ gulp.task('minify-js', function() {
 
 // Copy vendor libraries from /node_modules into /vendor
 gulp.task('copy', function() {
+    gulp.src(['img/**/*'])
+        .pipe(gulp.dest(`${BUILD_DIR}/img`))
+
     gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
-        .pipe(gulp.dest('vendor/bootstrap'))
+        .pipe(gulp.dest(`${BUILD_DIR}/vendor/bootstrap`))
 
     gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
-        .pipe(gulp.dest('vendor/jquery'))
+        .pipe(gulp.dest(`${BUILD_DIR}/vendor/jquery`))
 
     gulp.src(['node_modules/jquery-validation/dist/jquery.validate.js', 'node_modules/jquery-validation/dist/jquery.validate.min.js'])
-        .pipe(gulp.dest('vendor/jquery-validation'))
+        .pipe(gulp.dest(`${BUILD_DIR}/vendor/jquery-validation`))
 
     gulp.src(['node_modules/twitter-bootstrap-wizard/jquery.bootstrap.wizard.js', 'node_modules/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js'])
-        .pipe(gulp.dest('vendor/twitter-bootstrap-wizard'))
+        .pipe(gulp.dest(`${BUILD_DIR}/vendor/twitter-bootstrap-wizard`))
 
     gulp.src(['node_modules/select2/dist/**'])
-        .pipe(gulp.dest('vendor/select2'))
+        .pipe(gulp.dest(`${BUILD_DIR}/vendor/select2`))
 
     gulp.src([
             'node_modules/font-awesome/**',
@@ -91,7 +96,7 @@ gulp.task('copy', function() {
             '!node_modules/font-awesome/*.md',
             '!node_modules/font-awesome/*.json'
         ])
-        .pipe(gulp.dest('vendor/font-awesome'))
+        .pipe(gulp.dest(`${BUILD_DIR}/vendor/font-awesome`))
 })
 
 // Run everything
@@ -101,31 +106,18 @@ gulp.task('default', ['nunjucks', 'less', 'minify-css', 'minify-js', 'copy']);
 gulp.task('browserSync', function() {
     browserSync.init({
         server: {
-            baseDir: ''
+            baseDir: BUILD_DIR
         },
     })
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'nunjucks', 'less', 'minify-css', 'minify-js'], function() {
-    gulp.watch('less/*.less', ['less']);
-    gulp.watch('css/*.css', ['minify-css']);
+gulp.task('dev', ['copy', 'browserSync', 'nunjucks', 'less', 'minify-css', 'minify-js'], function() {
+    gulp.watch('less/*.less', ['less', 'minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
     gulp.watch('pages/**/*.+(html|nunjucks)', ['nunjucks'])
     gulp.watch('templates/**/*.nunjucks', ['nunjucks'])
     // Reloads the browser whenever HTML or JS files change
-    gulp.watch('*.html', browserSync.reload);
-    gulp.watch('js/**/*.js', browserSync.reload);
-});
-
-// Compiles SCSS files from /scss into /css
-// NOTE: This theme uses LESS by default. To swtich to SCSS you will need to update this gulpfile by changing the 'less' tasks to run 'sass'!
-gulp.task('sass', function() {
-    return gulp.src('scss/agency.scss')
-        .pipe(sass())
-        .pipe(header(banner, { pkg: pkg }))
-        .pipe(gulp.dest('css'))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
+    gulp.watch( BUILD_DIR + '/*.html', browserSync.reload);
+    gulp.watch( BUILD_DIR + '/js/**/*.js', browserSync.reload);
 });
