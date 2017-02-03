@@ -140,7 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media(min-width:768px) {
-    .navbar-custom {
+    .navbar-custom.animated {
         background-color: @navbar-init-bg;
         padding: 40px 0;
         -webkit-transition: padding 0.3s;
@@ -168,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 // Navbar Change on Scroll
 
 @media(min-width:768px) {
-    .navbar-custom.affix {
+    .navbar-custom.affix.animated {
         background-color: @navbar-bg;
         padding: 10px 0;
         .navbar-brand {
@@ -209,6 +209,10 @@ header {
             margin-bottom: 25px;
         }
     
+    }
+    &.just-pic {
+        margin-top: 40px;
+        height: 250px;
     }
 }
 
@@ -464,9 +468,9 @@ section {
                 margin-top: 10px;
                 margin-left: -65px;
                 h4 {
-                    font-size: 13px;
-                    margin-top: 27px;
-                    line-height: 18px;
+                    font-size: 18px;
+                    margin-top: 36px;
+                    line-height: 24px;
                 }
             }
             &.timeline-inverted > .timeline-panel {

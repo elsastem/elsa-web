@@ -1,12 +1,15 @@
+{% if page_name != "index" %}
+  {% set nav_link_prefix = "index.html" %}
+{% endif %}
 <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top {{ nav_class }}">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
+                <a class="navbar-brand page-scroll" href="{{nav_link_prefix}}#page-top">
                     <img src="img/elsa-logo 2.svg" alt="ELSA Logo">
                 </a>
             </div>
@@ -18,19 +21,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#elsa">About</a>
+                        <a class="page-scroll" href="{{nav_link_prefix}}#elsa">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#stem">STEM</a>
+                        <a class="page-scroll" href="{{nav_link_prefix}}#stem">STEM</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#pilot">Pilot</a>
+                        <a class="page-scroll" href="{{nav_link_prefix}}#pilot">Pilot</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#faq">FAQ</a>
+                        <a class="page-scroll" href="{{nav_link_prefix}}#faq">FAQ</a>
                     </li>
                     {#<li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="{{nav_link_prefix}}#contact">Contact</a>
                     </li>#}
                 </ul>
             </div>

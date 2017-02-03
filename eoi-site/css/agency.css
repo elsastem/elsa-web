@@ -203,7 +203,7 @@ fieldset[disabled] .btn-xl.active {
   background-color: #fec503;
 }
 @media (min-width: 768px) {
-  .navbar-custom {
+  .navbar-custom.animated {
     background-color: rgba(255, 255, 255, 0);
     padding: 40px 0;
     -webkit-transition: padding 0.3s;
@@ -211,31 +211,31 @@ fieldset[disabled] .btn-xl.active {
     transition: padding 0.3s;
     border: none;
   }
-  .navbar-custom .navbar-brand {
+  .navbar-custom.animated .navbar-brand {
     font-size: 2em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
-  .navbar-custom .navbar-brand img {
+  .navbar-custom.animated .navbar-brand img {
     height: 80px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
-  .navbar-custom .navbar-nav > .active > a {
+  .navbar-custom.animated .navbar-nav > .active > a {
     border-radius: 3px;
   }
 }
 @media (min-width: 768px) {
-  .navbar-custom.affix {
+  .navbar-custom.affix.animated {
     background-color: #fff;
     padding: 10px 0;
   }
-  .navbar-custom.affix .navbar-brand {
+  .navbar-custom.affix.animated .navbar-brand {
     font-size: 1.5em;
   }
-  .navbar-custom.affix .navbar-brand img {
+  .navbar-custom.affix.animated .navbar-brand img {
     height: 40px;
   }
 }
@@ -271,6 +271,10 @@ header .intro-text .intro-heading {
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 25px;
+}
+header.just-pic {
+  margin-top: 40px;
+  height: 250px;
 }
 @media (min-width: 768px) {
   header .intro-text {
@@ -501,9 +505,9 @@ section h3.section-subheading {
     margin-left: -65px;
   }
   .timeline > li .timeline-image h4 {
-    font-size: 13px;
-    margin-top: 27px;
-    line-height: 18px;
+    font-size: 18px;
+    margin-top: 36px;
+    line-height: 24px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     float: right;

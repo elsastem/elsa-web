@@ -1,7 +1,9 @@
+{% set page_name="index" %}
 {% extends 'layout.nunjucks' %}
 
 {% block content %}
 
+    {% set nav_class="animated" %}
     {% include 'partials/nav.nunjucks' %}
 
     {% include 'partials/index/header_section.nunjucks' %}
