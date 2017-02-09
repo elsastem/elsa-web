@@ -176,7 +176,7 @@ var FormWizard = function () {
                 });
 
                 // $("#country_list", r).change(function () {
-                //     r.validate().element($(this))
+                //      r.validate().element($(this))
                 // })
 
                 // $('#eoi-form-wizard').bootstrapWizard('show', 3);

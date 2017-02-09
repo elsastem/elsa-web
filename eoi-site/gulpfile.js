@@ -57,7 +57,7 @@ gulp.task('minify-css', ['less'], function() {
 });
 
 // Minify JS
-gulp.task('minify-js', function() {
+gulp.task('minify-js', function() {        
     return gulp.src('js/*.js')
         .pipe(uglify())
         .pipe(header(banner, { pkg: pkg }))
@@ -66,6 +66,11 @@ gulp.task('minify-js', function() {
         .pipe(browserSync.reload({
             stream: true
         }))
+});
+
+gulp.task('copy-js', function() {
+    gulp.src(['js/*.js'])
+        .pipe(gulp.dest(`${BUILD_DIR}/js`))
 });
 
 // Copy vendor libraries from /node_modules into /vendor
@@ -100,7 +105,7 @@ gulp.task('copy', function() {
 })
 
 // Run everything
-gulp.task('default', ['nunjucks', 'less', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['nunjucks', 'less', 'minify-css', 'copy-js', 'minify-js', 'copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -112,9 +117,9 @@ gulp.task('browserSync', function() {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['copy', 'browserSync', 'nunjucks', 'less', 'minify-css', 'minify-js'], function() {
+gulp.task('dev', ['copy', 'browserSync', 'nunjucks', 'less', 'copy-js', 'minify-css', 'minify-js'], function() {
     gulp.watch('less/*.less', ['less', 'minify-css']);
-    gulp.watch('js/*.js', ['minify-js']);
+    gulp.watch('js/*.js', ['copy-js', 'minify-js']);
     gulp.watch('pages/**/*.+(html|nunjucks)', ['nunjucks'])
     gulp.watch('templates/**/*.nunjucks', ['nunjucks'])
     // Reloads the browser whenever HTML or JS files change
