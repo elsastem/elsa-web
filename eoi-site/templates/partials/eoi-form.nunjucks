@@ -42,7 +42,7 @@
                     </li>
                 </ul>
                 <div id="bar" class="progress progress-striped" role="progressbar">
-                    <div class="progress-bar progress-bar-success" style="width: 25%;"> </div>
+                    <div class="progress-bar progress-bar-success" style="width: 20%;"> </div>
                 </div>
                 <div class="tab-content">
                     <div class="alert alert-danger display-none">
@@ -62,6 +62,7 @@
                             </div>
                         </div>
                         <legend>Address Details</legend>
+                        {#https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform#}
                         <div class="form-group">
                             <label class="control-label col-md-3">Line 1
                                 <span class="required" aria-required="true"> * </span>
@@ -95,7 +96,16 @@
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                <input type="text" placeholder="State" class="form-control" name="preschool_address_state">
+                                <select name="preschool_address_state" class="form-control">
+                                    <option name="act">Australian Capital Territory</option>
+                                    <option name="nsw">New South Wales</option>
+                                    <option name="nt">Northern Territory</option>
+                                    <option name="qld">Queensland</option>
+                                    <option name="sa">South Australia</option>
+                                    <option name="tas">Tasmania</option>
+                                    <option name="vic">Victoria</option>
+                                    <option name="wa">Western Australia</option>
+                                </select>
                                 <span class="help-block"></span>
                             </div>
                         </div>
@@ -114,7 +124,7 @@
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                 <div class="radio-list">
+                                 <div class="radio-list control-list">
                                     <label class="radio-inline">
                                         <input type="radio" name="preschool_category" value="city" data-title="Major City"> 
                                         City 
@@ -140,7 +150,6 @@
                                         Unsure 
                                     </label>
                                 </div>
-                                <div id="preschool_category_error"></div>
                                 <span class="help-block">Find your category by searching by suburb name or postcode at <a href="http://www.doctorconnect.gov.au/locator" target="_blank">http://www.doctorconnect.gov.au/locator</a></span>
                             </div>
                         </div>
@@ -211,7 +220,7 @@
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                 <div class="radio-list">
+                                 <div class="radio-list control-list">
                                     <label class="radio-inline">
                                         <input type="radio" name="wifi" value="yes" data-title="Yes"> 
                                         Yes 
@@ -229,7 +238,7 @@
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                 <div class="radio-list">
+                                 <div class="radio-list control-list">
                                     <label class="radio-inline">
                                         <input type="radio" name="prekindy" value="yes" data-title="Yes"> 
                                         Yes 
@@ -247,7 +256,7 @@
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                 <div class="radio-list">
+                                 <div class="radio-list control-list">
                                     <label class="radio-inline">
                                         <input type="radio" name="teacher" value="yes" data-title="Yes"> 
                                         Yes 
@@ -265,7 +274,7 @@
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                 <div class="">
+                                 <div class="radio-list control-list">
                                     <label class="radio-inline">
                                         <input type="radio" name="device" value="yes" data-title="Yes"> 
                                         Yes 
@@ -287,7 +296,7 @@
                             <label class="control-label col-md-3">
                             </label>
                             <div class="col-md-4">
-                                <input type="checkbox" id="provide_primary" value="true" > Provide Primary Contact
+                                <input type="checkbox" name="provide_primary" value="true" > Provide Primary Contact
                             </div>
                         </div>
                         <div id="primary_contact" class="hide">
@@ -297,7 +306,7 @@
                             <label class="control-label col-md-3">
                             </label>
                             <div class="col-md-4">
-                                <input type="checkbox" id="provide_secondary" value="true" > Provide Secondary Contact
+                                <input type="checkbox" name="provide_secondary" value="true" > Provide Secondary Contact
                             </div>
                         </div>
                         <div id="secondary_contact" class="hide">
@@ -321,29 +330,31 @@
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="other_count" value="0-25"> 
-                                        Less than 25 
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="other_count" value="25-59"> 
-                                        25-59 
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="other_count" value="60-80"> 
-                                        60-80 
-                                    </label>
-                                </div>
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="other_count" value="81+"> 
-                                        81 or more 
-                                    </label>
+                                <div class="control-list">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="other_count" value="0-25"> 
+                                            Less than 25 
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="other_count" value="25-59"> 
+                                            25-59 
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="other_count" value="60-80"> 
+                                            60-80 
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="other_count" value="81+"> 
+                                            81 or more 
+                                        </label>
+                                    </div>
                                 </div>
                                 <span class="help-block">How many children do you have in a preschool program in the year before school?</span>
                             </div>
@@ -352,35 +363,37 @@
                             <label class="control-label col-md-3">We would like to include a range of services that support Aboriginal and Torres Strait Islander communities. Please select checkboxes or use the text box to describe how your service is involved.
                             </label>
                             <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="other_atsi_owned"> 
-                                        Owned by an Aboriginal and Torres Strait Islander business
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="other_atsi_director"> 
-                                        Director or educators are Aboriginal and Torres Strait Islander people
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="other_atsi_enrolled"> 
-                                        Many Aboriginal and Torres Strait Islander families enroll at the service
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="other_atsi_engage"> 
-                                        Works with an Aboriginal and Torres Strait Islander elder or community member to provide learning opportunities
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="other_atsi_activities"> 
-                                        Regularly includes Aboriginal and Torres cultural activities as part of the preschool program
-                                    </label>
+                                <div class="control-list">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="other_atsi_owned"> 
+                                            Owned by an Aboriginal and Torres Strait Islander business
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="other_atsi_director"> 
+                                            Director or educators are Aboriginal and Torres Strait Islander people
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="other_atsi_enrolled"> 
+                                            Many Aboriginal and Torres Strait Islander families enroll at the service
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="other_atsi_engage"> 
+                                            Works with an Aboriginal and Torres Strait Islander elder or community member to provide learning opportunities
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="other_atsi_activities"> 
+                                            Regularly includes Aboriginal and Torres cultural activities as part of the preschool program
+                                        </label>
+                                    </div>
                                 </div>
                                 <span class="help-block"></span>
                             </div>
@@ -390,7 +403,7 @@
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                 <div class="radio-list">
+                                 <div class="radio-list control-list">
                                     <label class="radio-inline">
                                         <input type="radio" name="other_ella" value="yes" data-title="Yes"> 
                                         Yes 
@@ -408,23 +421,25 @@
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="other_ella_2017" value="2017"> 
-                                        2017
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="other_ella_2016" value="2016"> 
-                                        2016
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="other_ella_2015" value="2015"> 
-                                        2015
-                                    </label>
+                                <div class="checkbox-list">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="other_ella_2017" value="2017"> 
+                                            2017
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="other_ella_2016" value="2016"> 
+                                            2016
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="other_ella_2015" value="2015"> 
+                                            2015
+                                        </label>
+                                    </div>
                                 </div>
                                 <span class="help-block"></span>
                             </div>
@@ -446,7 +461,9 @@
                                 <span class="required" aria-required="true"></span>
                             </label>
                             <div class="col-md-4">
+                                <div class="control-list">
                                     <input type="checkbox" name="declaration" value="agree" > Yes, I agree
+                                </div>
                             </div>
                         </div>
                     </div>
