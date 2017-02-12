@@ -97,6 +97,12 @@ var FormWizard = function () {
                         passPanel.hide();
                         failPanel.show();
                         //App.scrollTo(t, -200)
+                        if (!validator.numberOfInvalids())
+                            return;
+
+                        $('html, body').animate({
+                            scrollTop: $(failPanel).offset().top - $("nav").height()
+                        }, 1000);
                     },
                     highlight: function (element, errorClass) {
                         $(element).closest(".form-group").removeClass("has-success").addClass("has-error");
@@ -160,6 +166,9 @@ var FormWizard = function () {
                     }
 
                     // App.scrollTo($(".page-title"))
+                    $('html, body').animate({
+                        scrollTop: $('#eoi-form-wizard').offset().top - $("nav").height()
+                    }, 1000);
                 };
 
                 $("#eoi-form-wizard").bootstrapWizard({
