@@ -12,31 +12,31 @@
     <section id="privacy">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-xs-12 text-center">
                     <h2 class="section-heading">Privacy Statement</h2>
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
             <div class="row text-muted">
-                <p>University of Canberra and the Department respect the privacy of individuals, protect personal information
-                    and comply with relevant Australian privacy laws. University of Canberra and the Department will collect
-                    personal information from you when you complete this application form. We will use your personal information
-                    only for the purposes for which it has been collected. The purposes include assessing your preschool’s
-                    application to participate in the ELSA program, and, if the application is successful, setting up your
-                    preschool to begin the program.</p>
-                <p>If you believe that the personal information that we hold about you is incorrect, please contact us at
-                    <a href="mailto:contact@elsa.edu.au">contact@elsa.edu.au</a> and reasonable steps will be taken to amend
-                    that information.</p>
-                <ul>
-                    <li>
-                        <a href="http://www.canberra.edu.au/about-uc/policy-and-legislation/disclaimer-copyright-privacy-accessibility">Read the University of Canberra’s Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="https://www.education.gov.au/privacy-policy">Read the Australian Government Department of Education and Training’s Privacy Policy.</a>
-
-                    </li>
-                </ul>
-
+                <div class="col-xs-12">
+                    <p>University of Canberra and the Department respect the privacy of individuals, protect personal information
+                        and comply with relevant Australian privacy laws. University of Canberra and the Department will collect
+                        personal information from you when you complete this application form. We will use your personal information
+                        only for the purposes for which it has been collected. The purposes include assessing your preschool’s
+                        application to participate in the ELSA program, and, if the application is successful, setting up your
+                        preschool to begin the program.</p>
+                    <p>If you believe that the personal information that we hold about you is incorrect, please contact us at
+                        <a href="mailto:contact@elsa.edu.au">contact@elsa.edu.au</a> and reasonable steps will be taken to amend
+                        that information.</p>
+                    <ul>
+                        <li>
+                            <a href="http://www.canberra.edu.au/about-uc/policy-and-legislation/disclaimer-copyright-privacy-accessibility">Read the University of Canberra’s Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="https://www.education.gov.au/privacy-policy">Read the Australian Government Department of Education and Training’s Privacy Policy.</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
