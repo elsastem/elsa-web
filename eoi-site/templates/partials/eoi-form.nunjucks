@@ -120,40 +120,6 @@
                         </div>
                         <legend>Preschool Attributes</legend>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Suburb Categorisation
-                                <span class="required" aria-required="true"> * </span>
-                            </label>
-                            <div class="col-md-4">
-                                 <div class="radio-list control-list">
-                                    <label class="radio-inline">
-                                        <input type="radio" name="preschool_category" value="city" data-title="Major City"> 
-                                        City 
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="preschool_category" value="inner" data-title="Inner Regional"> 
-                                        Inner Regional 
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="preschool_category" value="outer" data-title="Outer Regional"> 
-                                        Outer Regional 
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="preschool_category" value="remote" data-title="Remote"> 
-                                        Remote 
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="preschool_category" value="very_remote" data-title="Very Remote"> 
-                                        Very Remote 
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="preschool_category" value="unsure" data-title="Unsure"> 
-                                        Unsure 
-                                    </label>
-                                </div>
-                                <span class="help-block">Find your category by searching by suburb name or postcode at <a href="http://www.doctorconnect.gov.au/locator" target="_blank">http://www.doctorconnect.gov.au/locator</a></span>
-                            </div>
-                        </div>
-                        <div class="form-group">
                             <label class="control-label col-md-3">Service Approval Number
                                 <span class="required" aria-required="true"> * </span>
                             </label>

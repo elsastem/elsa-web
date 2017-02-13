@@ -24,7 +24,6 @@ var FormWizard = function () {
                             minlength: 4,
                             maxlength: 4
                         },
-                        "preschool_category": "required",
                         "preschool_service_number": {
                             required: true,
                             digits: true
