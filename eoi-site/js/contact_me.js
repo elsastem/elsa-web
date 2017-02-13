@@ -1,72 +1,95 @@
-// Contact Form Scripts
+//I grabbed most of this from another site, thus it is minified
 
-$(function() {
+var SubscribeForm = function () {
+    return {
+        init: function () {
+            var form = $("#subscribeForm");
+            form.validate({
+                doNotHideMessage: true,
+                errorElement: "span",
+                errorClass: "help-block help-block-error",
+                focusInvalid: false,
+                rules: {
+                    "email": {
+                        required: true,
+                        email: true
+                    },
+                    "business": "required",
+                    "name": "required",
+                },
+                errorPlacement: function (error, element) {
+                    var controlList = element.closest(".control-list");
+                    if (controlList.length > 0) {
+                        error.insertAfter(controlList[0]);
+                    } else
+                        error.insertAfter(element);
+                },
+                invalidHandler: function (event, validator) {
+                    if (!validator.numberOfInvalids())
+                        return;
+                },
+                highlight: function (element, errorClass) {
+                    $(element).closest(".form-group").removeClass("has-success").addClass("has-error");
+                },
+                unhighlight: function (element, errorClass) {
+                    $(element).closest(".form-group").removeClass("has-error");
+                },
+                success: function (label) {
+                    label.addClass("valid").closest(".form-group").removeClass("has-error").addClass("has-success");
+                },
+                submitHandler: function (form) {
+                    var formData = $(form).serializeObject();
+                    var url = "https://ed5h9uai93.execute-api.ap-southeast-2.amazonaws.com/prod/subscribe";// "https://api.elsa.edu.au/web/eoi";                    
+                    var apiKey = "huwyil4DTkGbPxduj8062871TorMtjM3CaSRS5Kh";
 
-    $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
-        preventSubmit: true,
-        submitError: function($form, event, errors) {
-            // additional error messages or events
-        },
-        submitSuccess: function($form, event) {
-            event.preventDefault(); // prevent default submit behaviour
-            // get values from FORM
-            var name = $("input#name").val();
-            var email = $("input#email").val();
-            var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
-            var firstName = name; // For Success/Failure Message
-            // Check for white space in name for Success/Fail message
-            if (firstName.indexOf(' ') >= 0) {
-                firstName = name.split(' ').slice(0, -1).join(' ');
-            }
-            $.ajax({
-                url: "././mail/contact_me.php",
-                type: "POST",
-                data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
-                },
-                cache: false,
-                success: function() {
-                    // Success message
-                    $('#success').html("<div class='alert alert-success'>");
-                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                        .append("</button>");
-                    $('#success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
-                    $('#success > .alert-success')
-                        .append('</div>');
-
-                    //clear all fields
-                    $('#contactForm').trigger("reset");
-                },
-                error: function() {
-                    // Fail message
-                    $('#success').html("<div class='alert alert-danger'>");
-                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                        .append("</button>");
-                    $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
-                    $('#success > .alert-danger').append('</div>');
-                    //clear all fields
-                    $('#contactForm').trigger("reset");
-                },
+                    $.ajax({
+                        url: url,
+                        method: "POST",
+                        contentType: "application/json",
+                        headers: {
+                            "x-api-key": apiKey
+                        },
+                        data: JSON.stringify(formData)
+                    })
+                        .done(function (result) {
+                            alert("success");
+                        })
+                        .fail(function (jqXHR, textStatus) {
+                            alert("error");
+                        })
+                        .always(function () {
+                            alert("complete");
+                        });
+                }
             });
-        },
-        filter: function() {
-            return $(this).is(":visible");
-        },
-    });
 
-    $("a[data-toggle=\"tab\"]").click(function(e) {
-        e.preventDefault();
-        $(this).tab("show");
+            $("#subscribe").click(function () {
+                if (form.valid()) {
+                    //form.submit();
+                }
+            });
+        }
+    }
+}();
+
+//http://stackoverflow.com/questions/1184624/convert-form-data-to-javascript-object-with-jquery
+$.fn.serializeObject = function () {
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function () {
+        if (o[this.name] !== undefined) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
     });
+    return o;
+};
+
+jQuery(document).ready(function () {
+    SubscribeForm.init();
 });
 
-
-/*When clicking on Full hide fail/success boxes */
-$('#name').focus(function() {
-    $('#success').html('');
-});
