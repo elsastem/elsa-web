@@ -35,6 +35,9 @@ var FormWizard = function () {
                         "wifi": "required",
                         "prekindy": "required",
                         "teacher": "required",
+                        "waiver": {
+                            required: "input[name=teacher][value=no]:checked",
+                        },
                         "device": "required",
                         "tablet_count": {
                             required: "input[name=device][value=yes]:checked",
@@ -262,6 +265,15 @@ var FormWizard = function () {
                     } else {
                         $('#tablet_no').removeClass('hide');
                         $('#tablet_yes').addClass('hide');
+                    }
+                });
+
+                 $('input[name=teacher]').change(function () {
+                    var val = $('input[name=teacher]:checked', '#eoi-form-wizard').val();
+                    if (val == 'no') {
+                        $('#teacher_no').removeClass('hide');
+                    } else {
+                        $('#teacher_no').addClass('hide');
                     }
                 });
 
