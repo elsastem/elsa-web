@@ -1,35 +1,12 @@
    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-3 footer-col">
+                <div class="col-md-4" footer-col>
                     <div>
                         <img src="img/coat-of-arms.png" alt="Australian Government Coat of Arms" width="140">
                     </div>
-                    <span class="copyright">Copyright &copy; ELSA 2017</span>
                 </div>
-                <div class="col-md-3 footer-col">
-                    <h4>Social</h4>
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 footer-col">
-                    <h4>Support</h4>
-                    <ul class="list-unstyled quicklinks">
-                        <li>
-                            <a href="privacy.html">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <p>Early Learning STEM Australia has been developed by the University of Canberra, through funding provided by the Australian Government Department of Education and Training under the National Innovation and Science Agenda. Copyright in the material on this website is owned by the Commonwealth of Australia unless otherwise indicated. This material may be used in accordance with the Creative Commons BY 4.0 licence (excluding images), unless otherwise indicated.</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 footer-col">
+                <div class="col-md-4 footer-col">
                     <h4>Contact Us</h4>
                     <ul class="list-unstyled quicklinks">
                         <li>
@@ -38,12 +15,32 @@
                         <li>
                             <address>
                                 <strong>Early Learning STEM Australia
-STEM Education Research Centre</strong><br> University of Canberra<br> Bruce, ACT, 2617, Australia<br>
-                                P: (02) 6xxx xxxx
+STEM Education Research Centre</strong><br> University of Canberra<br> Bruce, ACT, 2617, Australia
                             </address>
                         </li>
                     </ul>
                 </div>
+                <div class="col-md-4 footer-col">
+                    <div>
+                        <img src="img/uc.png" alt="University of Canberra logo" width="140">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-1 col-md-2">
+            </div>
+            <div class="col-xs-10 col-md-8">
+                <p class="copyright">Copyright &copy; ELSA 2017</p>
+                <p class="fineprint">Early Learning STEM Australia has been developed by the University of Canberra, through funding provided by the Australian Government Department of Education and Training under the National Innovation and Science Agenda. Copyright in the material on this website is owned by the Commonwealth of Australia unless otherwise indicated. This material may be used in accordance with the Creative Commons BY 4.0 licence (excluding images), unless otherwise indicated.</p>
+                <ul class="list-unstyled quicklinks">
+                    <li>
+                        <a href="privacy.html">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-1 col-md-2">
             </div>
         </div>
     </footer>
