@@ -7,6 +7,11 @@ var FormWizard = function () {
                 var form = $("#eoi_form"),
                     failPanel = $(".alert-danger", form),
                     passPanel = $(".alert-success", form);
+
+                $.validator.addMethod("notno", function(value, element, params) {
+                    return this.optional(element) || value != "no";
+                }, $.validator.format("{0}"));
+
                 form.validate({
                     doNotHideMessage: true,
                     errorElement: "span",
@@ -32,11 +37,15 @@ var FormWizard = function () {
                         "preschool_provider_number": "required",
                         "preschool_rating": "required",
                         "preschool_type": "required",
-                        "wifi": "required",
+                        "wifi": {
+                            required: true,
+                            notno: "An active internet connection is required to participate in ELSA. Please check our Participation Guidelines for more information."
+                        },
                         "prekindy": "required",
                         "teacher": "required",
                         "waiver": {
                             required: "input[name=teacher][value=no]:checked",
+                            notno: "Without a degree-qualified teacher, you will need a waiver is required to participate in ELSA. Please check our Participation Guidelines for more information."
                         },
                         "device": "required",
                         "tablet_count": {
@@ -47,6 +56,7 @@ var FormWizard = function () {
                         // },
                         "tablet_commitment": {
                             required: "input[name=device][value=no]:checked",
+                            notno: "A tablet device, or commitment to purchase one is required to participate in ELSA. Please check our Participation Guidelines for more information."
                         },
                         "director_name": "required",
                         "director_position": "required",
@@ -276,13 +286,6 @@ var FormWizard = function () {
                         $('#teacher_no').addClass('hide');
                     }
                 });
-
-                // $("#country_list", r).change(function () {
-                //      r.validate().element($(this))
-                // })
-
-                // $('#eoi-form-wizard').bootstrapWizard('show', 3);
-                
             }
         }
     }

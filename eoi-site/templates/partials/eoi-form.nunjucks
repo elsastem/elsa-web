@@ -177,7 +177,7 @@
                     </div>
                     <div class="tab-pane" id="tab2">
                         <h3 class="block">ELSA program eligibility</h3>
-                        <p>Please answer all of the follwing questions.</p>
+                        <p>Please answer all of the following questions, and consult the <a href="eligibility.html">Participation Guidelines</a> for more information</p>
                         <div class="form-group">
                             <label class="control-label col-md-3">Does the preschool have an active internet connection with wifi?
                                 <span class="required" aria-required="true"> * </span>
@@ -189,7 +189,7 @@
                                         Yes 
                                     </label>
                                     <label class="radio-inline">
-                                        <input type="radio" name="wifi" value="no" data-title="No"> 
+                                        <input type="radio" name="wifi" value="no" data-title="No" class="ineligible-if-checked"> 
                                         No 
                                     </label>
                                 </div>
@@ -244,7 +244,7 @@
                                         Yes 
                                     </label>
                                     <label class="radio-inline">
-                                        <input type="radio" name="waiver" value="no" data-title="No"> 
+                                        <input type="radio" name="waiver" value="no" data-title="No" class="ineligible-if-checked"> 
                                         No 
                                     </label>
                                 </div>
@@ -302,7 +302,7 @@
                                             Yes 
                                         </label>
                                         <label class="radio-inline">
-                                            <input type="radio" name="tablet_commitment" value="no" data-title="No"> 
+                                            <input type="radio" name="tablet_commitment" value="no" data-title="No" class="ineligible-if-checked"> 
                                             No 
                                         </label>
                                         </div>
@@ -345,12 +345,6 @@
                             </label>
                             <div class="col-md-4">
                                 <div class="control-list">
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" name="other_discover" value="0-25"> 
-                                            Less than 25 
-                                        </label>
-                                    </div>
                                     <div class="radio">
                                         <label>
                                             <input type="radio" name="other_discover" value="newspaper"> 
