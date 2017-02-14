@@ -3,7 +3,10 @@
 var SubscribeForm = function () {
     return {
         init: function () {
-            var form = $("#subscribeForm");
+            var form = $("#subscribeForm"),
+                failPanel = $(".alert-danger", form),
+                passPanel = $(".alert-success", form);
+
             form.validate({
                 doNotHideMessage: true,
                 errorElement: "span",
@@ -52,22 +55,23 @@ var SubscribeForm = function () {
                         data: JSON.stringify(formData)
                     })
                         .done(function (result) {
-                            alert("success");
+                            failPanel.hide();
+                            passPanel.show();
                         })
                         .fail(function (jqXHR, textStatus) {
-                            alert("error");
+                            failPanel.show();
+                            passPanel.hide();
                         })
                         .always(function () {
-                            alert("complete");
                         });
                 }
             });
 
-            $("#subscribe").click(function () {
-                if (form.valid()) {
-                    //form.submit();
-                }
-            });
+            // $("#subscribe").click(function () {
+            //     if (form.valid()) {
+            //         //form.submit();
+            //     }
+            // });
         }
     }
 }();
