@@ -124,7 +124,7 @@
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                <input type="number" placeholder="Service Approval Number" class="form-control" name="preschool_service_number">
+                                <input type="text" placeholder="Service Approval Number" class="form-control" name="preschool_service_number">
                                 <span class="help-block"></span>
                             </div>
                         </div>
@@ -151,13 +151,10 @@
                             </label>
                             <div class="col-md-4">
                                 <select name="preschool_rating" class="form-control">
-                                    <option value="0">Unknown</option>
                                     <option value="0">Not yet assessed</option>
-                                    <option value="1">Working towards NQS</option>
-                                    <option value="2">Significant Improvement</option>
+                                    <option value="1">Working towards NQS/Significant Improvement</option>
                                     <option value="3">Meeting NQS</option>
-                                    <option value="4">Exceeding NQS</option>
-                                    <option value="5">Excellent rating</option>
+                                    <option value="4">Exceeding NQS/Excellent Rating</option>
                                 </select>
                                 <span class="help-block"></span>
                             </div>
@@ -168,11 +165,10 @@
                             </label>
                             <div class="col-md-4">
                                 <select name="preschool_type" class="form-control">
-                                    <option value="long_gov">Long day care (Government)</option>
-                                    <option value="long_non">Long day care (non-Government)</option>
-                                    <option value="standalone">Standalone preschool</option>
-                                    <option value="school_gov">School-based preschool (Government)</option>
-                                    <option value="school_non">School-based preschool (non-Government)</option>
+                                    <option value="longdaycare">Long Day Care</option>
+                                    <option value="standalone">Standalone Preschool</option>
+                                    <option value="school_gov">School-based Preschool (Government)</option>
+                                    <option value="school_non">School-based Preschool (non-Government)</option>
                                     <option value="other">Other</option>
                                 </select>
                                 <span class="help-block"></span>
@@ -283,17 +279,69 @@
                     </div>
                     <div class="tab-pane" id="tab4">
                         <h3 class="block">Other Information</h3>
-                        <div class="form-group">
+                        <div class="form-group" id="other_discover">
                             <label class="control-label col-md-3">How did you hear about ELSA?
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                <input type="text" class="form-control" name="other_discover">
-                                <span class="help-block">Newspaper, radio, website (which website text field), e-newsletter (which e-newsletter text field), email (who sent the email), word of mouth, parent recommended it</span>
+                                <div class="control-list">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="other_discover" value="0-25"> 
+                                            Less than 25 
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="other_discover" value="newspaper"> 
+                                            Newspaper 
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="other_discover" value="radio"> 
+                                            Radio
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="other_discover" value="website" class="need-more-info"> 
+                                            Website 
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="other_discover" value="newletter" class="need-more-info"> 
+                                            E-Newsletter 
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="other_discover" value="email" class="need-more-info"> 
+                                            Email
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="other_discover" value="mouth"> 
+                                            Word of Mouth
+                                        </label>
+                                    </div>
+                                </div>
+                                <span class="help-block"></span>
+                            </div>
+                        </div>
+                        <div class="form-group hide" id="other_discover_text" >
+                            <label class="control-label col-md-3">Additional Information
+                                <span class="required" aria-required="true"> * </span>
+                            </label>
+                            <div class="col-md-4">
+                                <input type="text" placeholder="" class="form-control" name="other_discover_text">
+                                <span class="help-block">Which newsletter/website or who was the email from.</span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Number of children?
+                            <label class="control-label col-md-3">How many children do you have in a preschool program in the year before school?
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
@@ -323,7 +371,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <span class="help-block">How many children do you have in a preschool program in the year before school?</span>
+                                <span class="help-block"></span>
                             </div>
                         </div>
                         <div class="form-group">

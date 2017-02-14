@@ -17,8 +17,8 @@ var SubscribeForm = function () {
                         required: true,
                         email: true
                     },
-                    "business": "required",
-                    "name": "required",
+                    // "business": "required",
+                    // "name": "required",
                 },
                 errorPlacement: function (error, element) {
                     var controlList = element.closest(".control-list");

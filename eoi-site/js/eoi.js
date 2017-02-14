@@ -67,6 +67,9 @@ var FormWizard = function () {
                             required: "input[name=provide_secondary]:checked"
                         },
                         "other_discover": "required",
+                        "other_discover_text":  {
+                            required: "input.need-more-info:checked"
+                        },
                         "other_count": "required",
                         // "other_atsi_owned",
                         // "other_atsi_director",
@@ -232,6 +235,16 @@ var FormWizard = function () {
                         $('#ella-details').addClass('hide');
                     }
                 });
+
+                $('#other_discover input').change(function () {
+                    var val = $('.need-more-info:checked', '#eoi-form-wizard').val();
+                    if (val) {
+                        $('#other_discover_text').removeClass('hide');
+                    } else {
+                        $('#other_discover_text').addClass('hide');
+                    }
+                });
+                
 
                 // $("#country_list", r).change(function () {
                 //      r.validate().element($(this))
