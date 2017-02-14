@@ -8,7 +8,7 @@ var FormWizard = function () {
                     failPanel = $(".alert-danger", form),
                     passPanel = $(".alert-success", form);
 
-                $.validator.addMethod("notno", function(value, element, params) {
+                $.validator.addMethod("notno", function (value, element, params) {
                     return this.optional(element) || value != "no";
                 }, $.validator.format("{0}"));
 
@@ -92,7 +92,7 @@ var FormWizard = function () {
                             required: "input[name=provide_secondary]:checked"
                         },
                         "other_discover": "required",
-                        "other_discover_text":  {
+                        "other_discover_text": {
                             required: "input.need-more-info:checked"
                         },
                         "other_count": "required",
@@ -115,9 +115,9 @@ var FormWizard = function () {
                     },
                     errorPlacement: function (error, element) {
                         var controlList = element.closest(".control-list");
-                        if(controlList.length > 0) {
+                        if (controlList.length > 0) {
                             error.insertAfter(controlList[0]);
-                        } else 
+                        } else
                             error.insertAfter(element);
                     },
                     invalidHandler: function (event, validator) {
@@ -141,14 +141,18 @@ var FormWizard = function () {
                         label.addClass("valid").closest(".form-group").removeClass("has-error").addClass("has-success");
                     },
                     submitHandler: function (form) {
-                        passPanel.show();
+                        passPanel.hide();
                         failPanel.hide();
+                        $("#eoi-form-wizard .form-actions").addClass('hide');
+                        $("#eoi-form-wizard .tab-content").addClass('hide');
+                        $("#eoi-form-wizard .failed").addClass('hide');
+                        $("#eoi-form-wizard .loading").removeClass('hide');
                         //form[0].submit();
                         //console.log("Farts");
                         var formData = $(form).serializeObject();
-                        var url = "https://api.elsa.edu.au/web/eoi";                    
+                        var url = "https://api.elsa.edu.au/web/eoi";
                         var apiKey = "huwyil4DTkGbPxduj8062871TorMtjM3CaSRS5Kh";
-                        
+
                         $.ajax({
                             url: url,
                             method: "POST",
@@ -157,18 +161,18 @@ var FormWizard = function () {
                                 "x-api-key": apiKey
                             },
                             data: JSON.stringify(formData)
-                        }).done(function(result) {
-                            alert( "success" );
+                        }).done(function (result) {
+                            $("#eoi-form-wizard .submitted").removeClass('hide');
                         })
-                        .fail(function( jqXHR, textStatus ) {
-                            alert( "error" );
-                        })
-                        .always(function() {
-                            alert( "complete" );
-                        });
+                            .fail(function (jqXHR, textStatus) {
+                                $("#eoi-form-wizard .failed").removeClass('hide');
+                            })
+                            .always(function () {
+                                $("#eoi-form-wizard .loading").addClass('hide');
+                            });
                     }
                 });
-                
+
                 var updateStep = function (tab, navigation, index) {
                     var tabCount = navigation.find("li").length,
                         current = index + 1;
@@ -179,12 +183,12 @@ var FormWizard = function () {
                         $(nav[i]).addClass("done");
                     }
 
-                    if(1 == current)
+                    if (1 == current)
                         $("#eoi-form-wizard").find(".button-previous").hide();
                     else
                         $("#eoi-form-wizard").find(".button-previous").show();
 
-                    if( current >= tabCount) {
+                    if (current >= tabCount) {
                         $("#eoi-form-wizard").find(".button-next").hide();
                         $("#eoi-form-wizard").find(".button-submit").show();
                     } else {
@@ -208,9 +212,9 @@ var FormWizard = function () {
                         passPanel.hide();
                         failPanel.hide();
 
-                        if(!form.valid())
+                        if (!form.valid())
                             return false;
-                        
+
                         updateStep(tab, navigation, index);
                     },
                     onPrevious: function (tab, navigation, index) {
@@ -231,7 +235,7 @@ var FormWizard = function () {
                 $("#eoi-form-wizard").find(".button-previous").hide();
 
                 $("#eoi-form-wizard .button-submit").click(function () {
-                    if(form.valid()) {
+                    if (form.valid()) {
                         form.submit();
                     }
                 }).hide();
@@ -281,7 +285,7 @@ var FormWizard = function () {
                     }
                 });
 
-                 $('input[name=teacher]').change(function () {
+                $('input[name=teacher]').change(function () {
                     var val = $('input[name=teacher]:checked', '#eoi-form-wizard').val();
                     if (val == 'no') {
                         $('#teacher_no').removeClass('hide');
@@ -289,17 +293,22 @@ var FormWizard = function () {
                         $('#teacher_no').addClass('hide');
                     }
                 });
+
+                $('#submit_failed').click(function () {
+                    $("#eoi-form-wizard .failed").addClass('hide');
+                    $("#eoi-form-wizard .form-actions").removeClass('hide');
+                    $("#eoi-form-wizard .tab-content").removeClass('hide');
+                });
             }
         }
     }
-} ();
+}();
 
 //http://stackoverflow.com/questions/1184624/convert-form-data-to-javascript-object-with-jquery
-$.fn.serializeObject = function()
-{
+$.fn.serializeObject = function () {
     var o = {};
     var a = this.serializeArray();
-    $.each(a, function() {
+    $.each(a, function () {
         if (o[this.name] !== undefined) {
             if (!o[this.name].push) {
                 o[this.name] = [o[this.name]];

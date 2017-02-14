@@ -552,6 +552,36 @@
                     </div>
                 </div>
             </div>
+            <div class="loading hide">
+                <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="submitted hide container">
+                <div class="row">
+                    <div class="modalbox success col-sm-8 col-md-6 col-lg-5 center animate">
+                        <div class="icon">
+                            <span class="glyphicon glyphicon-ok"></span>
+                        </div>
+                        <h1>Success!</h1>
+                        <p>Thank you, your application has been submitted. <br>You will receive an automatic email to confirm that the application has been received. If you do not receive this email, please contact us at <a href="mailto:team@elsa.edu.au" target="_top">team@elsa.edu.au</a>.</p>
+                        <a href="index.html" class="btn button redo">Ok</a>
+                    </div>
+		        </div>
+            </div>
+            <div class="failed hide container">
+                <div class="row">
+                    <div class="modalbox error col-sm-8 col-md-6 col-lg-5 center animate">
+						<div class="icon">
+								<span class="glyphicon glyphicon-thumbs-down"></span>
+						</div>
+						<!--/.icon-->
+						<h1>Oh no!</h1>
+						<p>Oops! Something went wrong,
+								<br> you should try again, or contact us at <a href="mailto:team@elsa.edu.au" target="_top">team@elsa.edu.au</a>.</p>
+                        <button id="submit_failed" type="button" class="redo btn button" >Try again</button>
+                    </div>
+		        </div>
+            </div>
         </div>
     </form>
 </div>
