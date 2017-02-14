@@ -559,7 +559,6 @@ aside.clients {
 
 section#contact {
     background-color: @gray-darker;
-    background-image: url('../img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
     .section-heading {
@@ -613,10 +612,11 @@ footer {
     border-top: 1px solid @gray-darker;
     padding: 25px 0;
     text-align: center;
-    span.copyright {
+    p.copyright {
+        margin-top: 30px;
         line-height: 40px;
-        .heading-font;
-        text-transform: none;
+        font-size: smaller;
+        .text-muted;
     }
     ul.quicklinks {
         margin-bottom: 0;
@@ -632,6 +632,10 @@ footer {
     }
     p {
         line-height: 1.42857143;
+    }
+    p.fineprint {
+        font-size: smaller;
+        .text-muted;
     }
 }
 
