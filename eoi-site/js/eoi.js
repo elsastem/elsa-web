@@ -121,7 +121,7 @@ var FormWizard = function () {
                         //form[0].submit();
                         //console.log("Farts");
                         var formData = $(form).serializeObject();
-                        var url = "https://ed5h9uai93.execute-api.ap-southeast-2.amazonaws.com/prod/eoi";// "https://api.elsa.edu.au/web/eoi";                    
+                        var url = "https://api.elsa.edu.au/web/eoi";                    
                         var apiKey = "huwyil4DTkGbPxduj8062871TorMtjM3CaSRS5Kh";
                         
                         $.ajax({

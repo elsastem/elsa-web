@@ -42,7 +42,7 @@ var SubscribeForm = function () {
                 },
                 submitHandler: function (form) {
                     var formData = $(form).serializeObject();
-                    var url = "https://ed5h9uai93.execute-api.ap-southeast-2.amazonaws.com/prod/subscribe";// "https://api.elsa.edu.au/web/eoi";                    
+                    var url = "https://api.elsa.edu.au/web/subscribe";                  
                     var apiKey = "huwyil4DTkGbPxduj8062871TorMtjM3CaSRS5Kh";
 
                     $.ajax({
