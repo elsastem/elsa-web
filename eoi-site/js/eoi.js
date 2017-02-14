@@ -36,6 +36,15 @@ var FormWizard = function () {
                         "prekindy": "required",
                         "teacher": "required",
                         "device": "required",
+                        "tablet_count": {
+                            required: "input[name=device][value=yes]:checked",
+                        },
+                        // "tablet_info": {
+                        //     required: "input[name=device][value=yes]:checked",
+                        // },
+                        "tablet_commitment": {
+                            required: "input[name=device][value=no]:checked",
+                        },
                         "director_name": "required",
                         "director_position": "required",
                         "director_email": "required",
@@ -244,7 +253,17 @@ var FormWizard = function () {
                         $('#other_discover_text').addClass('hide');
                     }
                 });
-                
+
+                $('input[name=device]').change(function () {
+                    var val = $('input[name=device]:checked', '#eoi-form-wizard').val();
+                    if (val == 'yes') {
+                        $('#tablet_yes').removeClass('hide');
+                        $('#tablet_no').addClass('hide');
+                    } else {
+                        $('#tablet_no').removeClass('hide');
+                        $('#tablet_yes').addClass('hide');
+                    }
+                });
 
                 // $("#country_list", r).change(function () {
                 //      r.validate().element($(this))
