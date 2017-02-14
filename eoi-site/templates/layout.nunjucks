@@ -15,5 +15,5 @@
         {% block scripts %} 
             {% include 'partials/scripts.nunjucks' %}    
         {% endblock %} 
-    </body>Ï
+    </body>
 </html>
