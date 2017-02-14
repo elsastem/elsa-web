@@ -41,7 +41,10 @@ var FormWizard = function () {
                             required: true,
                             notno: "An active internet connection is required to participate in ELSA. Please check our Participation Guidelines for more information."
                         },
-                        "prekindy": "required",
+                        "prekindy": {
+                            required: true,
+                            notno: "A preschool/kindergarten program primarily for children is required to participate in ELSA. Please check our Participation Guidelines for more information."
+                        },
                         "teacher": "required",
                         "waiver": {
                             required: "input[name=teacher][value=no]:checked",
