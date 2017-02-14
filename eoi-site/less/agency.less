@@ -163,6 +163,25 @@ h1, h2, h3, h4, h5, h6 {
             border-radius: 3px;
         }
     }
+    .affix-top {
+        li {
+            a {
+                color: @theme-primary !important;
+                //background: @navbar-item-bg;
+                border-radius: 3px;
+                padding: 10px;
+                margin: 5px;
+
+                &:hover,
+                &:focus {
+                    //background: @navbar-item-bg !important;
+                    text-decoration: underline;
+                    color: @theme-primary;
+                    outline: none;
+                }
+            }
+        }
+    }
 }
 
 // Navbar Change on Scroll
