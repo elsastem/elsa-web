@@ -31,7 +31,6 @@ var FormWizard = function () {
                         },
                         "preschool_service_number": {
                             required: true,
-                            digits: true
                         },
                         "preschool_provider_name": "required",
                         "preschool_provider_number": "required",
@@ -138,7 +137,7 @@ var FormWizard = function () {
                         $(element).closest(".form-group").removeClass("has-error");
                     },
                     success: function (label) {
-                        label.addClass("valid").closest(".form-group").removeClass("has-error").addClass("has-success");
+                        label.addClass("valid").closest(".form-group").removeClass("has-error")//.addClass("has-success");
                     },
                     submitHandler: function (form) {
                         passPanel.hide();

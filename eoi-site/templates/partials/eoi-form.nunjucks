@@ -318,6 +318,13 @@
                         <div class="form-group">
                             <label class="control-label col-md-3">
                             </label>
+                            <div class="col-md-5">
+                                <p>If you would like to nominate a different person to receive communications about your application, please tick the Primary Contact box and add their details below. If you leave this box unchecked, communications will go to the Director.</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">
+                            </label>
                             <div class="col-md-4">
                                 <label><input type="checkbox" name="provide_primary" value="true" > Provide Primary Contact</label>
                             </div>
