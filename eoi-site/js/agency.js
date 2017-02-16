@@ -28,6 +28,13 @@
         offset: {
             top: 100
         }
+    });
+
+    var list = ['h1', 'h2', 'h3', 'li', 'p'];
+    list.forEach(function(tag){
+        $(tag).each(function() { 
+            $(this).html($(this).html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
+        }); 
     })
 
 })(jQuery); // End of use strict
