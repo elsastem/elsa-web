@@ -60,10 +60,10 @@ h1, h2, h3, h4, h5, h6 {
 .bg-darkest-gray {
     background-color: @gray-darker;
 }
-
+ 
 // Restyled Primary Buttons
 
-.btn-primary {
+.btn-primary { 
     .button-variant(@theme-primary-font; @theme-primary; @theme-primary);
     .heading-font;
     font-weight: 700;
@@ -74,10 +74,21 @@ h1, h2, h3, h4, h5, h6 {
     .heading-font;
     font-weight: 700;
     border-radius: 3px;
-    font-size: 18px;
-    padding: 20px 40px;
+    font-size: 15px;
+    padding: 14px 16px;
+    margin: 15px 5px;
 }
 
+@media(min-width:768px) {
+    .btn-xl {
+        .button-variant(@theme-primary-font; @theme-primary; @theme-primary);
+        .heading-font;
+        font-weight: 700;
+        border-radius: 3px;
+        font-size: 18px; 
+        padding: 20px 40px;
+    }
+}
 // Custom Navigation Bar
 
 .navbar-custom {

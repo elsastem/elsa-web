@@ -4,6 +4,7 @@
                 <div class="intro-lead-in">Welcome To The ELSA Pilot!</div>
                 <div class="intro-heading">Now taking applications</div>
                 <a href="#elsa" class="page-scroll btn btn-xl">Tell Me More</a>
+                <a href="register.html" class="page-scroll btn btn-xl">Register Now</a>
             </div>
         </div>
     </header>
