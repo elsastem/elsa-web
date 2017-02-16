@@ -47,7 +47,7 @@ gulp.task('less', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function() {
-    return gulp.src(`${BUILD_DIR}/css/*.css`)
+    return gulp.src([`${BUILD_DIR}/css/*.css`, `!${BUILD_DIR}/css/*.min.css`])
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest(`${BUILD_DIR}/css`))
