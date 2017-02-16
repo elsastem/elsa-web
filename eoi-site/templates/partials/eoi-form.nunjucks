@@ -9,7 +9,7 @@
                         <a href="#tab1" data-toggle="tab" class="step" aria-expanded="true">
                             <span class="number"> 1 </span>
                             <span class="desc">
-                                <i class="fa fa-check"></i> Preschool </span>
+                                <i class="fa fa-check"></i> Service </span>
                         </a>
                     </li>
                     <li>
@@ -50,18 +50,18 @@
                     <div class="alert alert-success display-none">
                         <button class="close" data-dismiss="alert"></button> Your form validation is successful! </div>
                     <div class="tab-pane active" id="tab1">
-                        <h3 class="block">Preschool Details</h3>
+                        <h3 class="block">Service Details</h3>
                         <p>Details of the preschool service that is interested in taking part in the 2018 ELSA pilot program.</p>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Preschool Name
+                            <label class="control-label col-md-3">Service Name
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
                                 <input type="text" class="form-control" name="preschool_name">
-                                <span class="help-block"> Provide the name of the preschool</span>
+                                <span class="help-block"> Provide the name of the preschool service</span>
                             </div>
                         </div>
-                        <legend>Address Details</legend>
+                        <legend>Address</legend>
                         {#https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform#}
                         <div class="form-group">
                             <label class="control-label col-md-3">Line 1
@@ -118,7 +118,7 @@
                                 <span class="help-block"></span>
                             </div>
                         </div>
-                        <legend>Preschool Attributes</legend>
+                        <legend>Service Details</legend>
                         <div class="form-group">
                             <label class="control-label col-md-3">Service Approval Number
                                 <span class="required" aria-required="true"> * </span>
@@ -147,20 +147,20 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Overall NQS Rating
+                            <label class="control-label col-md-3">National Quality Standard (NQS) rating
                             </label>
                             <div class="col-md-4">
                                 <select name="preschool_rating" class="form-control">
-                                    <option value="0">Not yet assessed</option>
-                                    <option value="1">Working towards NQS/Significant Improvement</option>
-                                    <option value="3">Meeting NQS</option>
-                                    <option value="4">Exceeding NQS/Excellent Rating</option>
+                                    <option value="none">Not yet assessed</option>
+                                    <option value="improvement">Significant improvement required/working towards NQS</option>
+                                    <option value="meeting">Meeting NQS</option>
+                                    <option value="exceeding">Exceeding NQS/Excellent Rating</option>
                                 </select>
                                 <span class="help-block"></span>
                             </div>
                         </div>
                        <div class="form-group">
-                            <label class="control-label col-md-3">Service Type
+                            <label class="control-label col-md-3">Primary service type
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
@@ -253,7 +253,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Does your preschool have a tablet device that children can use for the ELSA program?
+                            <label class="control-label col-md-3">Does your preschool have at least one tablet device that children can use for the ELSA program?
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
@@ -319,13 +319,13 @@
                             <label class="control-label col-md-3">
                             </label>
                             <div class="col-md-4">
-                                <input type="checkbox" name="provide_primary" value="true" > Provide Primary Contact
+                                <label><input type="checkbox" name="provide_primary" value="true" > Provide Primary Contact</label>
                             </div>
                         </div>
                         <div id="primary_contact" class="hide">
                             {{ form.person_fields('primary', name_field='Primary Contact') }}
                         </div>
-                        <div class="form-group">
+                        {#<div class="form-group">
                             <label class="control-label col-md-3">
                             </label>
                             <div class="col-md-4">
@@ -334,7 +334,7 @@
                         </div>
                         <div id="secondary_contact" class="hide">
                             {{ form.person_fields('secondary', name_field='Secondary Contact') }}
-                        </div>
+                        </div>#}
 
                     </div>
                     <div class="tab-pane" id="tab4">
@@ -345,6 +345,12 @@
                             </label>
                             <div class="col-md-4">
                                 <div class="control-list">
+                                    <div class="radio">
+                                        <label>
+                                            <input type="radio" name="other_discover" value="social_media" class="need-more-info"> 
+                                            Social Media 
+                                        </label>
+                                    </div>
                                     <div class="radio">
                                         <label>
                                             <input type="radio" name="other_discover" value="newspaper"> 
@@ -391,11 +397,11 @@
                             </label>
                             <div class="col-md-4">
                                 <input type="text" placeholder="" class="form-control" name="other_discover_text">
-                                <span class="help-block">Which newsletter/website or who was the email from.</span>
+                                <span class="help-block">Which newsletter/website/media was it or who was the email from?</span>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3">How many children do you have in a preschool program in the year before school?
+                            <label class="control-label col-md-3">How many children do you have in your preschool program in the year before school?
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
@@ -448,7 +454,7 @@
                                     <div class="checkbox">
                                         <label>
                                             <input type="checkbox" name="other_atsi_enrolled"> 
-                                            Many Aboriginal and Torres Strait Islander families enroll at the service
+                                            Many Aboriginal and Torres Strait Islander families enrol at the service
                                         </label>
                                     </div>
                                     <div class="checkbox">
@@ -468,7 +474,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-md-3">Has the preschool participated in the Early Learning Languages Australia trial (ELLA)?
+                            <label class="control-label col-md-3">Did your preschool participate in the Early Learning Languages Australia Pilot (ELLA)?
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
@@ -516,7 +522,7 @@
                     </div>
                     <div class="tab-pane" id="tab5">
                         <h3 class="block">Statement of Declaration</h3>
-                        <p>Please read and agree to the following</p>
+                        <p>Please review and indicate your acceptance of the following:</p>
                         <ul>
                             <li>I attest that I am authorised to act for the preschool listed in this application</li>
                             <li>All information provided on this form is true and correct</li>
@@ -531,7 +537,7 @@
                             </label>
                             <div class="col-md-4">
                                 <div class="control-list">
-                                    <input type="checkbox" name="declaration" value="agree" > Yes, I agree
+                                    <label><input type="checkbox" name="declaration" value="agree" > Yes, I agree<label>
                                 </div>
                             </div>
                         </div>
