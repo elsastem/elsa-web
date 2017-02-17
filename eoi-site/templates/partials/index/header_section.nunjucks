@@ -1,10 +1,12 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To The ELSA Pilot!</div>
-                <div class="intro-heading">Now taking applications</div>
+                <div class="intro-lead-in">{{context.leadText}}</div>
+                <div class="intro-heading">{{context.subText}}</div>
                 {#<a href="#elsa" class="page-scroll btn btn-xl">Tell Me More</a>#}
-                <a href="register.html" class="page-scroll btn btn-xl">Register Now</a>
+                {%for link in context.links %}
+                    <a href="{{link.url}}" class="page-scroll btn btn-xl">{{link.text}}</a>
+                {%endfor%}
             </div>
         </div>
     </header>

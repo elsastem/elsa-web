@@ -9,6 +9,9 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
+var fs = require('fs');
+var markdown = require('nunjucks-markdown');
+var marked = require('marked');
 
 var BUILD_DIR = "./build"
 
@@ -21,17 +24,30 @@ var banner = ['/*!\n',
     ''
 ].join('');
 
-//Setup nunjucks
+marked.setOptions({
+  renderer: new marked.Renderer(),
+  gfm: true,
+  tables: true,
+  breaks: false,
+  pendantic: false,
+  sanitize: true,
+  smartLists: true,
+  smartypants: false
+});
+
 gulp.task('nunjucks', function() {
-  return gulp.src('pages/**/*.+(html|nunjucks)')
-    // Adding data to Nunjucks
-    .pipe(data(function() {
-      return require('./data.json')
-    }))
-    .pipe(nunjucksRender({
-      path: ['templates']
-    }))
-    .pipe(gulp.dest(BUILD_DIR))
+    return gulp.src('pages/**/*.+(html|nunjucks)')
+        // Adding data to Nunjucks
+        .pipe(data(function() {
+            return JSON.parse(fs.readFileSync('./data.json', 'utf8'));
+        }))
+        .pipe(nunjucksRender({
+             path: ['templates'],
+             manageEnv: function(env) {
+                markdown.register(env, marked);
+             }
+        }))
+        .pipe(gulp.dest(BUILD_DIR))
 });
 
 // Compile LESS files from /less into /css
@@ -111,13 +127,15 @@ gulp.task('default', ['nunjucks', 'less', 'minify-css', 'copy-js', 'minify-js', 
 gulp.task('browserSync', function() {
     browserSync.init({
         server: {
-            baseDir: BUILD_DIR
+            baseDir: BUILD_DIR,
         },
+        open: false
     })
 })
 
 // Dev task with browserSync
 gulp.task('dev', ['copy', 'browserSync', 'nunjucks', 'less', 'copy-js', 'minify-css', 'minify-js'], function() {
+    gulp.watch('data.json', ['nunjucks']);
     gulp.watch('less/*.less', ['less', 'minify-css']);
     gulp.watch('js/*.js', ['copy-js', 'minify-js']);
     gulp.watch('pages/**/*.+(html|nunjucks)', ['nunjucks'])

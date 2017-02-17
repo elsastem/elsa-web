@@ -6,18 +6,9 @@
     {% set nav_class="animated" %}
     {% include 'partials/nav.nunjucks' %}
 
-    {% include 'partials/index/header_section.nunjucks' %}
-
-    {% include 'partials/index/elsa_section.nunjucks' %}
+    {% for section in content.sections %}
+        {% set context=section %} 
+        {% include 'partials/index/' + section.id + '_section.nunjucks' %}
+    {% endfor %} 
     
-    {% include 'partials/index/stem_section.nunjucks' %}
-
-    {% include 'partials/index/pilot_section.nunjucks' %}
-
-    {% include 'partials/index/faq_section.nunjucks' %}
-
-    {% include 'partials/index/contact_section.nunjucks' %}
-
-    {#{% include 'partials/index/partners_section.nunjucks' %}#}
-
 {% endblock %}
