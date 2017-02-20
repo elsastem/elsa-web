@@ -195,6 +195,20 @@ h1, h2, h3, h4, h5, h6 {
                 }
             }
         }
+        .open>a {
+            background-color: rgba(195, 195, 195, 0.26);
+            &:hover, &:focus{
+                background-color: rgba(222, 222, 222, 0.38);
+            }
+        }
+        .dropdown-menu {
+            background-color: rgba(195, 195, 195, 0.26);
+            &>li>a{
+                &:hover, &:focus{
+                    background-color: rgba(222, 222, 222, 0.38);
+                }
+            }
+        }
     }
 }
 
@@ -831,6 +845,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+}
+
+section#stem li {
+    margin-bottom: 12px;
 }
 
 //form-wizard - http://keenthemes.com/preview/metronic/theme/admin_2/form_wizard.html

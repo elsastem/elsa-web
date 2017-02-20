@@ -1,4 +1,5 @@
-<section id="{{context.id}}">
+
+<section id="{{context.id}}" class="{{ 'bg-light-gray' if sectionNumber % 2 }}">
     <div class="container">
         {% block head %} 
         <div class="row">
