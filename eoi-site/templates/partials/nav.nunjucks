@@ -42,10 +42,10 @@
                                 <a class="page-scroll" href="{{nav_link_prefix}}#contact">Newsletter</a>
                             </li>
                             <li>                        
-                                <a class="page-scroll" href="eligibility.html">Participation Guidelines</a>
+                                <a class="" href="eligibility.html">Participation Guidelines</a>
                             </li>
                             <li>                        
-                                <a class="page-scroll" href="register.html">Registration Form</a>
+                                <a class="" href="register.html">Registration Form</a>
                             </li>
                         </ul>
                     </li>
