@@ -27,7 +27,7 @@
                         <div class="alert alert-success display-none">
                             <button class="close" data-dismiss="alert">&times;</button> {{context.form.successText}}
                         </div>
-                        <button class="btn btn-xl" id="subscribe">Subscribe</button>
+                        <button class="btn btn-xl" id="subscribe"> {{context.form.submitText}}</button>
                     </div>
                 </div>
             </form>

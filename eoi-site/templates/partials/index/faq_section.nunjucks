@@ -1,25 +1,35 @@
 {% extends 'partials/index/section.nunjucks' %}
 
+{% macro question(qId, q, accordionId) %}
+    <div class="panel panel-default ">
+        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#{{accordionId}}"
+            data-target="#{{qId}}">
+            <h4 class="panel-title">
+                <a role="button" class="ing">Q: {{q.q}}</a>
+            </h4>
+        </div>
+        <div id="{{qId}}" class="panel-collapse collapse question">
+            <div class="panel-body">
+                {% markdown %}
+                {{ q.a | join("\n") }}
+                {% endmarkdown %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+
 {% block body %} 
     <div class="row">
+        {%for items in context.questions | slice(2)%}
         <div class="col-md-6">
-            <div class="panel-group" id="faqAccordion">
-            {%for question in context.questions%}
-                <div class="panel panel-default ">
-                    <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion"
-                        data-target="#question0">
-                        <h4 class="panel-title">
-                            <a role="button" class="ing">Q: {{question.q}}</a>
-                        </h4>
-                    </div>
-                    <div id="question0" class="panel-collapse collapse question">
-                        <div class="panel-body">
-                            <p>{{question.a}}</p>
-                        </div>
-                    </div>
-                </div>
+            {% set accordionId="faq" + loop.index %}
+            <div class="panel-group" id="{{accordionId}}">
+            {%for quest in items%}
+                {{ question(accordionId + "question" + loop.index, quest, accordionId) }}
             {%endfor%}
             </div>
         </div>
+        {%endfor%}
     </div>
 {% endblock %}         
