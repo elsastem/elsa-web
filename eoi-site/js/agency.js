@@ -8,7 +8,7 @@
         $(tag).each(function() { 
             $(this).html($(this).html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
         }); 
-    })
+    });
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {

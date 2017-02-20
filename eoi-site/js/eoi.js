@@ -17,6 +17,9 @@ var FormWizard = function () {
                     errorElement: "span",
                     errorClass: "help-block help-block-error",
                     focusInvalid: false,
+                    messages: {
+                        other_atsi_other_text: "You need to supply a reason if you check the other box."
+                    },
                     rules: {
                         "preschool_name": "required",
                         "preschool_address_line1": "required",
@@ -100,6 +103,9 @@ var FormWizard = function () {
                         // "other_atsi_enrolled",
                         // "other_atsi_engage",
                         // "other_atsi_activities",
+                        "other_atsi_other_text": {
+                            required: "input[name=other_atsi_other]:checked"
+                        },
                         "other_ella": "required",
                         // "other_ella_2017": {
                         //     required: "input[name=other_ella][value=yes]:checked"
@@ -292,6 +298,14 @@ var FormWizard = function () {
                         $('#teacher_no').addClass('hide');
                     }
                 });
+
+                $("input[name=other_atsi_other]").change(function() {
+                    if ($('input[name=other_atsi_other]').prop("checked")) {
+                        $('#atsiOther').removeClass('hide');
+                    } else {
+                        $('#atsiOther').addClass('hide');
+                    }
+                })
 
                 $('#submit_failed').click(function () {
                     $("#eoi-form-wizard .failed").addClass('hide');

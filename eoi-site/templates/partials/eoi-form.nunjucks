@@ -476,6 +476,15 @@
                                             Regularly includes Aboriginal and Torres cultural activities as part of the preschool program
                                         </label>
                                     </div>
+                                    <div class="checkbox" >
+                                        <label>
+                                            <input type="checkbox" name="other_atsi_other"> 
+                                            Other
+                                        </label>
+                                    </div>
+                                    <div class="hide" id="atsiOther">
+                                        <textarea class="form-control" name="other_atsi_other_text"></textarea>
+                                    </div>
                                 </div>
                                 <span class="help-block"></span>
                             </div>
