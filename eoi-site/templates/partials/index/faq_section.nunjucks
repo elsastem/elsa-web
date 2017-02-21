@@ -5,7 +5,7 @@
         <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#{{accordionId}}"
             data-target="#{{qId}}">
             <h4 class="panel-title">
-                <a role="button" class="ing">Q: {{q.q}}</a>
+                <a role="button" class="ing">{{q.q}}</a>
             </h4>
         </div>
         <div id="{{qId}}" class="panel-collapse collapse question">
