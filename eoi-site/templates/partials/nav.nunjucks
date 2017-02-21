@@ -22,13 +22,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{nav_link_prefix}}#elsa">About</a>
-                    </li>
-                    {#<li>
-                        <a class="page-scroll" href="{{nav_link_prefix}}#stem">STEM</a>
-                    </li>#}
-                    <li>
                         <a class="page-scroll" href="{{nav_link_prefix}}#pilot">Pilot</a>
+                    </li>
+                    <li>                        
+                        <a class="" href="register.html">Register</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="{{nav_link_prefix}}#faq">FAQ</a>
@@ -39,14 +36,17 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other <span class="caret"></span></a>
                         <ul class="dropdown-menu">
+                            <li>
+                                <a class="page-scroll" href="{{nav_link_prefix}}#elsa">About</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="{{nav_link_prefix}}#stem">STEM</a>
+                            </li>
                             <li>                        
                                 <a class="page-scroll" href="{{nav_link_prefix}}#contact">Newsletter</a>
                             </li>
                             <li>                        
                                 <a class="" href="eligibility.html">Participation Guidelines</a>
-                            </li>
-                            <li>                        
-                                <a class="" href="register.html">Registration Form</a>
                             </li>
                         </ul>
                     </li>
