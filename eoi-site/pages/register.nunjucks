@@ -17,6 +17,19 @@
                 </div>
             </div>
             <div class="row text-muted">
+                <div class="col-xs-12">
+                    {% markdown %}
+Thank you for your interest in the Early Learning STEM Australia (ELSA) Pilot. To apply, please fill out the details of your preschool.
+Please note, by preschool we mean a preschool or kindergarten program for the year before school. This includes programs within a long day care, at a school, or a community/stand-alone preschool.
+
+Before you fill out this form, please have the following information ready
++ Service approval number and provider approval number
++ Overall NQS rating
++ Optional: Any details about the tablet devices at your preschool, such as make, model and year purchased
+                    {% endmarkdown %}
+                </div>
+            </div>
+            <div class="row text-muted">
                 <div class="col-md-12">
                    {% include 'partials/eoi-form.nunjucks' %}
                 </div>
