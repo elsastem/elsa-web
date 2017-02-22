@@ -9,7 +9,7 @@
     </header>
 
     <!-- Services Section -->
-    <section class="text-page">
+    <section class="text-page eligibility-page-content">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
@@ -19,6 +19,7 @@
             </div>
             <div class="row text-muted">
                 <div class="col-xs-12">
+                    {#<img class="img-responsive" src="img/photos/elsa/ELSA_web_plants_resized.jpg" alt="Carer and Child with iPad">#}
                     {% markdown %}
 ## ELIGIBILITY
 To be eligible to participate in the 2018 ELSA Pilot, a preschool (an early learning centre, kindergarten or childcare centre) must meet the following requirements:

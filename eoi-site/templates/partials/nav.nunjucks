@@ -11,7 +11,7 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="{{nav_link_prefix}}#page-top">
                     {#<img src="img/elsa-logo 2.svg" alt="ELSA Logo">#}
-                    <img src="img/ELSA-MAINLOGO.svg" alt="ELSA Logo">
+                    <img src="{{logo.url}}" alt="logo.text">
                 </a>
             </div>
 

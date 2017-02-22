@@ -3,7 +3,7 @@
             <div class="row">
                 <div class="col-md-4" footer-col>
                     <div>
-                        <img src="img/dept-logo-square-black.png" alt="Department of Education and Training Logo" width="140">
+                        <img src="img/logos/dept-logo-square-black.png" alt="Department of Education and Training Logo" width="140">
                     </div>
                 </div>
                 <div class="col-md-4 footer-col">
@@ -22,7 +22,7 @@ STEM Education Research Centre</strong><br> University of Canberra<br> Bruce, AC
                 </div>
                 <div class="col-md-4 footer-col">
                     <div>
-                        <img src="img/uc.png" alt="University of Canberra logo" width="140">
+                        <img src="img/logos/uc.png" alt="University of Canberra logo" width="140">
                     </div>
                 </div>
             </div>

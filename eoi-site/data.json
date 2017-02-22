@@ -1,7 +1,8 @@
 {
     "version": "0.0.1",
     "logo": {
-        "url": ""
+        "url": "img/logos/ELSA-MAINLOGO-white.svg",
+        "text": "ELSA Logo"
     },
     "content": {
         "sections": [{
@@ -40,8 +41,8 @@
             "title": "Providing the best learning outcomes",
             "subtitle": "Benefits of joining the ELSA Pilot.",
             "image": {
-                "url": "img/533190937.jpg",
-                "alt": ""
+                "url": "img/photos/elsa/ELSA_web_smile_resized.jpg",
+                "alt": "Child with big smile"
             },
             "content": [
                 "In 2018, a hundred preschools across Australia will take part in the ELSA Pilot. These preschools will receive free workshops and be the first to use the ELSA apps and resources to incorporate STEM practices into their preschool program.",
@@ -63,22 +64,22 @@
             "subtitle": "Apply now for the 2018 ELSA Pilot.",
             "timeline": [{
                 "image": {
-                    "url": "img/people-circle.jpg",
-                    "alt": ""
+                    "url": "img/photos/elsa/ELSA_web_group_point_square_small.jpg",
+                    "alt": "Child pointing"
                 },
                 "title": "Starting in 2018",
                 "body": "A hundred centres across Australia will take part in the ELSA Pilot. These centres will be the first to try the ELSA Program, and receive free workshops and resources about incorporating STEM into their preschool program."
             },{
                 "image": {
-                    "url": "img/kids-floor.jpg",
-                    "alt": ""
+                    "url": "img/photos/elsa/ELSA_web_circle2_square_small.jpg",
+                    "alt": "Children in a circle"
                 },
                 "title": "Applying is easy",
                 "body": "Simply send in details about your centre to register. We are looking for a diverse range of centres to represent the diversity found across Australia. So whether your preschool is urban, regional or remote, large or small, government, community, independent, or anything else, we want to include you."
             },{
                 "image": {
-                    "url": "img/small-ipad-carer.jpg",
-                    "alt": ""
+                    "url": "img/photos/elsa/ELSA_web-outdoor_play_square_small.jpg",
+                    "alt": "Outdoor Play"
                 },
                 "title": "Eligibility",
                 "body": "To take part you  need is a preschool program and a tablet device for children to use, such as an iPad or Android tablet.e If you don’t have a tablet, you can commit to purchasing one before October if you are selected. There is no cost for ELSA, but ELSA does not provide funding for devices. Check the participation guidelines for more.",
