@@ -91,7 +91,7 @@ gulp.task('copy-js', function() {
 
 // Copy vendor libraries from /node_modules into /vendor
 gulp.task('copy', function() {
-    gulp.src(['img/**/*'])
+    gulp.src(['img/**/*', '!img/photos/elsa/unused/**/*'])
         .pipe(gulp.dest(`${BUILD_DIR}/img`))
 
     gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
