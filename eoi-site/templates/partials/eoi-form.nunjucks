@@ -276,7 +276,7 @@
                                     <span class="required" aria-required="true"> * </span>
                                 </label>
                                 <div class="col-md-4">
-                                    <input type="number" placeholder="" class="form-control" name="tablet_count">
+                                    <input type="number" placeholder="" class="form-control" name="tablet_count" min="1">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
@@ -542,9 +542,10 @@
                         <ul>
                             <li>I attest that I am authorised to act for the preschool listed in this application</li>
                             <li>All information provided on this form is true and correct</li>
-                            <li>I have read and understdood the Participation Requirements and Program Information</li>
-                            <li>If this application is successful, I agree to implement the ELSA program at the preschool in accordance with the Participation Requirements</li>
-                            <li>I consent to the information provided in this form being disclosed to relevant regulatory authorities or government departments or agencies</li>
+                            <li>I have read and understood the Participation Guidelines</li>
+                            <li>If this application is successful, I agree to implement the ELSA Pilot program at the preschool in accordance with the <a href="eligibility.html">Participation&nbsp;Guidelines</a></li>
+                            <li>I consent to the information provided in this form being disclosed to relevant regulatory authorities or government departments or agencies for the purposes of the ELSA Pilot</li>
+                            <li>I understand that if I do not accept these terms, my application can not be considered for the ELSA Pilot</li>
                         </ul>
                         <p><br/></p>
                         <div class="form-group">

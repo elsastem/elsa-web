@@ -55,6 +55,8 @@ var FormWizard = function () {
                         "device": "required",
                         "tablet_count": {
                             required: "input[name=device][value=yes]:checked",
+                            number: true,
+                            min: 1
                         },
                         // "tablet_info": {
                         //     required: "input[name=device][value=yes]:checked",
@@ -205,6 +207,7 @@ var FormWizard = function () {
                     $('html, body').animate({
                         scrollTop: $('#eoi-form-wizard').offset().top - $("nav").height()
                     }, 1000);
+
                 };
 
                 $("#eoi-form-wizard").bootstrapWizard({
@@ -214,6 +217,7 @@ var FormWizard = function () {
                         return false;
                     },
                     onNext: function (tab, navigation, index) {
+                        $(".button-next").blur();
                         passPanel.hide();
                         failPanel.hide();
 
@@ -223,6 +227,7 @@ var FormWizard = function () {
                         updateStep(tab, navigation, index);
                     },
                     onPrevious: function (tab, navigation, index) {
+                        $(".button-previous").blur();
                         passPanel.hide();
                         failPanel.hide();
                         updateStep(tab, navigation, index);

@@ -41,7 +41,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: darken(@theme-primary, 10%);
+    color: darken(@theme-primary, 5%);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -623,6 +623,9 @@ section#contact {
     .section-heading {
         color: white;
     }
+    .text-muted {
+        color: #a7a7a7;        
+    }
     .form-group {
         margin-bottom: 25px;
         input,
@@ -1028,6 +1031,15 @@ form {
 @media(max-width:768px) {
     .form-wizard .steps>li>a {
         text-align:left;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+    .form-wizard .steps>li>a.step>.desc {
+        display: block;
+    }
+    .form-wizard .steps>li>a.step>.number {
+        margin-right: 0px;
     }
 }
 

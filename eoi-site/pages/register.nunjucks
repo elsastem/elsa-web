@@ -13,19 +13,24 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">EXPRESS YOUR INTEREST</h2>
-                    <h3 class="section-subheading text-muted">Register your preschool services’ interest in participating in the ELSA Pilot.</h3>
+                    <h3 class="section-subheading text-muted">Register your preschool’s interest in participating in the 2018 ELSA Pilot</h3>
                 </div>
             </div>
             <div class="row text-muted">
                 <div class="col-xs-12">
                     {% markdown %}
-Thank you for your interest in the Early Learning STEM Australia (ELSA) Pilot. To apply, please fill out the details of your preschool.
-Please note, by preschool we mean a preschool or kindergarten program for the year before school. This includes programs within a long day care, at a school, or a community/stand-alone preschool.
+Thank you for your interest in the Early Learning STEM Australia (ELSA) Pilot. 
+To apply, please fill out the details of your preschool. 
+Please note, by preschool we mean a preschool or kindergarten program for the year before school. 
+This includes programs within a long day care centre, a school, or a community/stand-alone preschool.
 
 Before you fill out this form, please have the following information ready
 + Service approval number and provider approval number
 + Overall NQS rating
-+ Optional: Any details about the tablet devices at your preschool, such as make, model and year purchased
++ Optional: Any details about the tablet devices (i.e. iPad, Android) at your preschool, such as make, model and year purchased
+
+Applications are open until 11:00 pm AEST 10 April 2017. After applications close, we will select one hundred preschools for 
+the Pilot to reflect preschool diversity across Australia. Selections will be announced in August 2017.
                     {% endmarkdown %}
                 </div>
             </div>
