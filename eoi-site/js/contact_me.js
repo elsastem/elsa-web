@@ -45,6 +45,9 @@ var SubscribeForm = function () {
                     var url = "https://api.elsa.edu.au/web/subscribe";                  
                     var apiKey = "huwyil4DTkGbPxduj8062871TorMtjM3CaSRS5Kh";
 
+                    $("#subscribe .text").addClass('hide');
+                    $("#subscribe .spinner").removeClass('hide');
+
                     $.ajax({
                         url: url,
                         method: "POST",
@@ -63,6 +66,8 @@ var SubscribeForm = function () {
                             passPanel.hide();
                         })
                         .always(function () {
+                            $("#subscribe .text").removeClass('hide');
+                            $("#subscribe .spinner").addClass('hide');
                         });
                 }
             });
