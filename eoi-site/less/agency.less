@@ -41,7 +41,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: darken(@theme-primary, 5%);
+    color: @theme-primary-highlight;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
         &:focus,
         &:active,
         &.active {
-            color: darken(@theme-primary, 10%);
+            color: @theme-primary-highlight;
         }
         padding: 5px 10px;
         margin-top: 3px;
@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-nav>.active>a:hover,
     .navbar-nav>.active>a:focus {
         color: @navbar-color;
-        background-color: darken(@theme-primary, 10%);
+        background-color: @theme-primary-highlight;
     }
 }
 
@@ -460,6 +460,9 @@ section {
             border-radius: 100%;
             border: 7px solid #f1f1f1;
             text-align: center;
+            &:hover, &:focus {
+                background-color: @theme-primary-highlight;
+            }
             h4 {
                 font-size: 10px;
                 margin-top: 20px;
