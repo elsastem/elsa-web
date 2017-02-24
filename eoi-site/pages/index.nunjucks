@@ -3,7 +3,7 @@
 
 {% block content %}
 
-    {% set nav_class="animated" %}
+    {#{% set nav_class="animated" %}#}
     {% include 'partials/nav.nunjucks' %}
 
     {% for section in content.sections %}

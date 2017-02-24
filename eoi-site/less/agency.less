@@ -178,38 +178,38 @@ h1, h2, h3, h4, h5, h6 {
             border-radius: 3px;
         }
     }
-    .affix-top {
-        li {
-            a {
-                color: @theme-primary !important;
-                //background: @navbar-item-bg;
-                border-radius: 3px;
-                padding: 10px;
-                margin: 5px;
-                &:hover,
-                &:focus {
-                    //background: @navbar-item-bg !important;
-                    text-decoration: underline;
-                    color: @theme-primary;
-                    outline: none;
-                }
-            }
-        }
-        .open>a {
-            background-color: rgba(195, 195, 195, 0.26);
-            &:hover, &:focus{
-                background-color: rgba(222, 222, 222, 0.38);
-            }
-        }
-        .dropdown-menu {
-            background-color: rgba(195, 195, 195, 0.26);
-            &>li>a{
-                &:hover, &:focus{
-                    background-color: rgba(222, 222, 222, 0.38);
-                }
-            }
-        }
-    }
+    // .affix-top {
+    //     li {
+    //         a {
+    //             color: @theme-primary !important;
+    //             //background: @navbar-item-bg;
+    //             border-radius: 3px;
+    //             padding: 10px;
+    //             margin: 5px;
+    //             &:hover,
+    //             &:focus {
+    //                 //background: @navbar-item-bg !important;
+    //                 text-decoration: underline;
+    //                 color: @theme-primary;
+    //                 outline: none;
+    //             }
+    //         }
+    //     }
+    //     .open>a {
+    //         background-color: rgba(195, 195, 195, 0.26);
+    //         &:hover, &:focus{
+    //             background-color: rgba(222, 222, 222, 0.38);
+    //         }
+    //     }
+    //     .dropdown-menu {
+    //         background-color: rgba(195, 195, 195, 0.26);
+    //         &>li>a{
+    //             &:hover, &:focus{
+    //                 background-color: rgba(222, 222, 222, 0.38);
+    //             }
+    //         }
+    //     }
+    // }
     .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
         background-color: @theme-primary;
     }
@@ -218,7 +218,7 @@ h1, h2, h3, h4, h5, h6 {
 // Navbar Change on Scroll
 
 @media(min-width:768px) {
-    .navbar-custom.affix.animated {
+    .navbar-custom {
         background-color: @navbar-bg;
         padding: 10px 0;
         .navbar-brand {
@@ -235,6 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
+    margin-top: 45px;
     background-image: url('../img/photos/elsa/ELSA-web-pouring-sand-35.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -243,14 +244,14 @@ header {
     text-align: center;
     color: white;
     .intro-text {
-        padding-top: 100px;
+        padding-top: 65px;
         padding-bottom: 50px;
         position: relative;
         z-index: 0;
 
         .intro-lead-in {
             .serif-font;
-            font-style: italic;
+            //font-style: italic;
             font-size: 36px;
             line-height: 53px;
             margin-bottom: 25px;
@@ -265,19 +266,19 @@ header {
     
     }
     &.just-pic {
-        margin-top: 40px;
         height: 250px;
     }
 }
 
 @media(min-width:768px) {
     header {
+        margin-top: 74px;
         .intro-text {
-            padding-top: 250px;
+            padding-top: 180px;
             padding-bottom: 200px;
             .intro-lead-in {
                 .serif-font;
-                font-style: italic;
+                //font-style: italic;
                 font-size: 60px;
                 line-height: 75px;
                 margin-bottom: 25px;
