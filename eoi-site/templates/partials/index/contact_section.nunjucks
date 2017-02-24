@@ -20,6 +20,7 @@
                         </div>#}
                     </div>
                     <div class="clearfix"></div>
+                    <p class="unsubscribe">You can unsubscribe at any time by emailing <a href='mailto:team@elsa.edu.au'>team@elsa.edu.au</a>.</p>
                     <div class="col-lg-12 text-center">
                         <div class="alert alert-danger display-none">
                             <button class="close" data-dismiss="alert">&times;</button> {{context.form.errorText}} 

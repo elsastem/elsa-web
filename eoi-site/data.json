@@ -41,13 +41,13 @@
             "title": "Providing the best learning outcomes",
             "subtitle": "Benefits of joining the ELSA Pilot",
             "image": {
-                "url": "img/photos/elsa/ELSA_web_smile_resized.jpg",
+                "url": "img/photos/elsa/ELSA_web_plants_resized.jpg",
                 "alt": "Child with big smile"
             },
             "content": [
                 "In 2018, one hundred preschools across Australia will take part in the ELSA Pilot. These preschools will receive free workshops and be the first to use the ELSA apps and resources to incorporate STEM practices into their preschool program.",
                 "",
-                "STEM practices include exploring locations, patterns, problem solving, designing, making, and spatial reasoning.",
+                "STEM practices include exploring locations, patterns, designing, making, and spatial reasoning.",
                 "",
                 "Exploring STEM practices helps children weave strong skills in many areas such as problem solving and communication that are useful later life. Apply to join the ELSA Pilot to receive the following benefits:",
                 "+ More confidence in exploring STEM in your preschool to provide the best learning outcomes for children.",
@@ -75,14 +75,14 @@
                     "alt": "Children in a circle"
                 },
                 "title": "Applying is easy",
-                "body": "Simply send in details about your centre to register. We are looking for a diverse range of preschools to represent the diversity found across Australia. So whether your preschool is urban, regional or remote, large or small, government, community, independent, or anything else, we want to include you."
+                "body": "Simply fill in the online form with details about your centre to apply for the Pilot. We are looking for a diverse range of preschools to represent the diversity found across Australia. So whether your preschool is urban, regional or remote, large or small, government, community, independent, or anything else, we want to include you."
             },{
                 "image": {
-                    "url": "img/photos/elsa/ELSA_web-outdoor_play_square_small.jpg",
-                    "alt": "Outdoor Play"
+                    "url": "img/photos/elsa/ELSA_web_educators2_square_small.jpg",
+                    "alt": "Educators"
                 },
                 "title": "Eligibility",
-                "body": "To take part all you need is a preschool program and tablet device(s) for children to use, such as an iPad or Android. If you don’t have a tablet, you can commit to purchasing one before October 2017 if you are selected. There is no cost for ELSA, but ELSA does not provide funding for devices. Check the participation guidelines for more information.",
+                "body": "To take part, all you need is a preschool program and tablet device(s) for children to use, such as iPad or Android. If you don’t have a tablet, you can commit to purchasing one before October 2017 if you are selected. There is no cost for ELSA, but ELSA does not provide funding for devices. Check the participation guidelines for more information.",
                 "link": {
                     "url": "eligibility.html",
                     "text": "See the details"
@@ -91,7 +91,7 @@
                 "linkonly": true,
                 "link": {
                     "url": "register.html",
-                    "text": "Register \n Now"
+                    "text": "Apply<br>Now"
                 }
             }]      
         },{
@@ -137,7 +137,7 @@
             },{
                 "q": "How can I join the Pilot?",
                 "a": [
-                    "To register your interest for the ELSA Pilot, please fill out the [online form](register.html) before 11:00 pm AEST Monday, 10 April 2017.",
+                    "To express your interest for the ELSA Pilot, please fill out the [online form](register.html) before 11:00 pm AEST Monday, 10 April 2017.",
                     "",
                     "One hundred preschools across Australia will be involved in the 2018 ELSA Pilot. Preschools will be selected so that the Pilot represents diversity across Australia. For more information, read the [Participation Guidelines](eligibility.html). We will let you know the outcome of your application in August 2017."
                 ]

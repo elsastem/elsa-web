@@ -9,7 +9,7 @@
                 <li class="timeline-inverted">
                     <a href="{{entry.link.url}}" role="button">
                         <div class="timeline-image callout">
-                            <h4>{{entry.link.text}}</h4>
+                            <h4>{{entry.link.text | safe}}</h4>
                         </div>
                     </a>
                 </li>
