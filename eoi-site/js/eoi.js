@@ -41,16 +41,16 @@ var FormWizard = function () {
                         "preschool_type": "required",
                         "wifi": {
                             required: true,
-                            notno: "An active internet connection is required to participate in ELSA. Please check our Participation Guidelines for more information."
+                            notno: "An active internet connection is required to participate in ELSA. Please check our <a href='eligibility.html'>Participation Guidelines</a> for more information."
                         },
                         "prekindy": {
                             required: true,
-                            notno: "A preschool/kindergarten program primarily for children is required to participate in ELSA. Please check our Participation Guidelines for more information."
+                            notno: "A preschool/kindergarten program primarily for children is required to participate in ELSA. Please check our <a href='eligibility.html'>Participation Guidelines</a> for more information."
                         },
                         "teacher": "required",
                         "waiver": {
                             required: "input[name=teacher][value=no]:checked",
-                            notno: "Without a degree-qualified teacher, you will need a waiver is required to participate in ELSA. Please check our Participation Guidelines for more information."
+                            notno: "Without a degree-qualified teacher, you will need a waiver is required to participate in ELSA. Please check our <a href='eligibility.html'>Participation Guidelines</a> for more information."
                         },
                         "device": "required",
                         "tablet_count": {
