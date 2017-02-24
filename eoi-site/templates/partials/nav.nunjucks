@@ -2,7 +2,7 @@
   {% set nav_link_prefix = "index.html" %}
 {% endif %}
 <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top {{ nav_class }}">
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top {{ nav_class if nav_class else 'notanimated' }}">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
