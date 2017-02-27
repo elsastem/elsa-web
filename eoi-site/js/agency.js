@@ -3,7 +3,8 @@
 (function($) {
     "use strict"; // Start of use strict
 
-    var list = ['h1', 'h2', 'h3', 'li', 'p'];
+    //Lose the widows
+    var list = ['li', 'p'];
     list.forEach(function(tag){
         $(tag).each(function() { 
             $(this).html($(this).html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
