@@ -205,7 +205,6 @@
             "subtitle": "Subscribe to the ELSA newsletter to receive updates on the program",
             "form": {
                 "email": {
-                    "name": "email",
                     "placeholder": "Your Email *"
                 },
                 "errorText": "There was an error submitting your information, please try again, or contact us for help.",

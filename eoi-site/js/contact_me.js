@@ -13,7 +13,7 @@ var SubscribeForm = function () {
                 errorClass: "help-block help-block-error",
                 focusInvalid: false,
                 rules: {
-                    "email": {
+                    "EMAIL": {
                         required: true,
                         email: true
                     },
@@ -41,34 +41,37 @@ var SubscribeForm = function () {
                     label.addClass("valid").closest(".form-group").removeClass("has-error").addClass("has-success");
                 },
                 submitHandler: function (form) {
-                    var formData = $(form).serializeObject();
-                    var url = "https://api.elsa.edu.au/web/subscribe";                  
-                    var apiKey = "huwyil4DTkGbPxduj8062871TorMtjM3CaSRS5Kh";
 
-                    $("#subscribe .text").addClass('hide');
-                    $("#subscribe .spinner").removeClass('hide');
+                    form.submit();
+                    // var formData = $(form).serializeObject();
+                    // // var url = "https://api.elsa.edu.au/web/subscribe";                  
+                    // // var apiKey = "huwyil4DTkGbPxduj8062871TorMtjM3CaSRS5Kh";
+                    // var url = "//elsa.us15.list-manage.com/subscribe/post-json?u=e53a67afd496b56ee24b3cf99&amp;id=45f25b63ab&amp;c=?"; //mailchimp
 
-                    $.ajax({
-                        url: url,
-                        method: "POST",
-                        contentType: "application/json",
-                        headers: {
-                            "x-api-key": apiKey
-                        },
-                        data: JSON.stringify(formData)
-                    })
-                        .done(function (result) {
-                            failPanel.hide();
-                            passPanel.show();
-                        })
-                        .fail(function (jqXHR, textStatus) {
-                            failPanel.show();
-                            passPanel.hide();
-                        })
-                        .always(function () {
-                            $("#subscribe .text").removeClass('hide');
-                            $("#subscribe .spinner").addClass('hide');
-                        });
+                    // $("#subscribe .text").addClass('hide');
+                    // $("#subscribe .spinner").removeClass('hide');
+
+                    // $.ajax({
+                    //     url: url,
+                    //     method: "GET",
+                    //     contentType: "application/json",
+                    //     // headers: {
+                    //     //     "x-api-key": apiKey
+                    //     // },
+                    //     data: JSON.stringify(formData)
+                    // })
+                    //     .done(function (result) {
+                    //         failPanel.hide();
+                    //         passPanel.show();
+                    //     })
+                    //     .fail(function (jqXHR, textStatus) {
+                    //         failPanel.show();
+                    //         passPanel.hide();
+                    //     })
+                    //     .always(function () {
+                    //         $("#subscribe .text").removeClass('hide');
+                    //         $("#subscribe .spinner").addClass('hide');
+                    //     });
                 }
             });
 
