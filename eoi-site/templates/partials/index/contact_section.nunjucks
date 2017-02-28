@@ -7,7 +7,8 @@
                 <div class="row">
                     <div class="col-md-offset-3 col-md-6">
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="{{context.form.email.placeholder}}" name="EMAIL">
+                            <label for="contact_email" class="hide">Email address</label>
+                            <input type="email" class="form-control" placeholder="{{context.form.email.placeholder}}" name="EMAIL" id="contact_email">
                             <p class="help-block text-danger"></p>
                         </div>
                         {#<div class="form-group">

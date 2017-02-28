@@ -52,7 +52,7 @@ gulp.task('nunjucks', function() {
 
 // Compile LESS files from /less into /css
 gulp.task('less', function() {
-    return gulp.src('less/agency.less')
+    return gulp.src(['less/agency.less', 'less/unomomento.less'])
         .pipe(less())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest(`${BUILD_DIR}/css`))
