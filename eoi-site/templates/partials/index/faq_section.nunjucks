@@ -2,13 +2,15 @@
 
 {% macro question(qId, q, accordionId) %}
     <div class="panel panel-default ">
-        <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#{{accordionId}}"
-            data-target="#{{qId}}">
+        {% set headingId="heading_" + qId %}
+        <div class="panel-heading accordion-toggle question-toggle collapsed" role="tab" id="{{headingId}}">
             <h4 class="panel-title">
-                <a role="button" class="ing">{{q.q}}</a>
+                <a role="button" class="ing" data-toggle="collapse" data-parent="#{{accordionId}}" data-target="#{{qId}}" aria-controls="{{qId}}">
+                {{q.q}}
+                </a>
             </h4>
         </div>
-        <div id="{{qId}}" class="panel-collapse collapse question">
+        <div id="{{qId}}" class="panel-collapse collapse question" role="tabpanel" aria-labelledby="{{headingId}}">
             <div class="panel-body">
                 {% markdown %}
                 {{ q.a | join("\n") }}
@@ -24,7 +26,7 @@
         {%for items in context.questions | slice(2)%}
         <div class="col-md-6">
             {% set accordionId="faq" + loop.index %}
-            <div class="panel-group" id="{{accordionId}}">
+            <div class="panel-group" id="{{accordionId}}" role="tablist" aria-multiselectable="true">
             {%for quest in items%}
                 {{ question(accordionId + "question" + loop.index, quest, accordionId) }}
             {%endfor%}
