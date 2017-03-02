@@ -4,7 +4,7 @@
     <div class="row text-center">
         {% for blurb in context.blurbs %}
         <div class="col-md-4">
-            <span class="fa-stack fa-4x">
+            <span class="fa-stack fa-4x" aria-hidden="true">
                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
                 <i class="fa {{blurb.icon}} fa-stack-1x fa-inverse"></i>
             </span>

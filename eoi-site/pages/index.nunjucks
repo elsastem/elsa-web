@@ -2,14 +2,16 @@
 {% extends 'layout.nunjucks' %}
 
 {% block content %}
-
+    {#<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>#}
     {% set nav_class="animated" %}
     {% include 'partials/nav.nunjucks' %}
 
+    <div id="content" tabindex="-1">
     {% for section in content.sections %}
         {% set context=section %} 
         {% set sectionNumber=loop.index %} 
         {% include 'partials/index/' + section.id + '_section.nunjucks' %}
-    {% endfor %} 
+    {% endfor %}
+    </div>
     
 {% endblock %}
