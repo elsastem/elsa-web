@@ -6,13 +6,13 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
                 <a class="navbar-brand page-scroll" href="{{nav_link_prefix}}#page-top">
                     {#<img src="img/elsa-logo 2.svg" alt="ELSA Logo">#}
                     <img src="{{logo.url}}" alt="{{logo.text}}">
                 </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

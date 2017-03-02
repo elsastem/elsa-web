@@ -3,7 +3,9 @@
             <div class="row">
                 <div class="col-md-4" footer-col>
                     <div>
-                        <img src="img/logos/dept-logo-square-black.png" alt="Department of Education and Training Logo" width="140">
+                        <a href="https://www.education.gov.au/">
+                            <img src="img/logos/dept-logo-square-black.png" alt="Department of Education and Training Logo" width="140">
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-4 footer-col">
@@ -24,7 +26,9 @@
                 </div>
                 <div class="col-md-4 footer-col">
                     <div>
-                        <img src="img/logos/uc.png" alt="University of Canberra logo" width="140">
+                        <a href="http://www.canberra.edu.au/">
+                            <img src="img/logos/uc.png" alt="University of Canberra logo" width="140">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -35,7 +39,7 @@
             </div>
             <div class="col-xs-10 col-md-8">
                 {#<p class="copyright">Copyright &copy; ELSA 2017</p>#}
-                <p class="fineprint">Early Learning STEM Australia has been developed by the University of Canberra, through funding provided by the Australian Government Department of Education and Training under the National Innovation and Science Agenda. Copyright in the material on this website is owned by the Commonwealth of Australia unless otherwise indicated. This material may be used in accordance with the Creative Commons BY 4.0 licence (excluding images), unless otherwise indicated.</p>
+                <p class="fineprint">Early Learning STEM Australia has been developed by the University of Canberra, through funding provided by the Australian Government Department of Education and Training under the National Innovation and Science Agenda. Copyright in the material on this website is owned by the Commonwealth of Australia unless otherwise indicated. This material may be used in accordance with the Creative Commons BY 4.0 licence (excluding images), unless otherwise indicated.<a href="http://CMDphotographics.com.au">Photography by Carl Davies</a></p>
                 <ul class="list-unstyled quicklinks">
                     <li>
                         <a href="privacy.html">Privacy Policy</a>
