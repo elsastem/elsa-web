@@ -39,7 +39,7 @@
             </div>
             <div class="col-xs-10 col-md-8">
                 {#<p class="copyright">Copyright &copy; ELSA 2017</p>#}
-                <p class="fineprint">Early Learning STEM Australia has been developed by the University of Canberra, through funding provided by the Australian Government Department of Education and Training under the National Innovation and Science Agenda. Copyright in the material on this website is owned by the Commonwealth of Australia unless otherwise indicated. This material may be used in accordance with the Creative Commons BY 4.0 licence (excluding images), unless otherwise indicated.<a href="http://CMDphotographics.com.au">Photography by Carl Davies</a></p>
+                <p class="fineprint">Early Learning STEM Australia has been developed by the University of Canberra, through funding provided by the Australian Government Department of Education and Training under the National Innovation and Science Agenda. Copyright in the material on this website is owned by the Commonwealth of Australia unless otherwise indicated. This material may be used in accordance with the Creative Commons BY 4.0 licence (excluding images), unless otherwise indicated. Photography by Carl Davies.</p>
                 <ul class="list-unstyled quicklinks">
                     <li>
                         <a href="privacy.html">Privacy Policy</a>
