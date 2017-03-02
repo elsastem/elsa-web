@@ -1,10 +1,11 @@
    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4" footer-col>
-                    <div>
-                        <a href="https://www.education.gov.au/">
-                            <img src="img/logos/dept-logo-square-black.png" alt="Department of Education and Training Logo" width="140">
+                <div class="col-md-4 footer-col">
+                    <div class="uc-logo">
+                        <h4>Developed by</h4>
+                        <a href="http://www.canberra.edu.au/">
+                            <img src="img/logos/uc.png" alt="University of Canberra logo" width="140">
                         </a>
                     </div>
                 </div>
@@ -24,10 +25,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-4 footer-col">
+                <div class="col-md-4 footer-col" >
+                    <h4>Funded by</h4>
                     <div>
-                        <a href="http://www.canberra.edu.au/">
-                            <img src="img/logos/uc.png" alt="University of Canberra logo" width="140">
+                        <a href="https://www.education.gov.au/">
+                            <img src="img/logos/dept-logo-square-black.png" alt="Department of Education and Training Logo" width="140">
                         </a>
                     </div>
                 </div>

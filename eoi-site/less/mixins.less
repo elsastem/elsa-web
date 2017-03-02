@@ -67,3 +67,21 @@
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
+
+.placeholder(@rules) {
+
+    ::-webkit-input-placeholder {
+        @rules();
+    }
+    :-moz-placeholder {
+        @rules();
+    }
+    ::-moz-placeholder {
+        @rules();
+    }
+    :-ms-input-placeholder {
+        @rules();
+    }
+}
+
+    

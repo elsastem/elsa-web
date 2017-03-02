@@ -666,26 +666,12 @@ section#contact {
         border-color: @theme-primary;
         box-shadow: none;
     }
-    ::-webkit-input-placeholder {
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    :-moz-placeholder { /* Firefox 18- */
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    ::-moz-placeholder {  /* Firefox 19+ */
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
-    :-ms-input-placeholder {  
-       .heading-font;
-       font-weight: 700;
-       color: @gray-lighter;
-    }
+    .placeholder({
+        .heading-font;
+        font-weight: 700;
+    //    color: @gray-lighter;
+        .text-muted;
+    })
 }
 .text-danger {
     color: @theme-danger;
@@ -729,8 +715,8 @@ footer {
 
 @media(min-width:970px) {
     footer {
-        img {
-            margin-top: 20px;
+        .uc-logo {
+            margin-top: 12px; 
         }
     }
 }
