@@ -208,8 +208,10 @@ var FormWizard = function () {
 
                     // App.scrollTo($(".page-title"))
                     $('html, body').animate({
-                        scrollTop: $('#eoi-form-wizard').offset().top - $("nav").height()
-                    }, 1000);
+                        scrollTop: $('#eoi-form-wizard').offset().top - $("nav").outerHeight()
+                    }, 1000, "swing", function() {
+                        $('.tab-pane.active input')[0].focus();
+                    });
 
                 };
 
