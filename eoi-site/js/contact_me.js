@@ -11,7 +11,7 @@ var SubscribeForm = function () {
                 doNotHideMessage: true,
                 errorElement: "span",
                 errorClass: "help-block help-block-error",
-                focusInvalid: false,
+                focusInvalid: true,
                 rules: {
                     "EMAIL": {
                         required: true,
