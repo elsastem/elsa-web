@@ -2,8 +2,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 footer-col">
+                    <h4>Developed by</h4>
                     <div class="uc-logo">
-                        <h4>Developed by</h4>
                         <a href="http://www.canberra.edu.au/">
                             <img src="img/logos/uc.png" alt="University of Canberra logo" width="140">
                         </a>
@@ -39,7 +39,7 @@
         <div class="row">
             <div class="col-xs-1 col-md-2">
             </div>
-            <div class="col-xs-10 col-md-8">
+            <div class="col-xs-10 col-md-8" >
                 {#<p class="copyright">Copyright &copy; ELSA 2017</p>#}
                 <p class="fineprint">Early Learning STEM Australia has been developed by the University of Canberra, through funding provided by the Australian Government Department of Education and Training under the National Innovation and Science Agenda. Copyright in the material on this website is owned by the Commonwealth of Australia unless otherwise indicated. This material may be used in accordance with the Creative Commons BY 4.0 licence (excluding images), unless otherwise indicated. Photography by Carl Davies.</p>
                 <ul class="list-unstyled quicklinks">
