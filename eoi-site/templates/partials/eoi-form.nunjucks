@@ -45,8 +45,8 @@
                     <div class="progress-bar progress-bar-success" style="width: 20%;"> </div>
                 </div>
                 <div class="tab-content">
-                    <div class="alert alert-danger display-none">
-                        <button class="close" data-dismiss="alert"></button> <span tabindex="-1" id="mainErrorText">You have some form errors. Please check below.</span></div>
+                    <div class="alert alert-danger display-none" id="mainErrorText" tabindex="-1">
+                        <button class="close" data-dismiss="alert" aria-hidden="true"></button>You have some form errors. Please check below.</div>
                     <div class="alert alert-success display-none">
                         <button class="close" data-dismiss="alert"></button> Your form validation is successful! </div>
                     <div class="tab-pane active" id="tab1" role="tabpanel">
@@ -57,7 +57,7 @@
                                 <span class="required" aria-required="true"> * </span>
                             </label>
                             <div class="col-md-4">
-                                <input type="text" class="form-control" name="preschool_name" aria-describedby="preschool_name_help">
+                                <input type="text" class="form-control" name="preschool_name" aria-describedby="preschool_name_help" id="firstinput">
                                 <span class="help-block" id="preschool_name_help"> Provide the name of the preschool service</span>
                             </div>
                         </div>

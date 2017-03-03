@@ -135,8 +135,11 @@ var FormWizard = function () {
                             return;
 
                         $('html, body').animate({
-                            scrollTop: $(failPanel).offset().top - $("nav").height()
-                        }, 1000);
+                            scrollTop: $(failPanel).offset().top - $("nav").outerHeight()
+                        }, 1000, "swing", function() {
+                            $('#mainErrorText').focus();
+                //            e.preventDefault();
+                        });
                     },
                     highlight: function (element, errorClass) {
                         $(element).closest(".form-group").removeClass("has-success").addClass("has-error");
