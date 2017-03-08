@@ -32,11 +32,11 @@ var FormWizard = function () {
                             minlength: 4,
                             maxlength: 4
                         },
-                        "preschool_service_number": {
-                            required: true,
-                        },
-                        "preschool_provider_name": "required",
-                        "preschool_provider_number": "required",
+                        // "preschool_service_number": {
+                        //     required: true,
+                        // },
+                        // "preschool_provider_name": "required",
+                        // "preschool_provider_number": "required",
                         "preschool_rating": "required",
                         "preschool_type": "required",
                         "wifi": {
