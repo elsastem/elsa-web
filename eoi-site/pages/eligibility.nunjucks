@@ -13,6 +13,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
+                    <h2 class="section-heading">INFORMATION ON THE 2018 ELSA PILOT</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row text-muted">
+                <div class="col-xs-12">
+                    {#<img class="img-responsive" src="img/photos/elsa/ELSA_web_plants_resized.jpg" alt="Carer and Child with iPad">#}
+                    {% markdown %}
+Applications for the 2018 ELSA Pilot closed on 11:00 pm AEST Monday, 10 April 2017, and are currently being assessed.  
+Thank you to everyone who applied. We received a wide diversity of applicants from remote, regional and major cities across Australia, in every state and territory. We are now selecting preschools for the 2018 Pilot to represent preschool diversity across the country.   
+To change, update or withdraw your application, please contact us at [team@elsa.edu.au](mailto:team@elsa.edu.au).   
+Applicants will be informed of their outcome in August 2017.
+                    {% endmarkdown %}
+                </div>
+            </div>
+            <div class="row header-row">
+                <div class="col-xs-12 text-center">
                     <h2 class="section-heading">Participation Guidelines</h2>
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
@@ -21,6 +38,8 @@
                 <div class="col-xs-12">
                     {#<img class="img-responsive" src="img/photos/elsa/ELSA_web_plants_resized.jpg" alt="Carer and Child with iPad">#}
                     {% markdown %}
+These participation guidelines summarise what to expect in the 2018 ELSA Pilot. 
+
 ## ELIGIBILITY
 To be eligible to participate in the 2018 ELSA Pilot, a preschool (an early learning centre, kindergarten or childcare centre) must meet the following requirements:
 
@@ -29,7 +48,7 @@ To be eligible to participate in the 2018 ELSA Pilot, a preschool (an early lear
 3. Have an active internet and WiFi connection available.
 4. Have one or more tablet devices that children can use for the ELSA Pilot, or make a commitment to purchase one by October 2017 if you are selected for the Pilot.
 
-ELSA is free, and will give you more opportunities to explore STEM in your preschool program. With a suite of resources linked to the Early Years Learning Framework, you’ll find new ideas for children to explore, and have meaningful experiences, while providing the best learning outcomes for children.
+ELSA is free, and will give educators more opportunities to explore STEM in a preschool program. With a suite of resources linked to the Early Years Learning Framework, you’ll find new ideas for children to explore, and have meaningful experiences, while providing the best learning outcomes for children.
 
 ## SELECTION CRITERIA
 We are selecting a hundred centres from across Australia for the 2018 ELSA Pilot to represent the diversity across Australia.
@@ -41,8 +60,6 @@ Preschools will be selected to ensure a representative mix across:
 + National Quality Standards (NQS) ratings, ranging from significant improvement to excellent, and those still to be assessed
 + Preschools that support Aboriginal and Torres Strait Islander children and their communities
 + Preschools that service vulnerable and disadvantaged communities
-
-No matter what your preschool is like, we want to hear from you. 
 
 ## YOUR COMMITMENTS
 If you are selected for the 2018 ELSA Pilot, we will ask you to incorporate ELSA  as part of your overall 2018 preschool program and help us evaluate its contribution.  There are a number of requirements to ensure we can evaluate the ELSA Pilot effectively. In your application, we will ask you to agree to meet the following requirements:
@@ -67,7 +84,6 @@ To apply to participate in the 2018 ELSA Pilot, a preschool must complete the fo
 1. If the preschool is successful in its application, it will be advised by The University of Canberra and asked to enter into a Participation Agreement. The preschool will be provided with further information regarding the Pilot.
 1. If the preschool’s application is unsuccessful, the preschool will be advised of this by The University of Canberra.
 
-[Express your interest](register.html) to apply for the 2018 ELSA Pilot.
                     {% endmarkdown %}
                 </div>
             </div>
