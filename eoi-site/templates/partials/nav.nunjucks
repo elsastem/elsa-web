@@ -46,6 +46,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <h1>Newsletter Sign up</h1>
+                                        <span class="glyphicon glyphicon-remove-circle close-btn"></span>                                        
                                         <p>Sign up for the ELSA newsletter and recieve regular update on the pilot and articles on STEM practices.</p>
                                         <form action="//elsa.us15.list-manage.com/subscribe/post?u=e53a67afd496b56ee24b3cf99&amp;id=45f25b63ab" method="post" id="signup-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
                                             <div class="form-group">
