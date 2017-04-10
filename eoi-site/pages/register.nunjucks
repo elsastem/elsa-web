@@ -31,8 +31,11 @@
                 <div class="col-md-offset-3 col-md-6">
                     <img src="/{{logo.url}}" alt="{{logo.text}}">                
                     <h1 class="cover-heading">Applications Closed</h1>
-                    <p class="lead">You may have been looking for the application form, however applications closed on the 10th April 2017.</p>
-                    <p class="lead">To go back to where you were press the <strong>Back</strong> button on your browser, or you can find the ELSA home page with the button below.</p>
+                    <p class="lead">Applications for the 2018 ELSA Pilot closed on 10 April 2017.</p>
+                    <p class="lead">We are now assessing applicants to select 100 preschools for the pilot that reflect preschool diversity across Australia. Selected centres will be announced in August. All applicants will be notified about the outcome of their application. </p>
+                    <p class="lead">To discuss or change your application and the details you provided, please email <a href="mailto:team@elsa.edu.au">team@elsa.edu.au</a>. </p>
+                    <p class="lead">To receive updates with the latest news about ELSA, sign up to our newsletter.</p>
+                    
                     <a href="/index.html" class="btn btn-xl" type="button"><i class="fa fa-refresh fa-1x fa-fw"></i>Home</a>
                 </div>
             </div>
