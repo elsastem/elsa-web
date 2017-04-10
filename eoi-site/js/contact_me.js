@@ -80,6 +80,33 @@ var SubscribeForm = function () {
             //         //form.submit();
             //     }
             // });
+
+            $("#signup-form-subscribe").click(function(e) {
+                e.preventDefault();
+
+                var url = "http://api.elsa.edu.au/web/subscribe"; //mailchimp
+                var apiKey = "huwyil4DTkGbPxduj8062871TorMtjM3CaSRS5Kh";
+                var formData = $("#signup-form").serializeObject();
+                formData.listId = '45f25b63ab';
+
+                $.ajax({
+                    url: url,
+                    method: "POST",
+                    contentType: "application/json",
+                    headers: {
+                        "x-api-key": apiKey
+                    },
+                    data: JSON.stringify(formData)
+                })
+                .done(function (result) {
+                    console.log(result);
+                })
+                .fail(function (jqXHR, textStatus) {
+                    console.log(textStatus);
+                })
+                .always(function () {
+                });
+            });
         }
     }
 }();
