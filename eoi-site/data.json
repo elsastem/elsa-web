@@ -8,14 +8,14 @@
         "sections": [{
             "id": "header",
             "menu": null,
-            "leadText": "Apply to the Early Learning STEM Australia Pilot",
-            "subText": "",
+            "leadText": "Early Learning STEM Australia",
+            "subText": "Applications closed for 2018 Pilot",
             "links": [{
-                "text": "Tell Me More",
+                "text": "Tell me more",
                 "url": "#elsa"
             },{
-                "text": "Apply Now",
-                "url": "register.html"
+                "text": "Sign up for news",
+                "url": "#contact"
             }]            
         },{
             "id": "elsa",

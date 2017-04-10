@@ -34,7 +34,7 @@
                         <a class="" href="eligibility.html">Guidelines</a>
                     </li>
                     <li>                        
-                        <a class="" href="register.html">Apply</a>
+                        <a class="page-scroll" href="{{nav_link_prefix}}#contact">Signup for news</a>
                     </li>
                     {#<li>
                         <a class="page-scroll" href="{{nav_link_prefix}}#contact">News</a>
