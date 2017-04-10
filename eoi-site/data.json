@@ -24,7 +24,7 @@
             "subtitle": "",
             "notice": {
                 "text": "Applications have now closed for the 2018 ELSA Pilot. Outcomes will be announced in August 2017.",
-                "url": "/eligibility.html"
+                "url": "eligibility.html"
             }            
         },{
             "id": "elsa",
@@ -42,7 +42,7 @@
             },{
                 "icon": "fa-graduation-cap",
                 "title": "Pilot",
-                "body": "In 2018, one hundred preschools from across Australia will join the first ELSA Pilot. The pilot program includes professional learning for educators, and real world play for children to complement the apps."
+                "body": "In 2018, one hundred preschools from across Australia will join the first ELSA Pilot. The pilot program includes professional learning for educators, and real world play for children to complement the apps. Applications closed 10 April 2017."
             }]            
         },{
             "id": "stem",
@@ -72,14 +72,14 @@
             "id": "pilot",
             "menu": "Pilot",
             "title": "Pilot Program",
-            "subtitle": "Bringing ELSA to a preschool near you",
+            "subtitle": "Applications now closed to 2018 ELSA Pilot",
             "timeline": [{
                 "image": {
                     "url": "img/photos/elsa/ELSA_web_group_point_square_small.jpg",
                     "alt": "Child pointing"
                 },
                 "title": "One hundred preschools",
-                "body": "One hundred preschools across Australia will take part in the ELSA Pilot. We received expressions of interest from 5 March to 10 April 2017 from a diverse range of preschools across Australia. Now we are selecting one hundred preschools from a range of urban, regional, remote areas, and from across every state and territory. ELSA Pilot preschools will be announced in August."
+                "body": "One hundred preschools across Australia will take part in the ELSA Pilot. Expressions of interest for the pilot opened on 5 March and closed on 10 April 2017. We received applications from a diverse range of preschools across Australia. We are selecting one hundred preschools for the pilot from a range of urban, regional, remote areas, and from across every state and territory. ELSA Pilot preschools will be announced in August."
             },{
                 "image": {
                     "url": "img/photos/elsa/ELSA_web_circle2_square_small.jpg",
@@ -137,7 +137,7 @@
                 "a": [
                     "Applications for the 2018 ELSA Pilot closed on 11:00 pm AEST Monday, 10 April 2017, and are currently being assessed. Applicants will be notified of their outcome in August 2017. ",
                     "",
-                    "If you would like to receive updates about ELSA, please [subscribe to our newsletter](#signup)."
+                    "If you would like to receive updates about ELSA, please [sign up to our newsletter](#signup)."
                 ]
             },{
                 "q": "When does the Pilot start?",

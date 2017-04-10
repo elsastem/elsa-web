@@ -22,8 +22,11 @@
                     {#<img class="img-responsive" src="img/photos/elsa/ELSA_web_plants_resized.jpg" alt="Carer and Child with iPad">#}
                     {% markdown %}
 Applications for the 2018 ELSA Pilot closed on 11:00 pm AEST Monday, 10 April 2017, and are currently being assessed.  
+
 Thank you to everyone who applied. We received a wide diversity of applicants from remote, regional and major cities across Australia, in every state and territory. We are now selecting preschools for the 2018 Pilot to represent preschool diversity across the country.   
+
 To change, update or withdraw your application, please contact us at [team@elsa.edu.au](mailto:team@elsa.edu.au).   
+
 Applicants will be informed of their outcome in August 2017.
                     {% endmarkdown %}
                 </div>
