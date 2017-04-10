@@ -33,23 +33,33 @@
                     <li>                        
                         <a class="" href="eligibility.html">Guidelines</a>
                     </li>
-                    <li>                        
-                        <a class="page-scroll" href="{{nav_link_prefix}}#contact">Signup for news</a>
-                    </li>
+                    {#<li>                        
+                        <a class="page-scroll" href="{{nav_link_prefix}}#contact"></a>
+                    </li>#}
                     {#<li>
                         <a class="page-scroll" href="{{nav_link_prefix}}#contact">News</a>
                     </li>#}
-                    {#<li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Signup for news <span class="caret"></span></a>
+                        <ul id="signup-dp"class="dropdown-menu">
                             <li>
-                                <a class="page-scroll" href="{{nav_link_prefix}}#stem">STEM</a>
-                            </li>
-                            <li>                        
-                                <a class="page-scroll" href="{{nav_link_prefix}}#contact">Newsletter</a>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1>Newsletter Sign up</h1>
+                                        <p>Sign up for the ELSA newsletter and recieve regular update on the pilot and articles on STEM practices.</p>
+                                        <form action="//elsa.us15.list-manage.com/subscribe/post?u=e53a67afd496b56ee24b3cf99&amp;id=45f25b63ab" method="post" id="signup-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+                                            <div class="form-group">
+                                                <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="youremail@youremail.com.au">
+                                            </div>
+                                            <input type="text" name="b_e53a67afd496b56ee24b3cf99_45f25b63ab" tabindex="-1" value="" style="display:none">
+                                            <input type="submit" value="GO" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">
+                                            {#<a href="#" class="btn">Go</a>#}
+                                        </form>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
-                    </li>#}
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
