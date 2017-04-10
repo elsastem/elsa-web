@@ -7,7 +7,7 @@
                 {%for entry in context.timeline %}
                 {%if entry.linkonly%}
                 <li class="timeline-inverted">
-                    <a href="{{entry.link.url}}" role="button">
+                    <a href="{{entry.link.url}}" role="button" class="page-scroll">
                         <div class="timeline-image callout">
                             <h4>{{entry.link.text | safe}}</h4>
                         </div>
@@ -25,7 +25,7 @@
                         <div class="timeline-body">
                             <p class="text-muted">{{entry.body}}</p>
                             {% if entry.link %}
-                                <a href="{{entry.link.url}}" class="">{{entry.link.text}}</a>
+                                <a href="{{entry.link.url}}" class="page-scroll">{{entry.link.text}}</a>
                             {% endif %}
                         </div>
                     </div>
