@@ -51,7 +51,7 @@
                                             <p>Sign up for the ELSA newsletter and recieve regular update on the pilot and articles on STEM practices.</p>
                                             <form id="signup-form" name="mc-embedded-subscribe-form" class="validate form-inline" novalidate>
                                                 <div class="form-group">
-                                                    <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="youremail@youremail.com.au">
+                                                    <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="youremail@youremail.com.au" >
                                                 </div>
                                                 <input type="text" name="b_e53a67afd496b56ee24b3cf99_45f25b63ab" tabindex="-1" value="" style="display:none">
                                                 {#<input type="submit" value="GO" name="subscribe" id="signup-form-subscribe" class="btn btn-primary">#}
@@ -59,6 +59,7 @@
                                                     <span id="goBtn">GO</span>
                                                     <span id="loadingBtn"class="glyphicon glyphicon-repeat normal-right-spinner hide"></span>
                                                 </button>
+                                                <span id="mce-exists-error" class="help-block help-block-error" style="display:none;color: #e74c3c;"></span>
                                             </form>
                                         </div>
                                         <div id="signup_thankyou" class="hide">

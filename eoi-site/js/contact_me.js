@@ -3,9 +3,7 @@
 var SubscribeForm = function () {
     return {
         init: function () {
-            var form = $("#subscribeForm"),
-                failPanel = $(".alert-danger", form),
-                passPanel = $(".alert-success", form);
+            var form = $("#signup-form");
 
             form.validate({
                 doNotHideMessage: true,
@@ -17,8 +15,6 @@ var SubscribeForm = function () {
                         required: true,
                         email: true
                     },
-                    // "business": "required",
-                    // "name": "required",
                 },
                 errorPlacement: function (error, element) {
                     var controlList = element.closest(".control-list");
@@ -41,39 +37,43 @@ var SubscribeForm = function () {
                     label.addClass("valid").closest(".form-group").removeClass("has-error").addClass("has-success");
                 },
                 submitHandler: function (form) {
+                    var url = "https://api.elsa.edu.au/web/subscribe"; //mailchimp
+                    var apiKey = "huwyil4DTkGbPxduj8062871TorMtjM3CaSRS5Kh";
+                    var formData = $("#signup-form").serializeObject();
+                    //formData.listId = '45f25b63ab';
+                    formData.email = formData.EMAIL;
+                    $('#loadingBtn').removeClass('hide');
+                    $('#goBtn').addClass('hide');
 
-                    form.submit();
-                    // var formData = $(form).serializeObject();
-                    // // var url = "https://api.elsa.edu.au/web/subscribe";                  
-                    // // var apiKey = "huwyil4DTkGbPxduj8062871TorMtjM3CaSRS5Kh";
-                    // var url = "//elsa.us15.list-manage.com/subscribe/post-json?u=e53a67afd496b56ee24b3cf99&amp;id=45f25b63ab&amp;c=?"; //mailchimp
-
-                    // $("#subscribe .text").addClass('hide');
-                    // $("#subscribe .spinner").removeClass('hide');
-
-                    // $.ajax({
-                    //     url: url,
-                    //     method: "GET",
-                    //     contentType: "application/json",
-                    //     // headers: {
-                    //     //     "x-api-key": apiKey
-                    //     // },
-                    //     data: JSON.stringify(formData)
-                    // })
-                    //     .done(function (result) {
-                    //         failPanel.hide();
-                    //         passPanel.show();
-                    //     })
-                    //     .fail(function (jqXHR, textStatus) {
-                    //         failPanel.show();
-                    //         passPanel.hide();
-                    //     })
-                    //     .always(function () {
-                    //         $("#subscribe .text").removeClass('hide');
-                    //         $("#subscribe .spinner").addClass('hide');
-                    //     });
+                    $.ajax({
+                        url: url,
+                        method: "POST",
+                        contentType: "application/json",
+                        headers: {
+                            "x-api-key": apiKey
+                        },
+                        data: JSON.stringify(formData)
+                    })
+                        .done(function (result) {
+                            $("#signup_main").addClass('hide');
+                            $("#signup_thankyou").removeClass('hide');
+                        })
+                        .fail(function (jqXHR, textStatus) {
+                            if (jqXHR.responseJSON && jqXHR.responseJSON.title == "Member Exists") {
+                                $("#mce-exists-error").css('display', 'block');
+                                $("#mce-exists-error").text("Already subscribed");
+                            }
+                        })
+                        .always(function () {
+                            $('#loadingBtn').addClass('hide');
+                            $('#goBtn').removeClass('hide');
+                        });
                 }
             });
+
+            $("#mce-EMAIL").on('keydown', function(e) {
+                $("#mce-exists-error").css('display', 'none');
+            })
 
             // $("#subscribe").click(function () {
             //     if (form.valid()) {
@@ -81,42 +81,41 @@ var SubscribeForm = function () {
             //     }
             // });
 
-            $("#signup-form-subscribe").click(function(e) {
-                e.preventDefault();
+            // $("#signup-form-subscribe").click(function (e) {
+            //     e.preventDefault();
 
-                var url = "https://api.elsa.edu.au/web/subscribe"; //mailchimp
-                var apiKey = "huwyil4DTkGbPxduj8062871TorMtjM3CaSRS5Kh";
-                var formData = $("#signup-form").serializeObject();
-                //formData.listId = '45f25b63ab';
-                formData.email = formData.EMAIL;
-                $('#loadingBtn').removeClass('hide');
-                $('#goBtn').addClass('hide');
+            //     var url = "https://api.elsa.edu.au/web/subscribe"; //mailchimp
+            //     var apiKey = "huwyil4DTkGbPxduj8062871TorMtjM3CaSRS5Kh";
+            //     var formData = $("#signup-form").serializeObject();
+            //     //formData.listId = '45f25b63ab';
+            //     formData.email = formData.EMAIL;
+            //     $('#loadingBtn').removeClass('hide');
+            //     $('#goBtn').addClass('hide');
 
-                $.ajax({
-                    url: url,
-                    method: "POST",
-                    contentType: "application/json",
-                    headers: {
-                        "x-api-key": apiKey
-                    },
-                    data: JSON.stringify(formData)
-                })
-                .done(function (result) {
-                    console.log(result);
-                    $("#signup_main").addClass('hide');
-                    $("#signup_thankyou").removeClass('hide');
-                })
-                .fail(function (jqXHR, textStatus) {
-                    if(jqXHR.responseJson && jqXHR.responseJson.title == "Member Exists") {
+            //     $.ajax({
+            //         url: url,
+            //         method: "POST",
+            //         contentType: "application/json",
+            //         headers: {
+            //             "x-api-key": apiKey
+            //         },
+            //         data: JSON.stringify(formData)
+            //     })
+            //         .done(function (result) {
+            //             console.log(result);
+            //             $("#signup_main").addClass('hide');
+            //             $("#signup_thankyou").removeClass('hide');
+            //         })
+            //         .fail(function (jqXHR, textStatus) {
+            //             if (jqXHR.responseJSON && jqXHR.responseJSON.title == "Member Exists") {
 
-                    }
-
-                })
-                .always(function () {
-                    $('#loadingBtn').addClass('hide');
-                    $('#goBtn').removeClass('hide');
-                });
-            });
+            //             }
+            //         })
+            //         .always(function () {
+            //             $('#loadingBtn').addClass('hide');
+            //             $('#goBtn').removeClass('hide');
+            //         });
+            // });
         }
     }
 }();
