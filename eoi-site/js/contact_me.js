@@ -89,6 +89,8 @@ var SubscribeForm = function () {
                 var formData = $("#signup-form").serializeObject();
                 //formData.listId = '45f25b63ab';
                 formData.email = formData.EMAIL;
+                $('#loadingBtn').removeClass('hide');
+                $('#goBtn').addClass('hide');
 
                 $.ajax({
                     url: url,
@@ -101,11 +103,18 @@ var SubscribeForm = function () {
                 })
                 .done(function (result) {
                     console.log(result);
+                    $("#signup_main").addClass('hide');
+                    $("#signup_thankyou").removeClass('hide');
                 })
                 .fail(function (jqXHR, textStatus) {
-                    console.log(textStatus);
+                    if(jqXHR.responseJson && jqXHR.responseJson.title == "Member Exists") {
+
+                    }
+
                 })
                 .always(function () {
+                    $('#loadingBtn').addClass('hide');
+                    $('#goBtn').removeClass('hide');
                 });
             });
         }

@@ -45,17 +45,26 @@
                             <li>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <h1>Newsletter Sign up</h1>
                                         <span class="glyphicon glyphicon-remove-circle close-btn"></span>                                        
-                                        <p>Sign up for the ELSA newsletter and recieve regular update on the pilot and articles on STEM practices.</p>
-                                        <form id="signup-form" name="mc-embedded-subscribe-form" class="validate form-inline" novalidate>
-                                            <div class="form-group">
-                                                <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="youremail@youremail.com.au">
-                                            </div>
-                                            <input type="text" name="b_e53a67afd496b56ee24b3cf99_45f25b63ab" tabindex="-1" value="" style="display:none">
-                                            <input type="submit" value="GO" name="subscribe" id="signup-form-subscribe" class="btn btn-primary">
-                                            {#<a href="#" class="btn">Go</a>#}
-                                        </form>
+                                        <div id="signup_main">
+                                            <h1>Newsletter Sign up</h1>
+                                            <p>Sign up for the ELSA newsletter and recieve regular update on the pilot and articles on STEM practices.</p>
+                                            <form id="signup-form" name="mc-embedded-subscribe-form" class="validate form-inline" novalidate>
+                                                <div class="form-group">
+                                                    <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="youremail@youremail.com.au">
+                                                </div>
+                                                <input type="text" name="b_e53a67afd496b56ee24b3cf99_45f25b63ab" tabindex="-1" value="" style="display:none">
+                                                {#<input type="submit" value="GO" name="subscribe" id="signup-form-subscribe" class="btn btn-primary">#}
+                                                <button id="signup-form-subscribe" class="btn btn-primary" type="submit">
+                                                    <span id="goBtn">GO</span>
+                                                    <span id="loadingBtn"class="glyphicon glyphicon-repeat normal-right-spinner hide"></span>
+                                                </button>
+                                            </form>
+                                        </div>
+                                        <div id="signup_thankyou" class="hide">
+                                            <h1>Thanks for subscribing</h1>
+                                            <p>You have been sent a confirmation email. Please click the link in the email to finalise the signup process.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
