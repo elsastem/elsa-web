@@ -889,12 +889,19 @@ section#stem li {
     }
 }
 
+@signup-width: 335px;
+
 #signup-dp{
     //position: relative;
-    min-width: 335px;
+    width: @signup-width;
     padding: 14px 14px;
     overflow: hidden;
     background-color:#f2e8e9; //rgba(255,255,255,.8);
+    z-index: 99999;
+    right: 15px;
+    left: initial;
+    top: 90px;
+    position: fixed;
 
     h1 {
         font-size: 16px;
@@ -908,15 +915,20 @@ section#stem li {
         position: absolute;
         top: 0px;
         right: 10px;
+        cursor: pointer;
+        &:hover {
+            color: @theme-primary;
+        }
     }
     .help-block {
         margin: 0px;
     }
 }
+
 @media(max-width:768px){
     #signup-dp{
-        background-color: inherit;
-        color: #fff;
+        left: 50%;
+        margin-left: -(@signup-width / 2);
     }
 }
 

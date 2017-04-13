@@ -75,47 +75,17 @@ var SubscribeForm = function () {
                 $("#mce-exists-error").css('display', 'none');
             })
 
-            // $("#subscribe").click(function () {
-            //     if (form.valid()) {
-            //         //form.submit();
-            //     }
-            // });
-
-            // $("#signup-form-subscribe").click(function (e) {
-            //     e.preventDefault();
-
-            //     var url = "https://api.elsa.edu.au/web/subscribe"; //mailchimp
-            //     var apiKey = "huwyil4DTkGbPxduj8062871TorMtjM3CaSRS5Kh";
-            //     var formData = $("#signup-form").serializeObject();
-            //     //formData.listId = '45f25b63ab';
-            //     formData.email = formData.EMAIL;
-            //     $('#loadingBtn').removeClass('hide');
-            //     $('#goBtn').addClass('hide');
-
-            //     $.ajax({
-            //         url: url,
-            //         method: "POST",
-            //         contentType: "application/json",
-            //         headers: {
-            //             "x-api-key": apiKey
-            //         },
-            //         data: JSON.stringify(formData)
-            //     })
-            //         .done(function (result) {
-            //             console.log(result);
-            //             $("#signup_main").addClass('hide');
-            //             $("#signup_thankyou").removeClass('hide');
-            //         })
-            //         .fail(function (jqXHR, textStatus) {
-            //             if (jqXHR.responseJSON && jqXHR.responseJSON.title == "Member Exists") {
-
-            //             }
-            //         })
-            //         .always(function () {
-            //             $('#loadingBtn').addClass('hide');
-            //             $('#goBtn').removeClass('hide');
-            //         });
-            // });
+            $('a[href="#signup"]').on('click', function(e) {
+                e.preventDefault();
+                $('#signup-dp').parent().addClass('open');
+                return false;
+            })
+           
+            $('#signup-dp .close-btn').on('click', function(e) {
+                e.preventDefault();
+                $('#signup-dp').parent().removeClass('open');
+                return false;
+            });
         }
     }
 }();

@@ -15,7 +15,7 @@
                 "url": "#elsa"
             },{
                 "text": "Sign up for news",
-                "url": "#contact"
+                "url": "#signup"
             }]            
         },{
             "id": "notice",
@@ -93,11 +93,11 @@
                     "alt": "Educators"
                 },
                 "title": "Linked to best practice ",
-                "body": "ELSA is linked to the Early Years Learning Framework, and supports play-based learning in a variety of early childhood settings. Learning will be extended from the preschool to home, with our suite of resources for families coming in 2018. Sign up to our newsletter to receive all the latest news about the ELSA Pilot and articles about STEM in early learning. "
+                "body": "ELSA is linked to the Early Years Learning Framework, and supports play-based learning in a variety of early childhood settings. Learning will be extended from the preschool to home, with our suite of resources for families coming in 2018. [Sign up to our newsletter](#signup) to receive all the latest news about the ELSA Pilot and articles about STEM in early learning. "
             },{
                 "linkonly": true,
                 "link": {
-                    "url": "#contact",
+                    "url": "#signup",
                     "text": "Sign up<br>for news"
                 }
             }]      
@@ -137,7 +137,7 @@
                 "a": [
                     "Applications for the 2018 ELSA Pilot closed on 11:00 pm AEST Monday, 10 April 2017, and are currently being assessed. Applicants will be notified of their outcome in August 2017. ",
                     "",
-                    "If you would like to receive updates about ELSA, please subscribe to our newsletter."
+                    "If you would like to receive updates about ELSA, please [subscribe to our newsletter](#signup)."
                 ]
             },{
                 "q": "When does the Pilot start?",
@@ -196,19 +196,6 @@
                     "Yes. Families are encouraged to engage with the ELSA Pilot. We are developing a family suite that includes an app and resources to support connection between children’s homes and preschools."
                 ]
             }]      
-        },{
-            "id": "contact",
-            "menu": "News",
-            "title": "Find out more",
-            "subtitle": "Sign up to the ELSA newsletter to receive updates on the pilot",
-            "form": {
-                "email": {
-                    "placeholder": "Enter your email"
-                },
-                "errorText": "There was an error submitting your information, please try again, or contact us for help.",
-                "successText": "You have been successfully registered for the newsletter.",
-                "submitText": "Subscribe"
-            }
         }]
     }
 }
