@@ -5,7 +5,7 @@ set -eo pipefail
 S3_BUCKET_DEST=s3://dev.elsa.edu.au
 LOCAL_SITE_DIR=./eoi-site/build
 AWS_PROFILE=elsa
-
+ 
 echo "Building Site"
 cd eoi-site
 npm install
