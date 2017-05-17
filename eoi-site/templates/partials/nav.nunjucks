@@ -40,7 +40,8 @@
                         <a class="page-scroll" href="{{nav_link_prefix}}#contact">News</a>
                     </li>#}
                     <li>                        
-                        <a class="" href="#signup">Signup for news </a>
+                        <buttom id="signup" class="btn btn-primary btn-outline">Sign Up</a>
+                        {#<a class="btn btn-outline" href="#signup">Sign Up</a>#}
                     </li>
                 </ul>
             </div>

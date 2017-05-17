@@ -75,7 +75,8 @@ var SubscribeForm = function () {
                 $("#mce-exists-error").css('display', 'none');
             })
 
-            $('a[href="#signup"]').on('click', function(e) {
+            // $('a[href="#signup"]').on('click', function(e) {
+            $('#signup').on('click', function(e) {
                 e.preventDefault();
                 $('#signup-dp').parent().addClass('open');
                 return false;
