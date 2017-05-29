@@ -23,7 +23,7 @@
                     <div id="signup_thankyou" class="hide">
                         <h1>Thank you</h1>
                         <p>A confirmation email has been sent to your address. To complete your sign up, please click through the link in the confirmation email.</p>
-                        <p>You can unsubscribe at any time by emailing <a href="mailto:team@elsa.edu.au">team@elsa.edu.au<a>.</p>
+                        <p>You can unsubscribe at any time by emailing <a href="mailto:team@elsa.edu.au">team@elsa.edu.au</a>.</p>
                     </div>
                 </div>
             </div>
