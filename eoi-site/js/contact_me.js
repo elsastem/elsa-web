@@ -76,7 +76,7 @@ var SubscribeForm = function () {
             })
 
             // $('a[href="#signup"]').on('click', function(e) {
-            $('#signup').on('click', function(e) {
+            $('#signup, a[href="#signup"]').on('click', function(e) {
                 e.preventDefault();
                 $('#signup-dp').parent().addClass('open');
                 return false;
