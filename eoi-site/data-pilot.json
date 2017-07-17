@@ -1,0 +1,47 @@
+{
+    "pilot": {
+        "sections": [{
+            "id": "elsa",
+            "menu": "About",
+            "title": "Early Learning STEM Australia",
+            "subtitle": "A new learning initiative for Australia",
+            "blurbs": [{
+                "icon": "fa-flash",
+                "title": "Preschool",
+                "body": "Early Learning STEM Australia (ELSA) is a play-based digital learning program for children in preschool to explore Science, Technology, Engineering and Mathematics (STEM)."
+            },{
+                "icon": "fa-mobile",
+                "title": "Digital",
+                "body": "ELSA apps will go beyond the screen to encourage active play that supports STEM practices, such as exploring location, patterns and problem solving. Our apps support learning through play, and act as a springboard for children to explore the natural world."
+            },{
+                "icon": "fa-graduation-cap",
+                "title": "Pilot",
+                "body": "In 2018, one hundred preschools from across Australia will join the first ELSA Pilot. The pilot program includes professional learning for educators, and real world play for children to complement the apps. Applications closed 10 April 2017."
+            }]            
+        },{
+            "id": "stem",
+            "menu": "STEM",
+            "title": "Learning outcomes",
+            "subtitle": "Benefits of the ELSA Pilot",
+            "image": {
+                "url": "img/photos/elsa/ELSA_web_plants_resized.jpg",
+                "alt": "Child with big smile"
+            },
+            "content": [
+                "One hundred preschools across Australia are currently being selected to take part in the ELSA Pilot. These preschools will receive free workshops and be the first to use the ELSA apps and resources to incorporate STEM practices into their preschool program.",
+                "",
+                "STEM practices include exploring locations, patterns, designing, making, and spatial reasoning.",
+                "",
+                "Exploring STEM practices helps children weave strong skills in many areas such as problem solving and communication that are useful later in life.",
+                "",
+                "If you are an educator, ELSA can help you with:",
+                "+ Gaining more confidence in exploring STEM at your preschool to provide the best learning outcomes for children.",
+                "+ A host of resources aligned with the Early Years Learning Framework and linked to the Australian Curriculum, plus ways to share ideas with a supportive network of early learning professionals.",
+                "+ New ways to engage families through the ELSA family suite, which will extend the learning into home.",
+                "+ Innovative ideas for children to explore, investigate and have meaningful experiences in the natural world.",
+                "",
+                "ELSA is free and operates on a bring your own device basis."
+            ]
+        }]
+    }
+}

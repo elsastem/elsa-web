@@ -1,0 +1,69 @@
+{% set page_name="pilot" %}
+{% extends 'layout.nunjucks' %}
+
+{% block content %}
+    {#<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>#}
+    {% include 'partials/nav.nunjucks' %}
+
+    <!-- Header -->
+    <header class="just-pic">
+    </header>
+
+     <section class="text-page eligibility-page-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2 class="section-heading">2018 Pilot Preschools</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row text-muted">
+                <div class="col-xs-12">
+                    {% markdown %}
+Congratulations to the preschools that have been selected for the 2018 ELSA Pilot:
+                    {% endmarkdown %}
+                </div>
+            </div>
+            <div class="row text-muted">
+                <div class="col-xs-12">
+                <table class="table schools-table">
+                    <thead>
+                        <tr>
+                            {% for key, value in schoolData[0] %}
+                            <th>
+                                {{ key }}
+                            </th>
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for school in schoolData %}
+                        <tr>
+                            {% for key, value in school %}
+                            <td>
+                                {{ value }}
+                            </td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            <div class="row text-muted">
+                <div class="col-xs-12">
+                    {% markdown %}
+Thank you to all who applied. We received over 800 expressions of interest from preschools, kindergartens and early learning centres across Australia. Our 100 pilot preschools have been selected to reflect preschool diversity around the country. 
+
+Participating educators will start their ELSA journey in Term 4 2017 with a face-to-face workshop with the ELSA Program team. The ELSA Pilot will start in preschools in Term 1 2018. 
+
+If you would like to stay updated with our latest news and resources, please sign up to our newsletter. 
+
+Questions? Contact [team@elsa.edu.au](mailto:team@elsa.edu.au)
+                    {% endmarkdown %}
+                </div>
+            </div>
+        </div>
+    </section>
+    
+{% endblock %}

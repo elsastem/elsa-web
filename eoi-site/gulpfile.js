@@ -12,6 +12,7 @@ var pkg = require('./package.json');
 var fs = require('fs');
 var markdown = require('nunjucks-markdown');
 var marked = require('marked');
+const csv=require('csvtojson');
 
 var BUILD_DIR = "./build"
 
@@ -38,8 +39,19 @@ marked.setOptions({
 gulp.task('nunjucks', function() {
     return gulp.src('pages/**/*.+(html|nunjucks)')
         // Adding data to Nunjucks
-        .pipe(data(function() {
-            return JSON.parse(fs.readFileSync('./data.json', 'utf8'));
+        .pipe(data(function(srcFile, cb) {
+            var mainData = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
+            var pilotData = JSON.parse(fs.readFileSync('./data-pilot.json', 'utf8'));
+            // var schoolData = JSON.parse(fs.readFileSync('./data-schools.csv', 'utf8'));
+            var schoolData = [];
+            csv().fromFile('./data-schools.csv')
+            .on('json', (row) => {
+                schoolData.push(row);
+            })
+            .on('end', () => {
+                var result = Object.assign({}, mainData, pilotData, {schoolData});
+                cb(null, result);
+            })
         }))
         .pipe(nunjucksRender({
              path: ['templates'],
@@ -135,7 +147,7 @@ gulp.task('browserSync', function() {
 
 // Dev task with browserSync
 gulp.task('dev', ['copy', 'browserSync', 'nunjucks', 'less', 'copy-js', 'minify-css', 'minify-js'], function() {
-    gulp.watch('data.json', ['nunjucks']);
+    gulp.watch('data*', ['nunjucks']);
     gulp.watch('less/*.less', ['less', 'minify-css']);
     gulp.watch('js/*.js', ['copy-js', 'minify-js']);
     gulp.watch('pages/**/*.+(html|nunjucks)', ['nunjucks'])
