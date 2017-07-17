@@ -1,6 +1,10 @@
 {% set page_name="pilot" %}
 {% extends 'layout.nunjucks' %}
 
+{% block scriptsExt %}
+    <script src="js/pilot_page.js"></script>
+{% endblock %}
+
 {% block content %}
     {#<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>#}
     {% include 'partials/nav.nunjucks' %}
@@ -26,28 +30,30 @@ Congratulations to the preschools that have been selected for the 2018 ELSA Pilo
             </div>
             <div class="row text-muted">
                 <div class="col-xs-12">
-                <table class="table schools-table">
-                    <thead>
-                        <tr>
-                            {% for key, value in schoolData[0] %}
-                            <th>
-                                {{ key }}
-                            </th>
+                    <div class="schools-table">
+                        <table id="schoolTable" class="table">
+                            <thead>
+                                <tr>
+                                    {% for key, value in schoolData[0] %}
+                                    <th>
+                                        {{ key }}
+                                    </th>
+                                    {% endfor %}
+                                </tr>
+                            </thead>
+                            <tbody>
+                            {% for school in schoolData %}
+                                <tr>
+                                    {% for key, value in school %}
+                                    <td>
+                                        {{ value }}
+                                    </td>
+                                    {% endfor %}
+                                </tr>
                             {% endfor %}
-                        </tr>
-                    </thead>
-                    <tbody>
-                    {% for school in schoolData %}
-                        <tr>
-                            {% for key, value in school %}
-                            <td>
-                                {{ value }}
-                            </td>
-                            {% endfor %}
-                        </tr>
-                    {% endfor %}
-                    </tbody>
-                </table>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="row text-muted">
@@ -65,5 +71,4 @@ Questions? Contact [team@elsa.edu.au](mailto:team@elsa.edu.au)
             </div>
         </div>
     </section>
-    
 {% endblock %}

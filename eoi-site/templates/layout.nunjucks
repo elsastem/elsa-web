@@ -15,5 +15,8 @@
         {% block scripts %} 
             {% include 'partials/scripts.nunjucks' %}    
         {% endblock %} 
+
+        {% block scriptsExt %} {% endblock %} 
+
     </body>
 </html>

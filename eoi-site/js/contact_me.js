@@ -1,5 +1,3 @@
-//I grabbed most of this from another site, thus it is minified
-
 var SubscribeForm = function () {
     return {
         init: function () {
