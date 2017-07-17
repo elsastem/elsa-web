@@ -2,6 +2,8 @@
 {% extends 'layout.nunjucks' %}
 
 {% block scriptsExt %}
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap.js"></script>
     <script src="js/pilot_page.js"></script>
 {% endblock %}
 
