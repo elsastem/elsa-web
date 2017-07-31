@@ -417,6 +417,8 @@ section {
 
 // Timeline
 
+@timeline-line-color: #f9f9f9;// #cecece;
+
 .timeline {
     list-style: none;
     padding: 0;
@@ -427,7 +429,7 @@ section {
         position: absolute;
         content: "";
         width: 2px;
-        background-color: #f1f1f1;
+        background-color: @timeline-line-color;
         left: 40px;
         margin-left: -1.5px;
     }
@@ -472,7 +474,7 @@ section {
             background-color: @theme-primary;
             color: white;
             border-radius: 100%;
-            border: 7px solid #f1f1f1;
+            border: 7px solid @timeline-line-color;
             text-align: center;
             &:hover, &:focus {
                 background-color: @theme-primary-highlight;
@@ -514,7 +516,9 @@ section {
         }
     }
     .timeline-body {
-        > p,
+        > p {
+            margin-bottom: 7px; 
+        }
         > ul {
             margin-bottom: 0;
         }
@@ -1487,5 +1491,9 @@ form {
 }
 
 .schools-table {
-    margin: 15px 5px 45px;
+    margin: 45px 5px 45px;
+}
+
+[tabindex="-1"] {
+    outline: none;
 }

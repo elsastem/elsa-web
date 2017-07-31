@@ -9,7 +9,11 @@
                 <i class="fa {{blurb.icon}} fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">{{blurb.title}}</h4>
-            <p class="text-muted">{{blurb.body}}</p>
+            <p class="text-muted">
+                {% markdown %}
+                {{ blurb.body }}
+                {% endmarkdown %}
+            </p>
         </div>
         {%endfor%}
     </div>

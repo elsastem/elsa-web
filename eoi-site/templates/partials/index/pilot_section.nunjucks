@@ -25,7 +25,7 @@
                         <div class="timeline-body">
                             <p class="text-muted">
                             {% markdown %}
-                            {{entry.body}}
+                            {{entry.body | join("\n") }}
                             {% endmarkdown %}
                             </p>
                             {% if entry.link %}
