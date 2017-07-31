@@ -28,6 +28,9 @@
                         <a class="page-scroll" href="{{nav_link_prefix}}#pilot">Pilot</a>
                     </li>
                     <li>
+                        <a class="" href="pilots.html">Preschools</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="{{nav_link_prefix}}#faq">FAQ</a>
                     </li>
                     <li>                        
