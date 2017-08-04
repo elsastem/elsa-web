@@ -21,7 +21,7 @@
                 <div class="col-xs-12">
                     {#<img class="img-responsive" src="img/photos/elsa/ELSA_web_plants_resized.jpg" alt="Carer and Child with iPad">#}
                     {% markdown %}
-Preschools were selected for the 2018 ELSA Pilot following an expression of interest process in March and April 2017. Discover the ELSA Pilot preschools in your area. 
+Preschools were selected for the 2018 ELSA Pilot following an expression of interest process in March and April 2017. Discover the [ELSA Pilot preschools](pilot.html) in your area. 
 
 Thank you to everyone who expressed their interest. We received applications from services in a wide range of locations, including remote, regional and urban areas across Australia, in every state and territory.  The 100 services selected for the Pilot well represent the diversity of preschools and communities across the country.
 
