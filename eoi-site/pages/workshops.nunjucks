@@ -1,0 +1,63 @@
+{% extends 'layout.nunjucks' %}
+
+{% block content %}
+
+    {% include 'partials/nav.nunjucks' %}
+
+    <!-- Header -->
+    <header class="just-pic">
+    </header>
+
+    <!-- Services Section -->
+    <section id="privacy">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2 class="section-heading">Early Learning STEM Australia 2017 Educator Workshops</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row text-muted">
+                <div class="col-xs-12">                    
+                    <p>A key element of the ELSA Pilot is educator support which includes an introductory workshop in 2017.  The degree-qualified educator who will be primarily responsible for implementing the ELSA pilot at each preschool should attend the workshop.</p>
+                    <p>Please note, there is only capacity for one educator from each Pilot preschool to attend the workshop.</p>
+                    <p>There is no fee for educators to attend the workshop and the ELSA pilot will cover travel and accommodation costs for participants.</p>
+                    <p>Further information about travel and accommodation can be found in the Educator Workshops 2017 - Travel and Accommodation Conditions:</p>
+                    <br>
+                    <ul class="file-list">
+                        <li>
+                            <i class="fa fa-file-text-o file-icon" aria-hidden="true"></i>
+                            <span>Educator Workshops 2017 - Travel and Accommodation Conditions</span>
+                            (<a href="docs/ELSA Travel Information_September 2017.pdf">
+                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                    PDF
+                            </a> | 
+                            <a href="docs/ELSA Travel Information_September 2017.docx">
+                                <i class="fa fa-file-word-o" aria-hidden="true"></i> 
+                                docx
+                            </a>)
+                        </li>
+                    </ul>
+                    <br>
+                    <p>Educators who are attending a workshop are requested to complete the Educator Workshops 2017 – Travel Requirements Form and return to ELSA (<a href="mailto:team@elsa.edu.au">team@elsa.edu.au</a>) as soon as possible:</p>
+                    <br>
+                    <ul class="file-list">
+                        <li>
+                            <i class="fa fa-file-text-o file-icon" aria-hidden="true"></i>
+                            <span>Educator Workshops 2017 – Travel Requirements Form</span>
+                            (<a href="docs/ELSA Travel Requirements_September 2017.pdf">
+                                <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                    PDF
+                            </a> | 
+                            <a href="docs/ELSA Travel Requirements_September 2017.docx">
+                                <i class="fa fa-file-word-o" aria-hidden="true"></i> 
+                                docx
+                            </a>)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

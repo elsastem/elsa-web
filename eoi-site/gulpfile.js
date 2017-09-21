@@ -101,6 +101,11 @@ gulp.task('copy-js', function () {
         .pipe(gulp.dest(`${BUILD_DIR}/js`))
 });
 
+gulp.task('copy-docs', function () {
+    gulp.src(['docs/**/*'])
+        .pipe(gulp.dest(`${BUILD_DIR}/docs`))
+});
+
 // Copy vendor libraries from /node_modules into /vendor
 gulp.task('copy', function () {
     gulp.src(['img/**/*', '!img/photos/elsa/unused/**/*'])
@@ -138,7 +143,7 @@ gulp.task('copy', function () {
 })
 
 // Run everything
-gulp.task('default', ['nunjucks', 'less', 'minify-css', 'copy-js', 'minify-js', 'copy']);
+gulp.task('default', ['nunjucks', 'less', 'minify-css', 'copy-js', 'minify-js', 'copy', 'copy-docs']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function () {
@@ -151,7 +156,7 @@ gulp.task('browserSync', function () {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['copy', 'browserSync', 'nunjucks', 'less', 'copy-js', 'minify-css', 'minify-js'], function () {
+gulp.task('dev', ['copy', 'browserSync', 'nunjucks', 'less', 'copy-js', 'minify-css', 'minify-js', 'copy-docs'], function () {
     gulp.watch('data*', ['nunjucks']);
     gulp.watch('less/*.less', ['less', 'minify-css']);
     gulp.watch('js/*.js', ['copy-js', 'minify-js']);
