@@ -13,22 +13,22 @@
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
-    "browser-sync": "^2.13.0",
+    "browser-sync": "^2.18.13",
     "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.10",
     "gulp-data": "^1.2.1",
-    "gulp-header": "^1.8.7",
+    "gulp-header": "^1.8.9",
     "gulp-less": "^3.1.0",
     "gulp-nunjucks-render": "^2.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^1.5.4",
     "jquery": "^1.11.3",
-    "jquery-validation": "^1.16.0",
+    "jquery-validation": "^1.17.0",
     "marked": "^0.3.6",
     "nunjucks-markdown": "^2.0.1",
-    "select2": "^4.0.3",
+    "select2": "^4.0.5",
     "twitter-bootstrap-wizard": "^1.2.0"
   },
   "repository": {
@@ -36,8 +36,8 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap-agency.git"
   },
   "dependencies": {
-    "csvtojson": "^1.1.7",
-    "datatables.net": "^1.10.15",
-    "datatables.net-bs": "^1.10.15"
+    "csvtojson": "^1.1.9",
+    "datatables.net": "^1.10.16",
+    "datatables.net-bs": "^1.10.16"
   }
 }

@@ -1,0 +1,38 @@
+{% extends 'layout.nunjucks' %}
+
+{% block content %}
+    {% include 'partials/nav.nunjucks' %}
+
+    <!-- Header -->
+    <header class="just-pic">
+    </header>
+
+    <!-- Services Section -->
+    <section id="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2 class="section-heading">THE FIRST ELSA APP FOR CHILDREN</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row text-muted">
+                <div class="col-xs-12">
+                    <p>
+                        The first ELSA app for children is all about patterns and relationships. It will be coming to ELSA pilot preschools near you in Term 1, 2018.<br>Watch the video to see the app in action.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+            </div>        
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/242871818" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

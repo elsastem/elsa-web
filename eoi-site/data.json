@@ -1,7 +1,7 @@
 {
     "version": "0.0.1",
     "logo": {
-        "url": "img/logos/ELSA-MAINLOGO.svg",
+        "url": "/img/logos/ELSA-MAINLOGO.svg",
         "text": "ELSA Logo"
     },
     "content": {
@@ -29,7 +29,7 @@
                 "subtitle": "",
                 "notice": {
                     "text": "Preschools have been selected for the 2018 ELSA Pilot. Discover the ELSA Pilot preschools in your area.",
-                    "url": "pilot.html"
+                    "url": "/pilot.html"
                 }
             },
             {
@@ -46,12 +46,12 @@
                     {
                         "icon": "fa-mobile",
                         "title": "Digital",
-                        "body": "ELSA apps will go beyond the screen to encourage active play that supports STEM practices, such as exploring location, patterns and problem solving. Our apps support learning through play, and act as a springboard for children to explore the natural world."
+                        "body": "ELSA apps will go beyond the screen to encourage active play that supports STEM practices, such as creativity and problem solving. Our apps act as a springboard for children to explore the natural world. [Take a peek at the first app](/video)."
                     },
                     {
                         "icon": "fa-graduation-cap",
                         "title": "Pilot",
-                        "body": "In 2018, one hundred preschools from across Australia will join the first ELSA Pilot. The pilot program includes professional learning for educators, and real world play for children to complement the apps. [Discover the ELSA Pilot preschools](pilot.html) in your area."
+                        "body": "In 2018, one hundred preschools from across Australia will join the first ELSA Pilot. The pilot program includes professional learning for educators, and real world play for children to complement the apps. [Discover the ELSA Pilot preschools](/pilot.html) in your area."
                     }
                 ]
             },
@@ -61,7 +61,7 @@
                 "title": "Learning outcomes",
                 "subtitle": "Benefits of the ELSA Pilot",
                 "image": {
-                    "url": "img/photos/elsa/ELSA_web_plants_resized.jpg",
+                    "url": "/img/photos/elsa/ELSA_web_plants_resized.jpg",
                     "alt": "Child with big smile"
                 },
                 "content": [
@@ -88,19 +88,19 @@
                 "timeline": [
                     {
                         "image": {
-                            "url": "img/photos/elsa/ELSA_web_group_point_square_small.jpg",
+                            "url": "/img/photos/elsa/ELSA_web_group_point_square_small.jpg",
                             "alt": "Child pointing"
                         },
                         "title": "One hundred preschools",
                         "body": [
                             "One hundred preschools across Australia will take part in the ELSA Pilot. Expressions of interest for the pilot opened on 5 March and closed on 10 April 2017. We received 888 applications from a diverse range of preschools across Australia. We have selected one hundred preschools for the pilot from a range of urban, regional, remote areas, and from across every state and territory.",
                             "",
-                            "[Discover the ELSA Pilot preschools](pilot.html) in your area."
+                            "[Discover the ELSA Pilot preschools](/pilot.html) in your area."
                         ]
                     },
                     {
                         "image": {
-                            "url": "img/photos/elsa/ELSA_web_circle2_square_small.jpg",
+                            "url": "/img/photos/elsa/ELSA_web_circle2_square_small.jpg",
                             "alt": "Children in a circle"
                         },
                         "title": "Professional learning ",
@@ -110,7 +110,7 @@
                     },
                     {
                         "image": {
-                            "url": "img/photos/elsa/ELSA_web_educators2_square_small.jpg",
+                            "url": "/img/photos/elsa/ELSA_web_educators2_square_small.jpg",
                             "alt": "Educators"
                         },
                         "title": "Linked to best practice ",

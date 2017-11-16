@@ -1,5 +1,5 @@
 {% if page_name != "index" %}
-  {% set nav_link_prefix = "index.html" %}
+  {% set nav_link_prefix = "/index.html" %}
 {% endif %}
 <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top {{ nav_class if nav_class else 'notanimated' }}">
@@ -7,7 +7,6 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <a class="navbar-brand page-scroll" href="{{nav_link_prefix}}#page-top">
-                    {#<img src="img/elsa-logo 2.svg" alt="ELSA Logo">#}
                     <img src="{{logo.url}}" alt="{{logo.text}}">
                 </a>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -28,13 +27,13 @@
                         <a class="page-scroll" href="{{nav_link_prefix}}#pilot">Pilot</a>
                     </li>
                     <li>
-                        <a class="" href="pilot.html">Preschools</a>
+                        <a class="" href="/pilot.html">Preschools</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="{{nav_link_prefix}}#faq">FAQ</a>
                     </li>
                     <li>                        
-                        <a class="" href="eligibility.html">Guidelines</a>
+                        <a class="" href="/eligibility.html">Guidelines</a>
                     </li>
                     {#<li>                        
                         <a class="page-scroll" href="{{nav_link_prefix}}#contact"></a>

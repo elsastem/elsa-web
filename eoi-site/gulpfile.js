@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
-var sass = require('gulp-sass');
 var data = require('gulp-data');
 var nunjucksRender = require('gulp-nunjucks-render');
 var browserSync = require('browser-sync').create();
