@@ -13,24 +13,14 @@
                 "subText": "",
                 "links": [
                     {
-                        "text": "Tell me more",
-                        "url": "#elsa"
+                        "text": "For Families",
+                        "url": "/families.html"
                     },
                     {
-                        "text": "Sign up for news",
-                        "url": "#signup"
+                        "text": "For Educators",
+                        "url": "/educators.html"
                     }
                 ]
-            },
-            {
-                "id": "notice",
-                "menu": "Notice",
-                "title": "",
-                "subtitle": "",
-                "notice": {
-                    "text": "Preschools have been selected for the 2018 ELSA Pilot. Discover the ELSA Pilot preschools in your area.",
-                    "url": "/pilot.html"
-                }
             },
             {
                 "id": "elsa",
@@ -59,7 +49,7 @@
                 "id": "stem",
                 "menu": "STEM",
                 "title": "Learning outcomes",
-                "subtitle": "Benefits of the ELSA Pilot",
+                "subtitle": "Benefits of the ELSA program",
                 "image": {
                     "url": "/img/photos/elsa/ELSA_web_plants_resized.jpg",
                     "alt": "Child with big smile"
@@ -67,17 +57,17 @@
                 "content": [
                     "One hundred preschools across Australia have been selected to take part in the ELSA Pilot. These preschools will receive free workshops and be the first to use the ELSA apps and resources to incorporate STEM practices into their preschool program.",
                     "",
-                    "STEM practices include exploring locations, patterns, designing, making, and spatial reasoning.",
+                    "STEM practices are the ideas, methods and values that underpin STEM, such as curiosity, team work, and creativity.",
                     "",
                     "Exploring STEM practices helps children weave strong skills in many areas such as problem solving and communication that are useful later in life.",
                     "",
                     "ELSA can help educators with:",
                     "+ Gaining more confidence in exploring STEM at your preschool to provide the best learning outcomes for children.",
-                    "+ A host of resources aligned with the Early Years Learning Framework and linked to the Australian Curriculum, plus ways to share ideas with a supportive network of early learning professionals.",
-                    "+ New ways to engage families through the ELSA family suite, which will extend the learning into home.",
+                    "+ A host of resources aligned with the Early Years Learning Framework (EYLF) and linked to the Australian Curriculum, plus ways to share ideas with a supportive network of early learning professionals.",
+                    "+ New ways to engage families through the ELSA family app, which will extend the learning into home.",
                     "+ Innovative ideas for children to explore, investigate and have meaningful experiences in the natural world.",
                     "",
-                    "ELSA is free and operates on a bring your own device basis."
+                    "ELSA is free and operates on a bring your own device (BYOD) basis."
                 ]
             },
             {
@@ -93,7 +83,7 @@
                         },
                         "title": "One hundred preschools",
                         "body": [
-                            "One hundred preschools across Australia will take part in the ELSA Pilot. Expressions of interest for the pilot opened on 5 March and closed on 10 April 2017. We received 888 applications from a diverse range of preschools across Australia. We have selected one hundred preschools for the pilot from a range of urban, regional, remote areas, and from across every state and territory.",
+                            "One hundred preschools across Australia are taking part in the ELSA Pilot. Pilot preschools were selected from an expressions of interest process in 2017. The one hundred preschools were selected to represent a range of urban, regional, remote areas, and every state and territory.",
                             "",
                             "[Discover the ELSA Pilot preschools](/pilot.html) in your area."
                         ]
@@ -103,9 +93,9 @@
                             "url": "/img/photos/elsa/ELSA_web_circle2_square_small.jpg",
                             "alt": "Children in a circle"
                         },
-                        "title": "Professional learning ",
+                        "title": "Linked to best practice",
                         "body": [
-                            "Professional learning begins in Term 4 2017 with a workshop designed by an expert pedagogy team working closely with preschool educators. In 2018, a suite of professional learning resources about incorporating STEM into preschool programs will be made available to educators in participating early learning centres."
+                            "ELSA is aligned with the Early Years Learning Framework (EYLF), which supports and enhances young children's learning from birth to five years of age, as well as their transition to school. ELSA supports play-based learning in a variety of early childhood settings."
                         ]
                     },
                     {
@@ -115,7 +105,7 @@
                         },
                         "title": "Linked to best practice ",
                         "body": [
-                            "ELSA is  aligned to the Early Years Learning Framework (EYLF), which supports and enhances young children's learning from birth to five years of age, as well as their transition to school. ELSA supports play-based learning in a variety of early childhood settings. Learning will be extended from the preschool to home, with our suite of resources for families coming in 2018. [Sign up to our newsletter](#signup) to receive all the latest news about the ELSA Pilot and articles about STEM in early learning. "
+                            "Educators in the ELSA pilot contribute to a community of practice, sharing ideas, skills and knowledge between each other. ELSA supports educators to connect with families. Learning can be extended from the preschool to home, with our suite of resources for families coming in 2018. [Sign up to our newsletter](#signup) to receive all the latest news about the ELSA Pilot and articles about STEM in early learning. "
                         ]
                     },
                     {
@@ -124,117 +114,6 @@
                             "url": "#signup",
                             "text": "Sign up<br>for news"
                         }
-                    }
-                ]
-            },
-            {
-                "id": "faq",
-                "menu": "FAQ",
-                "title": "FAQ",
-                "subtitle": "Extra bits of information you might need",
-                "questions": [
-                    {
-                        "q": "What is ELSA?",
-                        "a": [
-                            "The Early Learning STEM Australia (ELSA)  Pilot will provide early learning educators  with opportunities  to facilitate preschool children to engage in STEM practices. The Pilot will commence in 2018 and be delivered via a series of digital applications, activities and workshops to create a play based learning environment rich in STEM practices, such as exploring locations, patterns, problem solving, designing, making and spatial reasoning.",
-                            "",
-                            "ELSA is a key early childhood initiative of the Australian Government’s National Innovation and Science Agenda. It supports the Inspiring all Australians in digital literacy and STEM measure, which seeks to increase the participation of Australian children in STEM and improve their digital literacy."
-                        ]
-                    },
-                    {
-                        "q": "What is STEM?",
-                        "a": [
-                            "STEM is an integrated approach to teaching science, technology, engineering and mathematics by exploring the real world.",
-                            "",
-                            "Children learn STEM through play when they:",
-                            "+ Create a community garden",
-                            "+ Build structures that are strong or tall",
-                            "+ Fill different containers with water or sand",
-                            "+ Create patterns or draw designs",
-                            "",
-                            "STEM practices include exploring place and patterns, problem solving, designing, making, and spatial reasoning. Exploring STEM practices helps children weave strong skills in problem solving and communication that can be used in many ways in later life."
-                        ]
-                    },
-                    {
-                        "q": "What do you mean by preschool?",
-                        "a": [
-                            "We define a preschool as a structured, play based learning program, delivered by a degree qualified early childhood teacher, aimed primarily at children in the year or two before they commence full time schooling. Preschools are also known as kindergartens, child parent centres, and early learning centres.",
-                            ""
-                        ]
-                    },
-                    {
-                        "q": "How can I join the Pilot?",
-                        "a": [
-                            "Applications for the 2018 ELSA Pilot have closed. ",
-                            "",
-                            "If you would like to receive updates about ELSA, please [sign up to our newsletter](#signup)."
-                        ]
-                    },
-                    {
-                        "q": "When does the Pilot start?",
-                        "a": [
-                            "Participating educators will take part in a face-to-face workshop with the ELSA Program team in Term 4 2017 . The ELSA Pilot will start in preschools in Term 1 2018. Apps and further workshops will be rolled out during 2018."
-                        ]
-                    },
-                    {
-                        "q": "What is involved for a preschool in the Pilot?",
-                        "a": [
-                            "Being involved in the ELSA Pilot will be a rich and rewarding professional experience. Pilot preschools will need to commit to providing and supporting tablet devices in their learning environments. You will need an active internet and WiFi connection to download the resources as they become available throughout 2018.",
-                            "",
-                            "Pilot preschools will need to commit dedicated time (approximately 40 minutes per week, in accordance with national screen time guidelines) for children to use the apps and experience the program. This time can be in group settings, with an educator guiding the learning experiences as a group of children play together. You will also be involved by contributing your feedback and reflections on the Pilot and participating in an evaluation of ELSA."
-                        ]
-                    },
-                    {
-                        "q": "Which tablet devices support ELSA?",
-                        "a": [
-                            "ELSA apps will operate on iPad and Android tablets."
-                        ]
-                    },
-                    {
-                        "q": "Is there any cost to participate?",
-                        "a": [
-                            "Although there is no cost to participate in the Pilot, it operates on a Bring Your Own Device (BYOD) model where preschools supply tablet devices and adequate internet and WiFi connection. These costs are the responsibility of the preschool."
-                        ]
-                    },
-                    {
-                        "q": "Do I need to have a science background to be involved?",
-                        "a": [
-                            "Not at all. ELSA is all about STEM practices. Educators already adopt a STEM practices approach by encouraging children to ask questions, make predictions, try things, and reflect on what happened and why. By participating in the Pilot, educators and families will find new ways for children to engage with STEM practices."
-                        ]
-                    },
-                    {
-                        "q": "Can I get help with tablets and digital technology?",
-                        "a": [
-                            "Absolutely. The ELSA Pilot will support educators to incorporate tablets and digital learning within existing preschool programs. There will be an ELSA helpdesk with support available to answer any technical questions you might have."
-                        ]
-                    },
-                    {
-                        "q": "What qualifications do educators need?",
-                        "a": [
-                            "To be involved formally in the ELSA Pilot, educators need to be a degree-qualified early childhood teacher, or have a waiver from a regulatory authority."
-                        ]
-                    },
-                    {
-                        "q": "What about screen time?",
-                        "a": [
-                            "ELSA will use tablet apps to create meaningful opportunities for children to explore rich digital learning environments.",
-                            "",
-                            "Children are expected to spend up to a maximum of 40 minutes per week engaging with the ELSA apps. This is likely to occur across multiple shorter sessions, and is consistent with screen time guidelines from the Australian Government. The apps are being carefully designed with early childhood experts to support active play."
-                        ]
-                    },
-                    {
-                        "q": "Is my privacy protected? What data will be collected?",
-                        "a": [
-                            "We take privacy seriously. The privacy of all participants, including children, educators and families, will be protected when participating in the ELSA Pilot.",
-                            "",
-                            "For example, data on app usage will be collected to help us improve the program. This data will be stored securely on Australian servers. If you have any questions about privacy, please contact us at [team@elsa.edu.au](mailto:team@elsa.edu.au)"
-                        ]
-                    },
-                    {
-                        "q": "Can children’s families participate?",
-                        "a": [
-                            "Yes. Families of an ELSA Pilot preschool are encouraged to participate. We are developing a family suite that includes an app and resources to support a strong connection between children’s homes and preschools."
-                        ]
                     }
                 ]
             }
