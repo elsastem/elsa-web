@@ -21,29 +21,22 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{nav_link_prefix}}#elsa">About</a>
+                        <a class="" href="/about.html">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{nav_link_prefix}}#pilot">Pilot</a>
+                        <a class="" href="/pilot.html">2018 Pilot</a>
                     </li>
                     <li>
-                        <a class="" href="/pilot.html">Preschools</a>
+                        <a class="" href="/pilot.html">For Families</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{nav_link_prefix}}#faq">FAQ</a>
+                        <a class="" href="/families.html">For Educators</a>
                     </li>
-                    <li>                        
-                        <a class="" href="/eligibility.html">Guidelines</a>
+                    <li>
+                        <a class="" href="/educators.html">Support</a>
                     </li>
-                    {#<li>                        
-                        <a class="page-scroll" href="{{nav_link_prefix}}#contact"></a>
-                    </li>#}
-                    {#<li>
-                        <a class="page-scroll" href="{{nav_link_prefix}}#contact">News</a>
-                    </li>#}
                     <li>                        
                         <buttom id="signup" class="btn btn-primary btn-outline">Sign Up</a>
-                        {#<a class="btn btn-outline" href="#signup">Sign Up</a>#}
                     </li>
                 </ul>
             </div>
