@@ -1,0 +1,91 @@
+{% extends 'layout.nunjucks' %}
+
+{% block content %}
+
+    {% include 'partials/nav.nunjucks' %}
+
+    <!-- Header -->
+    <header class="just-pic">
+    </header>
+
+    <!-- Services Section -->
+    <section class="text-page">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2 class="section-heading">FOR EDUCATORS</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row text-muted">
+                <div class="col-xs-12">
+                    {% markdown %}
+Welcome to all educators taking part in the ELSA pilot. We hope you're as excited as we are!
+
+To help you prepare for the pilot, we've included some key information and resources below, including how to contact our help desk. 
+
+## Get ready for launch
+
+Before the ELSA launch, there are a few things we need from you so that you're ready to go when the apps are released. 
+
+### Device survey
+
+Before you can start the ELSA pilot in your centre, we need to know some information about the devices you'll be using. For example, how many devices you have, what type they are, and which operating system they run. 
+
+Please complete the [device survey](){{ linkUrls.deviceSurvey }}. 
+
+### Become an approved user
+
+Only nominated staff of a participating pilot centre can login to the ELSA apps. To add your details to the list, please ask your director to contact us.
+
+Email: [team@elsa.edu.au](mailto:team@elsa.edu.au)
+Phone: 1800 931 042
+
+### Consent form - children
+
+All children participating in the ELSA pilot need a signed consent form from a parent or legal guardian. This consent form needs to be completed before children use the apps. 
+
+Parents and legal guardians can access the online [ELSA pilot consent form - children]({{ linkUrls.childContentForm }}). Alternatively, you can email them a link to the form: {{ linkUrls.childContentForm }}
+
+### Professional resources
+
+If you have not attended an ELSA workshop, or you need a refresher, take some time to explore our [professional resources](/professionalresources.html) below to help you run the ELSA pilot in your centre. 
+
+ELSA recommends you follow the **Experience**, **Represent**, **Apply** model to implement the pilot. Introduce opportunities for children to **Experience** a concept first with a hands-on activity. This idea is then **Represented** on the app in a game format. This engagement can then be followed with opportunities to **Apply** this idea to their own environment.
+
+### Activities
+
+Before you start using the ELSA apps, try out these Experience activities with your children, so they can experience the concepts that will be delivered in the apps. This will help you and the children get familiar about STEM practices. 
+
+Here are five activities you can use in the lead up to the ELSA pilot launch: 
+
+* [Books about sorting]({{ linkUrls.sortingApp }})
+* [Let's tidy up]({{ linkUrls.tidyApp }})
+* [Books about ordering]({{ linkUrls.orderApp }})
+* [Extending a pattern]({{ linkUrls.patternApp }})
+
+### What's next
+
+When the first ELSA apps are released, you will receive an email notifying you to download them from the App Store or Google Play, and a quickstart guide for setting up the apps. 
+
+The first thing to do is to log in with your details and verify your identity. Make sure you are a nominated staff at your centre, as we need to have your details in the ELSA system to give you access. See become a nominated staff above for more information. 
+
+## ELSA support
+
+If you are have any questions or need help with these steps, please contact ELSA support. 
+
+We will aim to get back to you as soon as possible and resolve your issue. 
+
+Contact ELSA support on:
+
+Email: [support@elsa.edu.au](mailto: support@elsa.edu.au)
+Phone: 1800 931 042
+
+                    {% endmarkdown %}
+                </div>
+            </div>        
+        </div>
+    </section>
+
+{% endblock %}

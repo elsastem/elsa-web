@@ -4,6 +4,14 @@
         "url": "/img/logos/ELSA-MAINLOGO.svg",
         "text": "ELSA Logo"
     },
+    "linkUrls": {
+        "childContentForm": "http://",
+        "deviceSurvey": "http://",
+        "sortingApp": "/sortingapp.html",
+        "tidyApp": "/tidyapp.html",
+        "orderApp": "/orderapp.html",        
+        "patternApp": "/patternapp.html"
+    },
     "content": {
         "sections": [
             {
