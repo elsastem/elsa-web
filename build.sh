@@ -2,7 +2,7 @@
 
 set -eo pipefail
 
-S3_BUCKET_DEST=s3://dev.elsa.edu.au
+S3_BUCKET_DEST=s3://elsadev.stripysock.com.au
 LOCAL_SITE_DIR=./eoi-site/build
 AWS_PROFILE=elsa
  
