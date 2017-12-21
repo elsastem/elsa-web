@@ -1,0 +1,99 @@
+{% extends 'layout.nunjucks' %}
+
+{% block content %}
+
+    {% include 'partials/nav.nunjucks' %}
+
+    <!-- Header -->
+    <header class="just-pic">
+    </header>
+
+    <!-- Services Section -->
+    <section class="text-page">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row text-muted">
+                <div class="col-xs-12">
+                    {% markdown %}
+Early Learning STEM Australia (ELSA) is a play-based digital learning program for children in preschool to explore science, technology, engineering and mathematics (STEM). ELSA allows children to play, experiment and make sense of the world around them - which is part of science, and also part of being a child. ELSA's STEM practices encourage children to ask questions, make predictions, experiment, and reflect on what happened and why. 
+
+ELSA is a key early childhood initiative of the Australian Government. ELSA has been developed by the University of Canberra through funding provided by the Australian Government Department of Education and Training under the National Innovation and Science Agenda. It supports the 'Inspiring all Australians in digital literacy and STEM measure', which seeks to increase the participation of Australian children in STEM and improve their digital literacy. 
+
+ELSA is led by [Professor Tom Lowrie](https://www.canberra.edu.au/about-uc/faculties/estem/contacts-estem/staff/tom-lowrie) and built on community involvement. The program collaborates with educators, care providers and families.
+
+                    {% endmarkdown %}
+                </div>
+            </div>        
+
+            <div class="row header-row">
+                <div class="col-xs-12 text-center">
+                    <h2 class="section-heading">2018 ELSA Pilot</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row text-muted">
+                <div class="col-xs-12">
+                    {% markdown %}
+The ELSA Pilot will provide early learning educators with opportunities to facilitate preschool children to engage in STEM practices. The pilot will commence in 2018 and be delivered via a series of digital applications, activities and workshops to create a play-based learning environment rich in STEM practices. These include: exploring locations, patterns, problem solving, designing, making and spatial?reasoning.
+
+The 2018 ELSA pilot will be conducted in 100 preschools and care centres across Australia. It will be delivered via hands-on activities and educational apps on tablets. 
+
+Find out more about the [ELSA pilot](/pilot.html). 
+                    {% endmarkdown %}
+                </div>
+            </div>        
+
+            <div class="row header-row">
+                <div class="col-xs-12 text-center">
+                    <h2 class="section-heading">Media enquiries</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row text-muted">
+                <div class="col-xs-12">
+                    {% markdown %}
+All media enquiries and interview requests can be directed to the ELSA team.
+
+Email: [team@elsa.edu.au](mailto:team@elsa.edu.au)
+Phone: 1800 931 042
+                    {% endmarkdown %}
+                </div>
+            </div>        
+
+            <div class="row header-row">
+                <div class="col-xs-12 text-center">
+                    <h2 class="section-heading">ELSA Partners</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row text-muted">
+                <div class="col-xs-12">
+                    {% markdown %}
+ELSA has partnered with industry experts and talented individuals to create a suite of digital apps for children, educators and families. 
+
+Our partners include:
+
+* [Mode Games](http://mode-games.com/) - developed the apps for children
+* [Stripy Sock](http://stripysock.com.au/) - developed the apps for educators and families
+* [Griffith University](https://www.griffith.edu.au/) - provided pedagogy advice
+* [The DA's Office](http://thedasoffice.com/) - created all audio for the apps for children 
+* [CMD Photographics](http://www.cmdphotographics.com.au/) - provided images for the website and apps 
+* [Kirrah Amosa](http://www.kirrahamosa.com/) - wrote and performed the songs for the dance activity
+* [Cleo Rose](http://www.rmk.com.au/cleo_rose/) - voiced the character Piper
+* [Charlie Dowling](http://kathyevans.com.au/voice/charlie-dowling/) - voiced the character Elliot
+* [Finley Greig-Byrne](http://kathyevans.com.au/voice/finley-greig-byrne/) - voiced the character Amy
+* [Oliver Sofo] - voiced the character Remy
+                    {% endmarkdown %}
+                </div>
+            </div>        
+
+        </div>
+    </section>
+
+{% endblock %}
