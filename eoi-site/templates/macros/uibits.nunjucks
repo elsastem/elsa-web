@@ -38,3 +38,38 @@
         </div>
     </div>
 {% endmacro %}
+
+{% macro question(qId, q, accordionId) %}
+    <div class="panel panel-default ">
+        {% set headingId="heading_" + qId %}
+        <div class="panel-heading accordion-toggle question-toggle collapsed" role="tab" id="{{headingId}}">
+            <h4 class="panel-title">
+                <a role="button" class="ing" data-toggle="collapse" data-parent="#{{accordionId}}" data-target="#{{qId}}" aria-controls="{{qId}}">
+                {{q.q}}
+                </a>
+            </h4>
+        </div>
+        <div id="{{qId}}" class="panel-collapse collapse question" role="tabpanel" aria-labelledby="{{headingId}}">
+            <div class="panel-body">
+                {% markdown %}
+                {{ q.a | join("\n") }}
+                {% endmarkdown %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro render_faq(context) %}
+    <div class="row faq">
+        {%for items in context.questions | slice(2)%}
+        <div class="col-md-6">
+            {% set accordionId="faq" + loop.index %}
+            <div class="panel-group" id="{{accordionId}}" role="tablist" aria-multiselectable="true">
+            {%for quest in items%}
+                {{ question(accordionId + "question" + loop.index, quest, accordionId) }}
+            {%endfor%}
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+{% endmacro %}
