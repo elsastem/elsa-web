@@ -9,7 +9,7 @@
         "deviceSurvey": "http://",
         "sortingApp": "/sortingapp.html",
         "tidyApp": "/tidyapp.html",
-        "orderApp": "/orderapp.html",        
+        "orderApp": "/orderapp.html",
         "patternApp": "/patternapp.html"
     },
     "content": {
@@ -123,6 +123,87 @@
                             "text": "Sign up<br>for news"
                         }
                     }
+                ]
+            }
+        ]
+    },
+    "educatorsContent": {
+        "timeline": [
+            {
+                "image": {
+                    "url": "/img/photos/elsa/ELSA_web_group_point_square_small.jpg",
+                    "alt": "Child pointing"
+                },
+                "title": "Device survey",
+                "body": [
+                    "Before you can start the ELSA pilot in your centre, we need to know some information about the devices you'll be using. For example, how many devices you have, what type they are, and which operating system they run.",
+                    "",
+                    "Please complete the [device survey]({{ linkUrls.deviceSurvey }})."
+                ]
+            },
+            {
+                "image": {
+                    "url": "/img/photos/elsa/ELSA_web_group_point_square_small.jpg",
+                    "alt": "Child pointing"
+                },
+                "title": "Become an approved user",
+                "body": [
+                    "Only nominated staff of a participating pilot centre can login to the ELSA apps. To add your details to the list, please ask your director to contact us.",
+                    "",
+                    "Email: [team@elsa.edu.au](mailto:team@elsa.edu.au)",
+                    "Phone: 1800 931 042"
+                ]
+            },
+            {
+                "image": {
+                    "url": "/img/photos/elsa/ELSA_web_group_point_square_small.jpg",
+                    "alt": "Child pointing"
+                },
+                "title": "Consent form - children",
+                "body": [
+                    "All children participating in the ELSA pilot need a signed consent form from a parent or legal guardian. This consent form needs to be completed before children use the apps. ",
+                    "",
+                    "Parents and legal guardians can access the online [ELSA pilot consent form - children]({{ linkUrls.childContentForm }}). Alternatively, you can email them a link to the form: {{ linkUrls.childContentForm }}"
+                ]
+            },
+            {
+                "image": {
+                    "url": "/img/photos/elsa/ELSA_web_group_point_square_small.jpg",
+                    "alt": "Child pointing"
+                },
+                "title": "Professional resources",
+                "body": [
+                    "If you have not attended an ELSA workshop, or you need a refresher, take some time to explore our [professional resources](/professionalresources.html) below to help you run the ELSA pilot in your centre.",
+                    "",
+                    "ELSA recommends you follow the **Experience**, **Represent**, **Apply** model to implement the pilot. Introduce opportunities for children to **Experience** a concept first with a hands-on activity. This idea is then **Represented** on the app in a game format. This engagement can then be followed with opportunities to **Apply** this idea to their own environment."
+                ]
+            },
+            {
+                "image": {
+                    "url": "/img/photos/elsa/ELSA_web_group_point_square_small.jpg",
+                    "alt": "Child pointing"
+                },
+                "title": "Activities",
+                "body": [
+                    "Before you start using the ELSA apps, try out these Experience activities with your children, so they can experience the concepts that will be delivered in the apps. This will help you and the children get familiar about STEM practices.",
+                    "",
+                    "Here are some activities you can use in the lead up to the ELSA pilot launch:",
+                    "* [Books about sorting]({{ linkUrls.sortingApp }})",
+                    "* [Let's tidy up]({{ linkUrls.tidyApp }})",
+                    "* [Books about ordering]({{ linkUrls.orderApp }})",
+                    "* [Extending a pattern]({{ linkUrls.patternApp }})"
+                ]
+            },
+            {
+                "image": {
+                    "url": "/img/photos/elsa/ELSA_web_group_point_square_small.jpg",
+                    "alt": "Child pointing"
+                },
+                "title": "What's next",
+                "body": [
+                    "When the first ELSA apps are released, you will receive an email notifying you to download them from the App Store or Google Play, and a quickstart guide for setting up the apps. ",
+                    "",
+                    "The first thing to do is to log in with your details and verify your identity. Make sure you are a nominated staff at your centre, as we need to have your details in the ELSA system to give you access. See become a nominated staff above for more information."
                 ]
             }
         ]

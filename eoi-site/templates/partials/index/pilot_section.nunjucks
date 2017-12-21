@@ -1,42 +1,6 @@
 {% extends 'partials/index/section.nunjucks' %}
+{% import "macros/uibits.nunjucks" as uibits %}
 
 {% block body %} 
-    <div class="row">
-        <div class="col-lg-12">
-            <ul class="timeline">
-                {%for entry in context.timeline %}
-                {%if entry.linkonly%}
-                <li class="timeline-inverted">
-                    <a href="{{entry.link.url}}" role="button" class="{{entry.link.class}}">
-                        <div class="timeline-image callout">
-                            <h4>{{entry.link.text | safe}}</h4>
-                        </div>
-                    </a>
-                </li>
-                {%else%}
-                <li class="{%if loop.index % 2 %}timeline-inverted{%endif%}">
-                    <div class="timeline-image">
-                        <img class="img-circle img-responsive" src="{{entry.image.url}}" alt="{{entry.image.alt}}">
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>{{entry.title}}</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">
-                            {% markdown %}
-                            {{entry.body | join("\n") }}
-                            {% endmarkdown %}
-                            </p>
-                            {% if entry.link %}
-                                <a href="{{entry.link.url}}" class="{{entry.link.class}}">{{entry.link.text}}</a>
-                            {% endif %}
-                        </div>
-                    </div>
-                </li>
-                {%endif%}
-                {%endfor%}
-            </ul>
-        </div>
-    </div>
+    {{ uibits.timeline(context.timeline) }}
 {% endblock %}         
