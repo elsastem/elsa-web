@@ -40,7 +40,7 @@ gulp.task('nunjucks', function () {
         // Adding data to Nunjucks
         .pipe(data(function (srcFile, cb) {
             var mainData = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
-            var pilotData = JSON.parse(fs.readFileSync('./data-pilot.json', 'utf8'));
+            // var pilotData = JSON.parse(fs.readFileSync('./data-pilot.json', 'utf8'));
             // var schoolData = JSON.parse(fs.readFileSync('./data-schools.csv', 'utf8'));
             var schoolData = [];
             csv().fromFile('./data-schools.csv')
@@ -48,9 +48,16 @@ gulp.task('nunjucks', function () {
                     schoolData.push(row);
                 })
                 .on('end', () => {
-                    var result = Object.assign({}, mainData, pilotData, { schoolData });
-                    cb(null, result);
-                })
+                    var evalData = [];
+                    csv().fromFile('./eval-schools.csv')
+                        .on('json', (row2) => {
+                            evalData.push(row2);
+                        })
+                        .on('end', () => {
+                            var result = Object.assign({}, mainData, { schoolData }, { evalData });
+                            cb(null, result);
+                        });
+                });
         }))
         .pipe(nunjucksRender({
             path: ['templates'],

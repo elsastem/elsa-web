@@ -19,21 +19,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 text-center">
-                    <h2 class="section-heading">{{pilot.title}}</h2>
-                    <h3 class="section-subheading text-muted">{{pilot.subtitle}}</h3>
+                    <h2 class="section-heading">2018 ELSA Pilot</h2>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
             <div class="row text-muted">
                 <div class="col-xs-12">
                     {% markdown %}
-                    {{pilot.content | join("\n") }}
+One hundred preschools, kindergartens and early learning centres from across Australia have been selected to take part in the 2018 ELSA pilot. 
+
+Explore the tables below to discover ELSA pilot preschools and user experience evaluation centres in your area. 
+
+* [Preschools](#schoolTableNav)
+* [User experience evaluation centres](#evalTableNav)
+
+An expression of interest process occurred in 2017. We received applications from services in a wide range of locations, including remote, regional and urban areas across Australia, in every state and territory. 
+
+Pilot preschools were selected to create a group that reflects the diversity of preschools and communities around the country. 
+
+The ELSA Pilot will start in preschools in Term 1 2018. To stay updated with the latest news about ELSA and resources about STEM in early learning, please [sign up to our newsletter](#signup).
+If you have any questions, please contact us at [team@elsa.edu.au](team@elsa.edu.au).
+
                     {% endmarkdown %}
                 </div>
             </div>
-            <div class="row text-muted">
+            <div class="row text-muted" id="schoolTableNav">
                 <div class="col-xs-12">
                     <div class="schools-table">
-                        <table id="schoolTable" class="table">
+                        <table id="schoolTable" class="table" tab-index="-1">
                             <thead>
                                 <tr>
                                     {% for key, value in schoolData[0] %}
@@ -45,6 +58,44 @@
                             </thead>
                             <tbody>
                             {% for school in schoolData %}
+                                <tr>
+                                    {% for key, value in school %}
+                                    <td>
+                                        {{ value }}
+                                    </td>
+                                    {% endfor %}
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-muted">
+                <div class="col-xs-12">
+                    {% markdown %}
+## User experience evaluation centres
+
+As well as pilot preschools, ELSA is also available at a small group of user experience evaluation centres. These centres are helping the ELSA team at University of Canberra to develop the program, and have given their time to try out software and provide feedback during development.  
+
+                    {% endmarkdown %}
+                </div>
+            </div>
+            <div class="row text-muted" id="evalTableNav">
+                <div class="col-xs-12">
+                    <div class="schools-table">
+                        <table id="evalTable" class="table" tab-index="-1">
+                            <thead>
+                                <tr>
+                                    {% for key, value in evalData[0] %}
+                                    <th>
+                                        {{ key }}
+                                    </th>
+                                    {% endfor %}
+                                </tr>
+                            </thead>
+                            <tbody>
+                            {% for school in evalData %}
                                 <tr>
                                     {% for key, value in school %}
                                     <td>
