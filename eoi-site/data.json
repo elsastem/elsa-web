@@ -7,10 +7,10 @@
     "linkUrls": {
         "childContentForm": "http://",
         "deviceSurvey": "http://",
-        "sortingApp": "/sortingapp.html",
-        "tidyApp": "/tidyapp.html",
-        "orderApp": "/orderapp.html",
-        "patternApp": "/patternapp.html"
+        "sortingApp": "/app_sorting.html",
+        "tidyApp": "/app_tidy.html",
+        "orderApp": "/app_order.html",
+        "patternApp": "/app_pattern.html"
     },
     "content": {
         "sections": [

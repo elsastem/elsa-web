@@ -1,0 +1,106 @@
+{% extends 'layout.nunjucks' %}
+
+{% block content %}
+
+    {% include 'partials/nav.nunjucks' %}
+
+    <!-- Header -->
+    <header class="just-pic">
+    </header>
+
+    <!-- Services Section -->
+    <section class="text-page">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2 class="section-heading">For Families</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row text-muted">
+                <div class="col-xs-12">
+                    {% markdown %}
+# Your child and ELSA
+
+If your child is attending a preschool, kindergarten or early learning centre in the ELSA pilot, you may be wondering what this means for your family.
+
+ELSA is a new program designed to help children explore science, technology, engineering and mathematics (STEM). It uses a mix of hands-on and digital activities. The digital activities are delivered via ELSA apps for children, which are available at the preschool on iPad and/or Android tablets. 
+
+## ELSA apps 
+
+ELSA apps go beyond the screen to encourage active play and act as a springboard for children to explore the natural world. The apps encourage children to ask questions, make predictions, experiment, and reflect on what happened and why. 
+
+Each child in the pilot will use the ELSA apps for a maximum of 40 minutes per week (broken up into smaller sessions). The pilot aims to minimise screen time while maximising learning outcomes. 
+
+## Why STEM practices are important
+
+Our ELSA apps allow children to explore STEM practices. STEM practices are the ideas, methods and values that underpin STEM. They are important because they help children develop strong skills and values that are useful later in life, such as:
+* problem solving
+* communication
+* creativity
+* curiosity
+
+## ELSA and the Early Years Learning Framework
+
+ELSA is aligned with the Early Years Learning Framework (EYLF). This framework supports and enhances young children's learning from birth to five years of age, as well as their transition to school.
+
+## What will the ELSA pilot look like?
+
+Preschools are customising ELSA activities to meet the needs of families in their community. So the ELSA pilot will look different in different environments. Generally, though, you can expect that your child will interact with ELSA as part of their daily play and learning. 
+
+The ELSA pilot moves through three steps to introduce STEM concepts to children: experience, represent, apply.  
+
+### Step 1: Experience
+
+Firstly, children will experience STEM concepts. During this stage educators will help your child notice STEM concepts while they are playing - for example, while building towers with blocks or collecting seed pods outside. Educators will also prepare and direct fun experiences for your child that introduce STEM concepts.  
+
+### Step 2: Represent
+
+After these hands-on experiences, your child will have a chance to represent their ideas on an ELSA app. The app's educational games encourage them to do things like create colourful patterns and sort healthy food by shape, size, or another attribute they choose. 
+
+Activities on the apps have been designed for children to play together, communicate, and engage with the world around them. They can take photos and be creative as they play. 
+
+Watch this video to see a demonstration of the activities in the Patterns and Relationships app, the first ELSA app for children. 
+                    {% endmarkdown %}
+                </div>
+            </div>        
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/242871818" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-muted">
+                <div class="col-xs-12">
+                    {% markdown %}
+### Step 3: Apply
+
+Your child can then apply what they learn from the app with more hands-on activities. They may find new ways to express new ideas, and be inspired to do things differently with the ideas they have developed. 
+
+## Talk about ELSA 
+
+Talk to your child about how they are finding ELSA. As ELSA is still in development, we would love to hear your feedback, good or bad. The 2018 pilot is intended to find ways to improve ELSA, so feel free to share your experiences of the pilot with us. 
+
+You can contact us at team@elsa.edu.au or call 1800 931 042. Alternatively, you can fill out an anonymous survey. 
+
+Ways to be involved with ELSA
+
+ELSA is what you make it. Our apps and activities are designed for you to create alongside your preschool. 
+
+For the first three months of 2018, ELSA is focusing on patterns and relationships. 
+
+Here are some ways you can connect with your preschool:
+* Bring in a collection of shells, rocks or other objects for children to observe and sort.
+* Make bunting to hang around the preschool that has a sequenced pattern of colours. One of the ELSA activities is about creating patterns to put up around a cubby house. 
+* Make up a dance at home that has a pattern to it. For example: clap, clap, stomp, clap, clap stomp. Or clap, spin, clap, clap, spin clap. It can be any pattern and action you want. Your child can then do the dance with friends at preschool. The educator can even lead the whole class in a dance pattern activity. 
+
+Talk to your educator about how you can be involved in bringing ELSA to life.
+                    {% endmarkdown %}
+                </div>
+            </div>        
+        </div>
+    </section>
+
+{% endblock %}
