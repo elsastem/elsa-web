@@ -138,7 +138,7 @@
                 "body": [
                     "Before you can start the ELSA pilot in your centre, we need to know some information about the devices you'll be using. For example, how many devices you have, what type they are, and which operating system they run.",
                     "",
-                    "Please complete the [device survey]({{ linkUrls.deviceSurvey }})."
+                    "Please complete the [device survey](http://someform)."
                 ]
             },
             {
@@ -151,6 +151,7 @@
                     "Only nominated staff of a participating pilot centre can login to the ELSA apps. To add your details to the list, please ask your director to contact us.",
                     "",
                     "Email: [team@elsa.edu.au](mailto:team@elsa.edu.au)",
+                    "",
                     "Phone: 1800 931 042"
                 ]
             },
@@ -163,7 +164,7 @@
                 "body": [
                     "All children participating in the ELSA pilot need a signed consent form from a parent or legal guardian. This consent form needs to be completed before children use the apps. ",
                     "",
-                    "Parents and legal guardians can access the online [ELSA pilot consent form - children]({{ linkUrls.childContentForm }}). Alternatively, you can email them a link to the form: {{ linkUrls.childContentForm }}"
+                    "Parents and legal guardians can access the online [ELSA pilot consent form - children](http://someform). Alternatively, you can email them a link to the form: http://someform"
                 ]
             },
             {
@@ -188,10 +189,10 @@
                     "Before you start using the ELSA apps, try out these Experience activities with your children, so they can experience the concepts that will be delivered in the apps. This will help you and the children get familiar about STEM practices.",
                     "",
                     "Here are some activities you can use in the lead up to the ELSA pilot launch:",
-                    "* [Books about sorting]({{ linkUrls.sortingApp }})",
-                    "* [Let's tidy up]({{ linkUrls.tidyApp }})",
-                    "* [Books about ordering]({{ linkUrls.orderApp }})",
-                    "* [Extending a pattern]({{ linkUrls.patternApp }})"
+                    "* [Books about sorting](/app_sorting.html)",
+                    "* [Let's tidy up](/app_tidy.html)",
+                    "* [Books about ordering](/app_order.html)",
+                    "* [Extending a pattern](/app_pattern.html)"
                 ]
             },
             {

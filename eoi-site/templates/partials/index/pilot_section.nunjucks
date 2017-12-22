@@ -2,5 +2,5 @@
 {% import "macros/uibits.nunjucks" as uibits %}
 
 {% block body %} 
-    {{ uibits.timeline(context.timeline) }}
+    {{ uibits.timeline(context.timeline, linkUrls) }}
 {% endblock %}         

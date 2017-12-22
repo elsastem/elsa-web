@@ -1,5 +1,5 @@
 {% extends 'layout.nunjucks' %}
-{% import 'macros/uibits.nunjucks' as uibits %}
+{% import 'macros/uibits.nunjucks' as uibits with context%}
 
 {% block content %}
 
@@ -34,7 +34,7 @@ Before the ELSA launch, there are a few things we need from you so that you're r
             </div>        
             <div style="padding: 30px;"></div>
             
-            {{ uibits.timeline(educatorsContent.timeline) }}
+            {{ uibits.timeline(educatorsContent.timeline, linkUrls) }}
 
             <div class="row text-muted">
                 <div class="col-xs-12">
