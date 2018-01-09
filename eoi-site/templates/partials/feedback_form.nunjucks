@@ -1,15 +1,3 @@
-<div class="row header-row">
-    <div class="col-xs-12 text-center">
-        <h2 class="section-heading">Feedback</h2>
-        <h3 class="section-subheading text-muted"></h3>
-    </div>
-</div>
-<div class="row text-muted">
-    <div class="col-xs-12">
-        <form>
-            <h4>### Form Placeholder ###</h4>
-        </form>
-
-        <p>Your feedback helps us improve ELSA.</p>
-    </div>
-</div>        
+<form>
+    <h4>### Form Placeholder ###</h4>
+</form>

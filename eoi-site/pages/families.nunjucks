@@ -1,26 +1,13 @@
 {% extends 'layout.nunjucks' %}
+{% import 'macros/uibits.nunjucks' as uibits %}
 
 {% block content %}
+{% include 'partials/nav.nunjucks' %}
 
-    {% include 'partials/nav.nunjucks' %}
-
-    <!-- Header -->
-    <header class="just-pic">
-    </header>
-
-    <!-- Services Section -->
-    <section class="text-page">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h2 class="section-heading">For Families</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-            <div class="row text-muted">
-                <div class="col-xs-12">
-                    {% markdown %}
+{% call uibits.page_wrapper() -%}
+    {{ uibits.page_header("For Families") }}    
+    {% call uibits.page_section("", "", 0) -%}
+        {% call uibits.page_section_markdown() -%}
 # Your child and ELSA
 
 If your child is attending a preschool, kindergarten or early learning centre in the ELSA pilot, you may be wondering what this means for your family.
@@ -62,19 +49,9 @@ After these hands-on experiences, your child will have a chance to represent the
 Activities on the apps have been designed for children to play together, communicate, and engage with the world around them. They can take photos and be creative as they play. 
 
 Watch this video to see a demonstration of the activities in the Patterns and Relationships app, the first ELSA app for children. 
-                    {% endmarkdown %}
-                </div>
-            </div>        
-            <div class="row">
-                <div class="col-md-offset-2 col-md-8">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/242871818" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="row text-muted">
-                <div class="col-xs-12">
-                    {% markdown %}
+        {%- endcall %}
+        {{ uibits.page_section_video("https://player.vimeo.com/video/242871818") }}
+        {% call uibits.page_section_markdown() -%}
 ### Step 3: Apply
 
 Your child can then apply what they learn from the app with more hands-on activities. They may find new ways to express new ideas, and be inspired to do things differently with the ideas they have developed. 
@@ -97,12 +74,12 @@ Here are some ways you can connect with your preschool:
 * Make up a dance at home that has a pattern to it. For example: clap, clap, stomp, clap, clap stomp. Or clap, spin, clap, clap, spin clap. It can be any pattern and action you want. Your child can then do the dance with friends at preschool. The educator can even lead the whole class in a dance pattern activity. 
 
 Talk to your educator about how you can be involved in bringing ELSA to life.
-                    {% endmarkdown %}
-                </div>
-            </div>        
-
-            {% include 'partials/feedback_form.nunjucks' %}
-        </div>
-    </section>
+        {%- endcall %}
+    {%- endcall %}
+    {% call uibits.page_section("Feedback", "", 1) -%}
+        {% include 'partials/feedback_form.nunjucks' %}
+        <p>Your feedback helps us improve ELSA.</p>
+    {%- endcall %}
+{%- endcall %}
 
 {% endblock %}

@@ -1,31 +1,18 @@
 {% extends 'layout.nunjucks' %}
+{% import 'macros/uibits.nunjucks' as uibits %}
 
 {% block content %}
+{% include 'partials/nav.nunjucks' %}
 
-    {% include 'partials/nav.nunjucks' %}
-
-    <!-- Header -->
-    <header class="just-pic">
-    </header>
-
-    <!-- Services Section -->
-    <section class="text-page">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h2 class="section-heading">Professional Resources</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-            <div class="row text-muted">
-                <div class="col-xs-12">
-                    {% markdown %}
+{% call uibits.page_wrapper() -%}
+    {{ uibits.page_header("Professional Resources") }}    
+    {% call uibits.page_section("", "", 0) -%}
+        {% call uibits.page_section_markdown() -%}
 These videos and PowerPoint slides are from the two day ELSA workshops. 
 
 The videos and slides will be particularly helpful to any new educators and those who were unable to attend the workshop, or who would like a refresher. 
 
-#### Videos from ELSA workshops
+## Videos from ELSA workshops
 
 Day one video presentations:
 
@@ -47,7 +34,7 @@ Day two video presentations:
 * [ELSA apps in practice - location and arrangement: part 1 Tools for digital devices](https://www.youtube.com/watch?v=HOhfP0tVQcI&feature=youtu.be)
 * [ELSA apps in practice - location and arrangement: part 2](https://www.youtube.com/watch?v=bztcRVwbVeQ&feature=youtu.be)
 
-#### PowerPoint slides from ELSA workshops [H4]
+## PowerPoint slides from ELSA workshops
 
 Day one PowerPoint presentations:
 
@@ -60,11 +47,7 @@ Day two PowerPoint presentations:
 * Part 1
 * Part 2
 * Part 3                    
-                    {% endmarkdown %}
-                </div>
-            </div>        
-
-        </div>
-    </section>
-
+        {%- endcall %}
+    {%- endcall %}
+{%- endcall %}
 {% endblock %}

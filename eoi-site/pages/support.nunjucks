@@ -1,49 +1,29 @@
 {% extends 'layout.nunjucks' %}
-{% import "macros/uibits.nunjucks" as uibits %}
+{% import 'macros/uibits.nunjucks' as uibits %}
 
 {% block content %}
+{% include 'partials/nav.nunjucks' %}
 
-    {% include 'partials/nav.nunjucks' %}
-
-    <!-- Header -->
-    <header class="just-pic">
-    </header>
-
-    <!-- Services Section -->
-    <section class="text-page">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h2 class="section-heading">ELSA Support</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-            <div class="row text-muted">
-                <div class="col-xs-12">
-                    {% markdown %}
+{% call uibits.page_wrapper() -%}
+    {{ uibits.page_header("ELSA Support") }}    
+    {% call uibits.page_section("", "", 0) -%}
+        {% call uibits.page_section_markdown() -%}
 If you have a question about the ELSA pilot or need help, please fill out a form below or contact ELSA Support.
 
 Email: [support@elsa.edu.au](mailto:support@elsa.edu.au)
 Phone: 1800 931 042
 
 We will get back to you as soon as possible about your issue. 
-                    {% endmarkdown %}
-                </div>
-            </div>        
+        {%- endcall %}
+    {%- endcall %}
 
-            {% include 'partials/feedback_form.nunjucks' %}
+    {% call uibits.page_section("Feedback", "", 1) -%}
+        {% include 'partials/feedback_form.nunjucks' %}
+        <p>Your feedback helps us improve ELSA.</p>
+    {%- endcall %}
 
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h2 class="section-heading">FAQ</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-
-            {{ uibits.render_faq(faq) }}
-
-        </div>
-    </section>
-
+    {% call uibits.page_section("FAQ", "", 2) -%}
+        {{ uibits.render_faq(faq) }}
+    {%- endcall %}
+{%- endcall %}
 {% endblock %}
