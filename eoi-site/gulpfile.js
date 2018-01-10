@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var less = require('gulp-less');
 var data = require('gulp-data');
 var nunjucksRender = require('gulp-nunjucks-render');
+var nunjucks = require('nunjucks');
 var browserSync = require('browser-sync').create();
 var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
@@ -12,6 +13,8 @@ var fs = require('fs');
 var markdown = require('nunjucks-markdown');
 var marked = require('marked');
 const csv = require('csvtojson');
+const contentful = require('contentful');
+const mkpath = require('mkpath');
 
 var BUILD_DIR = "./build"
 
@@ -33,6 +36,45 @@ marked.setOptions({
     sanitize: false,
     smartLists: true,
     smartypants: false
+});
+
+const contentfulClient = contentful.createClient({
+    space: 'wvupwhynylhj',
+    accessToken: 'dd6640a13e7476336bfb9ac596fb548b03b7505eba03cc3351bf347aad89b2fa'
+})
+
+gulp.task('contentfullActivities', function (cb) {
+    var mainData = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
+    var options = {
+        path: 'templates',
+        ext: '.html',
+        data: {},
+        inheritExtension: false,
+        envOptions: {
+            watch: false
+        },
+        manageEnv: null
+    };
+    options.loaders = new nunjucks.FileSystemLoader(options.path);
+    nunjucks.configure(options.envOptions);
+    var compile = new nunjucks.Environment(options.loaders, options.envOptions);
+    markdown.register(compile, marked);
+
+    contentfulClient.getEntries({
+        content_type: "activity",
+    }).then(entries => {
+        entries.items.forEach(activity => {
+            var context = Object.assign({}, activity, mainData);
+            if(activity.sys.id == "5c2QP64hIIKkiy6COEe6UY")
+                console.log(activity);
+            var result = compile.render("activity.nunjucks", context);
+            var path = BUILD_DIR + `/activities`;
+            mkpath.sync(path)
+            var filename = path + `/${activity.sys.id}.html`;
+            fs.writeFileSync(filename, result);
+        });
+        cb();
+    })
 });
 
 gulp.task('nunjucks', function () {
@@ -149,7 +191,7 @@ gulp.task('copy', function () {
 })
 
 // Run everything
-gulp.task('default', ['nunjucks', 'less', 'minify-css', 'copy-js', 'minify-js', 'copy', 'copy-docs']);
+gulp.task('default', ['nunjucks', 'contentfullActivities', 'less', 'minify-css', 'copy-js', 'minify-js', 'copy', 'copy-docs']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function () {
@@ -162,7 +204,7 @@ gulp.task('browserSync', function () {
 })
 
 // Dev task with browserSync
-gulp.task('dev', ['copy', 'browserSync', 'nunjucks', 'less', 'copy-js', 'minify-css', 'minify-js', 'copy-docs'], function () {
+gulp.task('dev', ['copy', 'browserSync', 'contentfullActivities', 'nunjucks', 'less', 'copy-js', 'minify-css', 'minify-js', 'copy-docs'], function () {
     gulp.watch('data*', ['nunjucks']);
     gulp.watch('less/*.less', ['less', 'minify-css']);
     gulp.watch('js/*.js', ['copy-js', 'minify-js']);

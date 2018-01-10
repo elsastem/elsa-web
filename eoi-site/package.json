@@ -36,8 +36,10 @@
     "url": "https://github.com/BlackrockDigital/startbootstrap-agency.git"
   },
   "dependencies": {
+    "contentful": "^5.0.5",
     "csvtojson": "^1.1.9",
     "datatables.net": "^1.10.16",
-    "datatables.net-bs": "^1.10.16"
+    "datatables.net-bs": "^1.10.16",
+    "mkpath": "^1.0.0"
   }
 }

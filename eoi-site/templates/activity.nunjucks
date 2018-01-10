@@ -1,0 +1,16 @@
+{% extends 'layout.nunjucks' %}
+{% import 'macros/uibits.nunjucks' as uibits %}
+
+{% block content %}
+{% include 'partials/nav.nunjucks' %}
+
+{% call uibits.page_wrapper() -%}
+    {{ uibits.page_header("Activity") }}    
+    {% call uibits.page_section(fields.title, "", 0) -%}
+        {% call uibits.page_section_markdown() -%}
+{{ fields.body }}
+        {%- endcall %}
+    {%- endcall %}
+{%- endcall %}
+
+{% endblock %}
