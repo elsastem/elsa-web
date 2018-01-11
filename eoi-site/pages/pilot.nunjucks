@@ -15,19 +15,25 @@
     {{ uibits.page_header("2018 ELSA Pilot") }}    
     {% call uibits.page_section("", "", 0) -%}
         {% call uibits.page_section_markdown() -%}
-One hundred preschools, kindergartens and early learning centres from across Australia have been selected to take part in the 2018 ELSA pilot. 
+One hundred preschool services from across Australia have been selected to take part in the 2018 ELSA Pilot. 
 
-Explore the tables below to discover ELSA pilot preschools and user experience evaluation centres in your area. 
+Explore the tables below to discover ELSA Pilot preschool services and user experience evaluation centres in your area. 
 
-* [Preschools](#schoolTableNav)
-* [User experience evaluation centres](#evalTableNav)
+- [Preschool services](#schoolTableNav)
+- [User experience evaluation centres](#evalTableNav)
 
-An expression of interest process occurred in 2017. We received applications from services in a wide range of locations, including remote, regional and urban areas across Australia, in every state and territory. 
+How pilot centres were selected [H2]
 
-Pilot preschools were selected to create a group that reflects the diversity of preschools and communities around the country. 
+An expression of interest process occurred in 2017. We received applications from services across Australia in a wide range of locations, including remote, regional and urban areas in every state and territory. 
 
-The ELSA Pilot will start in preschools in Term 1 2018. To stay updated with the latest news about ELSA and resources about STEM in early learning, please [sign up to our newsletter](#signup).
-If you have any questions, please contact us at [team@elsa.edu.au](mailto:team@elsa.edu.au).
+Pilot preschool services were selected to create a group that reflects the diversity of preschools and communities around the country. 
+
+## Get updates on the ELSA Pilot
+
+The ELSA Pilot will start in preschool services during Term 1, 2018. To stay updated with the latest news about ELSA and information about STEM practices, please [sign up to our newsletter](#signup).
+If you have any questions, please contact [ELSA support](/support.html).
+
+## Preschool services
         {%- endcall %}
         <div class="row text-muted" id="schoolTableNav">
             <div class="col-xs-12">
@@ -60,7 +66,7 @@ If you have any questions, please contact us at [team@elsa.edu.au](mailto:team@e
         {% call uibits.page_section_markdown() -%}
 ## User experience evaluation centres
 
-As well as pilot preschools, ELSA is also available at a small group of user experience evaluation centres. These centres are helping the ELSA team at University of Canberra to develop the program, and have given their time to try out software and provide feedback during development.  
+As well as pilot preschool services, ELSA is also available at a small group of user experience evaluation centres. These centres are helping the ELSA team at the University of Canberra to develop the program, and have given their time to try out software and provide feedback during development of the ELSA apps.  
         {%- endcall %}
         <div class="row text-muted" id="evalTableNav">
             <div class="col-xs-12">

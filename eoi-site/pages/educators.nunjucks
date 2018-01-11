@@ -8,13 +8,13 @@
     {{ uibits.page_header("For Educators") }}    
     {% call uibits.page_section("", "", 0) -%}
         {% call uibits.page_section_markdown() -%}
-Welcome to all educators taking part in the ELSA pilot. We hope you're as excited as we are!
+Welcome to all educators taking part in the ELSA Pilot. We hope you're as excited as we are!
 
-To help you prepare for the pilot, we've included some key information and resources below, including how to contact our help desk. 
+To help you prepare for the pilot, we've included some key information and resources below. 
 
 ## Get ready for launch
 
-Before the ELSA launch, there are a few things we need from you so that you're ready to go when the apps are released. 
+Before ELSA launches, we need a few things from you to make sure you're ready to start when the apps are released. 
         {%- endcall %}
 
         <div class="text-muted" style="margin: 100px 0;">
@@ -24,14 +24,7 @@ Before the ELSA launch, there are a few things we need from you so that you're r
         {% call uibits.page_section_markdown() -%}
 ## ELSA support
 
-If you are have any questions or need help with these steps, please contact ELSA support. 
-
-We will aim to get back to you as soon as possible and resolve your issue. 
-
-Contact ELSA support on:
-
-Email: [support@elsa.edu.au](mailto: support@elsa.edu.au)
-Phone: 1800 931 042
+If you have any questions or need help with these steps, please contact [ELSA support](/support.html)
 
         {%- endcall %}
     {%- endcall %}
