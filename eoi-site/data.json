@@ -21,12 +21,12 @@
                 "subText": "",
                 "links": [
                     {
-                        "text": "For Families",
-                        "url": "/families.html"
-                    },
-                    {
                         "text": "For Educators",
                         "url": "/educators.html"
+                    },
+                    {
+                        "text": "For Families",
+                        "url": "/families.html"
                     }
                 ]
             },
@@ -39,7 +39,7 @@
                     {
                         "icon": "fa-flash",
                         "title": "Preschool",
-                        "body": "Early Learning STEM Australia (ELSA) is a play-based digital learning program for children in preschool to explore science, technology, engineering and mathematics (STEM)."
+                        "body": "Early Learning STEM Australia (ELSA) is a play-based digital learning program for children in preschool to explore science, technology, engineering and mathematics (STEM) practices."
                     },
                     {
                         "icon": "fa-mobile",
@@ -49,7 +49,7 @@
                     {
                         "icon": "fa-graduation-cap",
                         "title": "Pilot",
-                        "body": "In 2018, one hundred preschools from across Australia will join the first ELSA Pilot. The pilot program includes professional learning for educators, and real world play for children to complement the apps. [Discover the ELSA Pilot preschools](/pilot.html) in your area."
+                        "body": "One hundred preschool services from across Australia?are taking part in the 2018 ELSA Pilot. The pilot program includes professional learning for educators, and real-world play for children to complement the apps. [Discover the ELSA Pilot preschools](/pilot.html) in your area."
                     }
                 ]
             },
@@ -57,23 +57,22 @@
                 "id": "stem",
                 "menu": "STEM",
                 "title": "Learning outcomes",
-                "subtitle": "Benefits of the ELSA program",
+                "subtitle": "Benefits of the ELSA Pilot",
                 "image": {
                     "url": "/img/photos/elsa/ELSA_web_plants_resized.jpg",
                     "alt": "Child with big smile"
                 },
                 "content": [
-                    "One hundred preschools across Australia have been selected to take part in the ELSA Pilot. These preschools will receive free workshops and be the first to use the ELSA apps and resources to incorporate STEM practices into their preschool program.",
+                    "Educators from the 100 preschool services selected to take part in the ELSA Pilot will have opportunities to attend free workshops and will be the first to use the ELSA apps. They'll also receive resources to incorporate STEM practices into their preschool program.",
                     "",
-                    "STEM practices are the ideas, methods and values that underpin STEM, such as curiosity, team work, and creativity.",
+                    "STEM practices are the ideas, methods and values that underpin STEM, such as curiosity, team work and creativity. Exploring STEM practices helps children develop strong skills in many areas like problem solving and communication that are useful later in life.",
                     "",
-                    "Exploring STEM practices helps children weave strong skills in many areas such as problem solving and communication that are useful later in life.",
+                    "ELSA can help educators to explore STEM practices as part of their preschool program and provide the best learning outcomes for children.",
                     "",
-                    "ELSA can help educators with:",
-                    "+ Gaining more confidence in exploring STEM at your preschool to provide the best learning outcomes for children.",
-                    "+ A host of resources aligned with the Early Years Learning Framework (EYLF) and linked to the Australian Curriculum, plus ways to share ideas with a supportive network of early learning professionals.",
-                    "+ New ways to engage families through the ELSA family app, which will extend the learning into home.",
-                    "+ Innovative ideas for children to explore, investigate and have meaningful experiences in the natural world.",
+                    "ELSA will also provide:",
+                    "+ a host of resources aligned with the Early Years Learning Framework (EYLF) and linked to the Australian Curriculum, plus ways to share ideas with a supportive network of early learning professionals",
+                    "+ new ways to engage families through the ELSA Families app, which will extend learning into homes",
+                    "+ innovative ideas for children to explore, investigate and have meaningful experiences in the natural world.",
                     "",
                     "ELSA is free and operates on a bring your own device (BYOD) basis."
                 ]
