@@ -15,8 +15,12 @@ var marked = require('marked');
 const csv = require('csvtojson');
 const contentful = require('contentful');
 const mkpath = require('mkpath');
+const childProcess = require('child_process')
 
 var BUILD_DIR = "./build"
+
+var commit = childProcess.execSync('git rev-parse HEAD').toString().trim();
+console.log(commit);
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -97,6 +101,7 @@ gulp.task('nunjucks', function () {
                         })
                         .on('end', () => {
                             var result = Object.assign({}, mainData, { schoolData }, { evalData });
+                            result.gitcommit = commit;
                             cb(null, result);
                         });
                 });

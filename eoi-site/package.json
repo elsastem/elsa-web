@@ -29,7 +29,9 @@
     "marked": "^0.3.6",
     "nunjucks-markdown": "^2.0.1",
     "select2": "^4.0.5",
-    "twitter-bootstrap-wizard": "^1.2.0"
+    "twitter-bootstrap-wizard": "^1.2.0",
+    "gulp-cache-bust": "^1.1.0",
+    "mkpath": "^1.0.0"
   },
   "repository": {
     "type": "git",
@@ -39,7 +41,6 @@
     "contentful": "^5.0.5",
     "csvtojson": "^1.1.9",
     "datatables.net": "^1.10.16",
-    "datatables.net-bs": "^1.10.16",
-    "mkpath": "^1.0.0"
+    "datatables.net-bs": "^1.10.16"
   }
 }
