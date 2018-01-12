@@ -8,9 +8,9 @@
     {{ uibits.page_header("Professional Resources") }}    
     {% call uibits.page_section("", "", 0) -%}
         {% call uibits.page_section_markdown() -%}
-These videos and PowerPoint slides are from the two day ELSA workshops. 
+These videos and PowerPoint slides are from the two-day ELSA workshops held in 2017. 
 
-The videos and slides will be particularly helpful to any new educators and those who were unable to attend the workshop, or who would like a refresher. 
+The videos and slides will be particularly helpful to any new educators and those who were unable to attend a workshop, as well as anyone who would like a refresher. 
 
 ## Videos from ELSA workshops
 
@@ -19,10 +19,10 @@ Day one video presentations:
 * [Welcome to the ELSA pilot](https://www.youtube.com/watch?v=GiDXpcDkcK4&feature=youtu.be)
 * [Why early years educators already embrace STEM](https://www.youtube.com/watch?v=rXCeA4Ndpvw&feature=youtu.be)
 * [STEM in early childhood education](https://www.youtube.com/watch?v=DIasYduzJeU&feature=youtu.be)
-* [Spatial Reasoning](https://www.youtube.com/watch?v=FQtGzOrBzTg&feature=youtu.be)
+* [Spatial reasoning](https://www.youtube.com/watch?v=FQtGzOrBzTg&feature=youtu.be)
 * [STEM practices](https://www.youtube.com/watch?v=DFZdflmZswE&feature=youtu.be)
 * [What is early learning STEM Australia](https://www.youtube.com/watch?v=6vJ49EB0BqM&feature=youtu.be)
-* [ELSA apps in practice - patterns and relationships](https://www.youtube.com/watch?v=0z_M2NGp2M0&feature=youtu.be)
+* [ELSA apps in practice - Patterns and Relationships](https://www.youtube.com/watch?v=0z_M2NGp2M0&feature=youtu.be)
 
 Day two video presentations:
 
@@ -31,22 +31,89 @@ Day two video presentations:
 * [STEM in picture books: part 3](https://www.youtube.com/watch?v=OoOHzy7EPlc&feature=youtu.be)
 * [Digital technology in early childhood learning](https://www.youtube.com/watch?v=ObND2vJ49Pg&feature=youtu.be)
 * [ELSA for educators](https://www.youtube.com/watch?v=ifMXkZkfCy0&feature=youtu.be)
-* [ELSA apps in practice - location and arrangement: part 1 Tools for digital devices](https://www.youtube.com/watch?v=HOhfP0tVQcI&feature=youtu.be)
-* [ELSA apps in practice - location and arrangement: part 2](https://www.youtube.com/watch?v=bztcRVwbVeQ&feature=youtu.be)
+* [ELSA apps in practice - Location and Arrangement: part 1 Tools for digital devices](https://www.youtube.com/watch?v=HOhfP0tVQcI&feature=youtu.be)
+* [ELSA apps in practice - Location and Arrangement: part 2](https://www.youtube.com/watch?v=bztcRVwbVeQ&feature=youtu.be)
 
 ## PowerPoint slides from ELSA workshops
 
 Day one PowerPoint presentations:
 
-* Part 1
-* Part 2
-* Part 3
+<ul class="file-list">
+    <li> 
+        <i class="fa fa-file-powerpoint-o file-icon" aria-hidden="true"></i>
+         [Part 1 (PPTX)](/docs/SYD_Day 1_1 ELSA workshop.pptx)
+    </li>
+    <ul>
+        <li>Welcome</li>
+        <li>Postcard matching</li>
+        <li>Why early years educators already embrace STEM practices</li>
+        <li>STEM in early childhood education</li>
+        <li>Why STEM in the early years?</li>
+        <li>Spatial reasoning</li>
+        <li>STEM practices</li>
+    </ul>
+</ul>
+
+<ul class="file-list">
+    <li> 
+        <i class="fa fa-file-powerpoint-o file-icon" aria-hidden="true"></i>
+         [Part 2 (PPTX)](/docs/SYD_Day 1_2 ELSA workshop.pptx)
+    </li>
+    <ul>
+        <li>What is Early Learning STEM Australia?</li>
+        <li>ELSA apps in practice - Patterns and Relationships</li>
+    </ul>
+</ul>
+
+<ul class="file-list">
+    <li> 
+        <i class="fa fa-file-powerpoint-o file-icon" aria-hidden="true"></i>
+         [Part 3 (PPTX)](/docs/SYD_Day 1_3 ELSA workshop.pptx)
+    </li>
+    <ul>
+        <li>STEM practices and children's literature</li>
+        <li>ELSA action plan</li>
+        <li>Day one reflection</li>
+    </ul>
+</ul>
 
 Day two PowerPoint presentations: 
 
-* Part 1
-* Part 2
-* Part 3                    
+<ul class="file-list">
+    <li> 
+        <i class="fa fa-file-powerpoint-o file-icon" aria-hidden="true"></i>
+         [Part 1 (PPTX)](/docs/SYD_Day 2_1 ELSA workshops.pptx)
+    </li>
+    <ul>
+        <li>Welcome</li>
+        <li>STEM practices - applying our knowledge </li>
+        <li>Digital technology in early childhood learning</li>
+    </ul>
+</ul>
+
+<ul class="file-list">
+    <li> 
+        <i class="fa fa-file-powerpoint-o file-icon" aria-hidden="true"></i>
+         [Part 2 (PPTX)](/docs/SYD_Day 2_2 ELSA workshops.pptx)
+    </li>
+    <ul>
+        <li>Preparing for the ELSA Pilot</li>
+        <li>ELSA apps in practice - Location and Arrangement</li>
+    </ul>
+</ul>
+
+<ul class="file-list">
+    <li> 
+        <i class="fa fa-file-powerpoint-o file-icon" aria-hidden="true"></i>
+         [Part 3 (PPTX)](/docs/SYD_Day 2_3_ELSA workshop.pptx)
+    </li>
+    <ul>
+        <li>An introduction to communities of practice in the ELSA Pilot</li>
+        <li>ELSA action plan</li>
+        <li>Final reflections</li>
+    </ul>
+</ul>
+
         {%- endcall %}
     {%- endcall %}
 {%- endcall %}
