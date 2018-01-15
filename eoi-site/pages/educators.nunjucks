@@ -24,7 +24,7 @@ Before ELSA launches, we need a few things from you to make sure you're ready to
         {% call uibits.page_section_markdown() -%}
 ## ELSA support
 
-If you have any questions or need help with these steps, please contact [ELSA support](/support.html)
+If you have any questions or need help with these steps, please contact [ELSA support](/support.html).
 
         {%- endcall %}
     {%- endcall %}
