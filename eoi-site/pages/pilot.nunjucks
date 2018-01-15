@@ -10,8 +10,7 @@
 
 {% block content %}
 {% include 'partials/nav.nunjucks' %}
-
-<{% call uibits.page_wrapper() -%}
+{% call uibits.page_wrapper() -%}
     {{ uibits.page_header("2018 ELSA Pilot") }}    
     {% call uibits.page_section("", "", 0) -%}
         {% call uibits.page_section_markdown() -%}
