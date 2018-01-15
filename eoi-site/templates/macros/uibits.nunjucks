@@ -105,6 +105,19 @@
     </section>
 {% endmacro%}
 
+{% macro page_section_markdown_with_image(imgUrl, altText = 'an image') %}
+    <div class="row">
+        <div class="col-md-6">
+            {% markdown %}
+{{ caller() }}            
+            {% endmarkdown %}
+        </div>
+        <div class="col-md-6">
+            <img class="img-responsive" src="{{imgUrl}}" alt="{{altText}}">
+        </div>
+    </div>
+{% endmacro%}
+
 {% macro page_section_markdown() %}
    <div class="row text-muted">
         <div class="col-lg-offset-1 col-lg-10">

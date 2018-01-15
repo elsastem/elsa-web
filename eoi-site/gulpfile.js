@@ -159,10 +159,13 @@ gulp.task('copy-docs', function () {
         .pipe(gulp.dest(`${BUILD_DIR}/docs`))
 });
 
-// Copy vendor libraries from /node_modules into /vendor
-gulp.task('copy', function () {
+gulp.task('copy-imgs', function () {
     gulp.src(['img/**/*', '!img/photos/elsa/unused/**/*'])
-        .pipe(gulp.dest(`${BUILD_DIR}/img`))
+        .pipe(gulp.dest(`${BUILD_DIR}/img`));
+});
+
+// Copy vendor libraries from /node_modules into /vendor
+gulp.task('copy', ['copy-imgs'], function () {
 
     gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
         .pipe(gulp.dest(`${BUILD_DIR}/vendor/bootstrap`))
@@ -211,6 +214,7 @@ gulp.task('browserSync', function () {
 // Dev task with browserSync
 gulp.task('dev', ['copy', 'browserSync', 'contentfullActivities', 'nunjucks', 'less', 'copy-js', 'minify-css', 'minify-js', 'copy-docs'], function () {
     gulp.watch('data*', ['nunjucks']);
+    gulp.watch('img/**', ['copy-imgs']);
     gulp.watch('less/*.less', ['less', 'minify-css']);
     gulp.watch('js/*.js', ['copy-js', 'minify-js']);
     gulp.watch('pages/**/*.+(html|nunjucks)', ['nunjucks'])
