@@ -38,7 +38,7 @@ ELSA is aligned with the Early Years Learning Framework (EYLF). EYLF describes o
     {%- endcall %}
     {% call uibits.page_section("What will the ELSA Pilot look like?", "", 1) -%}
         {% call uibits.page_section_markdown() -%}
-            {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1701631.jpg", "Happy child with iPad in classroom") -%}
+            {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1701631.jpg", "Happy child with iPad in classroom", 8) -%}
 Preschool services are customising ELSA activities to meet the needs of children and families in their community. This means that the ELSA Pilot may look different in other services. Generally, though, you can expect that your child will interact with ELSA as part of their daily play and learning. 
 
 The ELSA Pilot will introduce STEM concepts and practices to children via three steps - experience, represent and apply - using on and off-app activities.  
@@ -69,11 +69,12 @@ Your child will now be able to apply what they learn from the app with more hand
         {% call uibits.page_section_markdown() -%}
             {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1700994.jpg", "Children gather around educator") -%}  
 We recommend that you talk to your child about the ELSA Pilot and find out what they've been doing. Ask your child what activities they are enjoying and not enjoying, and why. As ELSA is still in development, and the 2018 pilot is intended to find ways to improve ELSA, we would love to hear about their experiences and feedback.
-            {%- endcall %}
 
 ### Share your feedback with us
 
 You can share your feedback of the ELSA Pilot with us using our online form. Alternatively, you can email [team@elsa.edu.au](mailto:team@elsa.edu.au) or call 1800 931 042. 
+
+            {%- endcall %}
 
 ### Ways to be involved with ELSA
 

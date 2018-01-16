@@ -14,7 +14,7 @@
     {{ uibits.page_header("2018 ELSA Pilot") }}    
     {% call uibits.page_section("", "", 0) -%}
         {% call uibits.page_section_content() -%}
-            {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1701916.jpg", "3 Kids around iPads") -%}
+            {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1701916.jpg", "3 Kids around iPads", 8) -%}
 One hundred preschool services from across Australia have been selected to take part in the 2018 ELSA Pilot. 
 
 Explore the tables below to discover ELSA Pilot preschool services and user experience evaluation centres in your area. 
