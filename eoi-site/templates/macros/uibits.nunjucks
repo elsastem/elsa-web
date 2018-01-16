@@ -105,7 +105,7 @@
     </section>
 {% endmacro%}
 
-{% macro page_section_markdown_with_image(imgUrl, altText = 'an image') %}
+{% macro page_section_markdown_with_image(imgUrl, altText = '') %}
     <div class="row">
         <div class="col-md-6">
             {% markdown %}

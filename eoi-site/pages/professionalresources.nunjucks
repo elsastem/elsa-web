@@ -8,12 +8,15 @@
     {{ uibits.page_header("Professional Resources") }}    
     {% call uibits.page_section("", "", 0) -%}
         {% call uibits.page_section_markdown() -%}
+            {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1701916.jpg", "3 Kids around iPads") -%}
 These videos and PowerPoint slides are from the two-day ELSA workshops held in 2017. 
 
 The videos and slides will be particularly helpful to any new educators and those who were unable to attend a workshop, as well as anyone who would like a refresher. 
-
-## Videos from ELSA workshops
-
+            {%- endcall %}
+        {%- endcall %}
+    {%- endcall %}
+    {% call uibits.page_section("Videos from ELSA workshops", "", 1) -%}        
+        {% call uibits.page_section_markdown() -%}
 Day one video presentations:
 
 * [Welcome to the ELSA pilot](https://www.youtube.com/watch?v=GiDXpcDkcK4&feature=youtu.be)
@@ -33,8 +36,11 @@ Day two video presentations:
 * [ELSA for educators](https://www.youtube.com/watch?v=ifMXkZkfCy0&feature=youtu.be)
 * [ELSA apps in practice - Location and Arrangement: part 1 Tools for digital devices](https://www.youtube.com/watch?v=HOhfP0tVQcI&feature=youtu.be)
 * [ELSA apps in practice - Location and Arrangement: part 2](https://www.youtube.com/watch?v=bztcRVwbVeQ&feature=youtu.be)
+        {%- endcall %}
+    {%- endcall %}
 
-## PowerPoint slides from ELSA workshops
+    {% call uibits.page_section("PowerPoint slides from ELSA workshops", "", 2) -%}
+        {% call uibits.page_section_markdown() -%}
 
 Day one PowerPoint presentations:
 
