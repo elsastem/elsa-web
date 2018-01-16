@@ -8,11 +8,12 @@
     {{ uibits.page_header("For Families") }}    
     {% call uibits.page_section("", "", 0) -%}
         {% call uibits.page_section_markdown() -%}
+            {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1700676.jpg", "4 Kids on a rocks with iPad") -%}
 # Your child and ELSA
-
 If your child is attending a preschool service taking part in the ELSA pilot, you may be wondering what this means for your family.
 
 ELSA is a new pilot designed to help children explore science, technology, engineering and mathematics (STEM) through hands-on and digital activities. The digital activities are delivered via ELSA children apps, which are available at the preschool service on their iPad and/or Android tablets. 
+            {%- endcall %}
 
 ## ELSA apps
 
@@ -33,11 +34,15 @@ The ELSA Pilot enables children to explore STEM practices. These are the ideas, 
 
 ELSA is aligned with the Early Years Learning Framework (EYLF). EYLF describes outcomes which support and enhance young children's learning from birth to five years of age, as well as their transition to school.
 
-## What will the ELSA Pilot look like?
-
+        {%- endcall %}
+    {%- endcall %}
+    {% call uibits.page_section("What will the ELSA Pilot look like?", "", 1) -%}
+        {% call uibits.page_section_markdown() -%}
+            {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1701631.jpg", "Happy child with iPad in classroom") -%}
 Preschool services are customising ELSA activities to meet the needs of children and families in their community. This means that the ELSA Pilot may look different in other services. Generally, though, you can expect that your child will interact with ELSA as part of their daily play and learning. 
 
 The ELSA Pilot will introduce STEM concepts and practices to children via three steps - experience, represent and apply - using on and off-app activities.  
+            {%- endcall %}
 
 ### Step 1: Experience
 
@@ -58,9 +63,13 @@ Watch this video to see a demonstration of activities in the Patterns and Relati
 
 Your child will now be able to apply what they learn from the app with more hands-on activities. They may find new ways to express ideas, and be inspired to do things differently with the ideas they have developed. They will also be able to take photos and be creative as they play. 
 
-## Talk about ELSA 
-
+        {%- endcall %}
+    {%- endcall %}
+    {% call uibits.page_section("Talk about ELSA", "", 2) -%}
+        {% call uibits.page_section_markdown() -%}
+            {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1700994.jpg", "Children gather around educator") -%}  
 We recommend that you talk to your child about the ELSA Pilot and find out what they've been doing. Ask your child what activities they are enjoying and not enjoying, and why. As ELSA is still in development, and the 2018 pilot is intended to find ways to improve ELSA, we would love to hear about their experiences and feedback.
+            {%- endcall %}
 
 ### Share your feedback with us
 

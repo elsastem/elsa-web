@@ -8,7 +8,7 @@
     {{ uibits.page_header("Professional Resources") }}    
     {% call uibits.page_section("", "", 0) -%}
         {% call uibits.page_section_markdown() -%}
-            {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1701916.jpg", "3 Kids around iPads") -%}
+            {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1712873.jpg", "Educator with child and iPads") -%}
 These videos and PowerPoint slides are from the two-day ELSA workshops held in 2017. 
 
 The videos and slides will be particularly helpful to any new educators and those who were unable to attend a workshop, as well as anyone who would like a refresher. 
