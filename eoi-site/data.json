@@ -49,7 +49,7 @@
                     {
                         "icon": "fa-graduation-cap",
                         "title": "Pilot",
-                        "body": "One hundred preschool services from across Australia?are taking part in the 2018 ELSA Pilot. The pilot program includes professional learning for educators, and real-world play for children to complement the apps. [Discover the ELSA Pilot preschools](/pilot.html) in your area."
+                        "body": "One hundred preschool services from across Australia are taking part in the 2018 ELSA Pilot. The pilot program includes professional learning for educators, and real-world play for children to complement the apps. [Discover the ELSA Pilot preschools](/pilot.html) in your area."
                     }
                 ]
             },
@@ -65,7 +65,7 @@
                 "content": [
                     "Educators from the 100 preschool services selected to take part in the ELSA Pilot will have opportunities to attend free workshops and will be the first to use the ELSA apps. They'll also receive resources to incorporate STEM practices into their preschool program.",
                     "",
-                    "STEM practices are the ideas, methods and values that underpin STEM, such as curiosity, team work and creativity. Exploring STEM practices helps children develop strong skills in many areas like problem solving and communication that are useful later in life.",
+                    "STEM practices are the ideas, methods and values that underpin STEM, such as curiosity, team work and creativity. Exploring STEM practices helps children develop strong skills in many areas - like problem solving and communication - that are useful later in life.",
                     "",
                     "ELSA can help educators to explore STEM practices as part of their preschool program and provide the best learning outcomes for children.",
                     "",
@@ -112,7 +112,7 @@
                         },
                         "title": "CONNECTED TO COMMUNITY",
                         "body": [
-                            "Educators in the ELSA Pilot contribute to a community of practice, sharing ideas, skills and knowledge. ELSA also supports educators to connect with families. Learning can be extended from the preschool to home, with our Families app coming in early 2018. [Sign up to our newsletter](#signup) to receive all the latest news about the ELSA Pilot and information about STEM practices in early learning."
+                            "Educators in the ELSA Pilot contribute to a community of practice, sharing ideas, skills and knowledge. ELSA also supports educators to connect with families. Learning can be extended from the preschool to home, with the ELSA Families app coming in early 2018. [Sign up to our newsletter](#signup) to receive all the latest news about the ELSA Pilot and information about STEM practices in early learning."
                         ]
                     },
                     {
@@ -203,21 +203,13 @@
                 "body": [
                     "When the first ELSA apps are released, you will receive an email notifying you to download them from the App Store or Google Play, and a quickstart guide for setting up the apps. ",
                     "",
-                    "The first thing to do is to log in with your details and verify your identity. Make sure you are a nominated staff at your centre, as we need to have your details in the ELSA system to give you access. See become a nominated staff above for more information."
+                    "The first thing to do is to log in with your details and verify your identity. Make sure you are a nominated staff at your centre, as we need to have your details in the ELSA system to give you access. See become an approved ELSA Pilot user above for more information."
                 ]
             }
         ]
     },
     "faq": {
         "questions": [
-            {
-                "q": "What is ELSA?",
-                "a": [
-                    "The Early Learning STEM Australia (ELSA)  Pilot will provide early learning educators  with opportunities  to facilitate preschool children to engage in STEM practices. The Pilot will commence in 2018 and be delivered via a series of digital applications, activities and workshops to create a play based learning environment rich in STEM practices, such as exploring locations, patterns, problem solving, designing, making and spatial reasoning.",
-                    "",
-                    "ELSA is a key early childhood initiative of the Australian Government?s National Innovation and Science Agenda. It supports the Inspiring all Australians in digital literacy and STEM measure, which seeks to increase the participation of Australian children in STEM and improve their digital literacy."
-                ]
-            },
             {
                 "q": "What is STEM?",
                 "a": [
@@ -248,7 +240,7 @@
                 ]
             },
             {
-                "q": "How can I join the Pilot?",
+                "q": "How can I join the pilot?",
                 "a": [
                     "Applications for the 2018 ELSA Pilot have closed. ",
                     "",
@@ -256,9 +248,9 @@
                 ]
             },
             {
-                "q": "When does the Pilot start?",
+                "q": "When does the pilot start?",
                 "a": [
-                    "The ELSA Pilot will start in preschool services in Term 1, 2018. Apps and further workshops for educators will be rolled out during�2018."
+                    "The ELSA Pilot will start in preschool services in Term 1, 2018. Apps and further workshops for educators will be rolled out during 2018."
                 ]
             },
             {
@@ -292,7 +284,7 @@
                 "a": [
                     "We take privacy seriously. The privacy of all participants - including children, educators and families - will be protected when participating in the ELSA Pilot.",
                     "",
-                    "For example, data on app usage will be collected to help us improve the program. This data will be stored securely on Australian servers. If you have any questions about privacy, please contact us at [team@elsa.edu.au](mailto:team@elsa.edu.au)"
+                    "For example, data on app usage will be collected to help us improve the program. This data will be stored securely on Australian servers. If you have any questions about privacy, please contact us at [team@elsa.edu.au](mailto:team@elsa.edu.au)."
                 ]
             },
             {
