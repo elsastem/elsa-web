@@ -10,12 +10,12 @@
         {% call uibits.page_section_markdown() -%}
 {{ fields.body }}
 
-## ELFY Outcomes
+{# ## ELFY Outcomes
         {% if fields.eylfOutcomes %}
             {% for outcome in fields.eylfOutcomes %}
 + {{ outcome.fields.title }}
             {% endfor %}
-        {% endif %}
+        {% endif %} #}
 
         {%- endcall %}
     {%- endcall %}
