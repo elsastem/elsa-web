@@ -88,6 +88,19 @@
     </header>
 {% endmacro%}
 
+{% macro page_header_activity(title, subtitle, imgName, titleStyle = 'Dark') %}
+    <header class="activity-heading" style="background: none;">
+        <div class="{{ 'light-bg' if titleStyle != 'Dark' else 'dark-bg'}}"></div>
+        <div class="full-image {{ 'dark' if titleStyle == 'Dark'}}" style="background-image: url('/img/activities/{{imgName}}')"></div>
+        <div class="text-box">
+            <div class="container">
+                <div class="banner-heading {{ 'dark-text' if titleStyle != 'Dark' else 'light-text'}}" >{{title}}</div>
+                <div class="banner-subheading {{ 'dark-text' if titleStyle != 'Dark' else 'light-text'}}" >{{subtitle}}</div>
+            </div>
+        </div>
+    </header>
+{% endmacro%}
+
 {% macro page_section(title = "", subtitle = "", sectionNumber = 0) %}
     <section class="{{ 'bg-light-gray' if sectionNumber % 2 == 1 }}" tabindex="-1">
         <div class="container">

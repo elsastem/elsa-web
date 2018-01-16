@@ -258,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    margin-top: 45px;
+    margin-top: 54px;
     background-image: url('/img/hero_image.png');
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -288,6 +288,45 @@ header {
     }
     &.just-pic {
         height: 250px;
+    }
+    &.activity-heading {
+        height: 250px;    
+        position: relative;  
+        .full-image {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            .background-cover;
+            opacity: 0.4;
+            &.dark {
+                opacity: 0.6;                
+            }
+        }  
+        .light-bg { 
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: white;
+        }
+        .dark-bg { 
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+        }
+        .dark-text {
+            color: black;
+        }
+        .light-text {
+            color: white;
+        }
+        .text-box {
+            position: absolute;    
+            width: 100%;
+        }
     }
 }
 
@@ -914,6 +953,12 @@ section#stem li {
         font-weight: 700;
         font-size: 32px;
         padding-top: 100px;
+    }
+    .banner-subheading { 
+        .heading-font;
+        font-weight: 400;
+        font-size: 20px;
+        padding-top: 0px;
     }
     section {
         padding: 70px 0;

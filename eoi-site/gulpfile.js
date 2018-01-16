@@ -16,6 +16,7 @@ const csv = require('csvtojson');
 const contentful = require('contentful');
 const mkpath = require('mkpath');
 const childProcess = require('child_process')
+const download = require('image-downloader')
 
 var BUILD_DIR = "./build"
 
@@ -64,18 +65,38 @@ gulp.task('contentfullActivities', function (cb) {
     var compile = new nunjucks.Environment(options.loaders, options.envOptions);
     markdown.register(compile, marked);
 
+    function exportActivity(activity) {
+        var context = Object.assign({}, activity, mainData);
+        var result = compile.render("activity.nunjucks", context);
+        var path = BUILD_DIR + `/activities`;
+        mkpath.sync(path)
+        var filename = path + `/${activity.sys.id}.html`;
+        fs.writeFileSync(filename, result);
+    }
+
     contentfulClient.getEntries({
         content_type: "activity",
     }).then(entries => {
         entries.items.forEach(activity => {
-            var context = Object.assign({}, activity, mainData);
-            if(activity.sys.id == "5c2QP64hIIKkiy6COEe6UY")
-                console.log(activity);
-            var result = compile.render("activity.nunjucks", context);
-            var path = BUILD_DIR + `/activities`;
-            mkpath.sync(path)
-            var filename = path + `/${activity.sys.id}.html`;
-            fs.writeFileSync(filename, result);
+            if (activity.sys.id == "5c2QP64hIIKkiy6COEe6UY")
+                console.log(activity.fields.bigIdea);
+
+            var imgPath = `${BUILD_DIR}/img/activities/`;
+            mkpath.sync(imgPath)
+            const options = {
+                url: `http:${activity.fields.mainImage.fields.file.url}`,
+                dest: imgPath
+            }
+            if (!fs.existsSync(`${imgPath}/${activity.fields.mainImage.fields.file.fileName}`)) {
+                download.image(options)
+                    .then(({ filename, image }) => {
+                        exportActivity(activity);
+                    }).catch((err) => {
+                        throw err
+                    })
+            } else {
+                exportActivity(activity);
+            }
         });
         cb();
     })

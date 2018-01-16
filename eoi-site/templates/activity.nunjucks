@@ -5,10 +5,18 @@
 {% include 'partials/nav.nunjucks' %}
 
 {% call uibits.page_wrapper() -%}
-    {{ uibits.page_header("Activity") }}    
-    {% call uibits.page_section(fields.title, "", 0) -%}
+    {{ uibits.page_header_activity(fields.title, fields.bigIdea.fields.title, fields.mainImage.fields.file.fileName, fields.titleStyle.fields.title) }}    
+    {% call uibits.page_section("", "", 0) -%}
         {% call uibits.page_section_markdown() -%}
 {{ fields.body }}
+
+## ELFY Outcomes
+        {% if fields.eylfOutcomes %}
+            {% for outcome in fields.eylfOutcomes %}
++ {{ outcome.fields.title }}
+            {% endfor %}
+        {% endif %}
+
         {%- endcall %}
     {%- endcall %}
 {%- endcall %}

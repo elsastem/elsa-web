@@ -41,6 +41,7 @@
     "contentful": "^5.0.5",
     "csvtojson": "^1.1.9",
     "datatables.net": "^1.10.16",
-    "datatables.net-bs": "^1.10.16"
+    "datatables.net-bs": "^1.10.16",
+    "image-downloader": "^3.3.0"
   }
 }
