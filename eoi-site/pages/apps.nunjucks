@@ -1,0 +1,16 @@
+{% extends 'layout.nunjucks' %}
+{% import 'macros/uibits.nunjucks' as uibits %}
+
+{% block content %}
+{% include 'partials/nav.nunjucks' %}
+
+{% call uibits.page_wrapper() -%}
+    {{ uibits.page_header("Apps") }}    
+    {% call uibits.page_section("", "", 0) -%}
+        <div class="text-center">
+            <h1>COMING SOON</h1>
+        </div>
+    {%- endcall %}
+{%- endcall %}
+
+{% endblock %}
