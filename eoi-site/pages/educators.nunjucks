@@ -20,7 +20,7 @@ Before ELSA launches, we need a few things from you to make sure you're ready to
         <div class="text-muted" style="margin: 100px 0;">
             {{ uibits.timeline(educatorsContent.timeline, linkUrls) }}
         </div>        
-
+ 
         {% call uibits.page_section_markdown() -%}
 ## ELSA support
 

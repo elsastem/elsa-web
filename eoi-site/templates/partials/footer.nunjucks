@@ -25,23 +25,23 @@
                         </li>
                     </ul>
                 </div>
+                    <ul class="list-unstyled quicklinks">
+                        <li>
+                            <a href="https://canberraelsa.au1.qualtrics.com/jfe/form/SV_064dy5LMMfsBj6J">Provide Feedback</a>
+                        </li>                
+                        <li>
+                            <a href="/privacy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="row">
+                <div class="col-xs-offset-1 col-md-offset-2 col-xs-10 col-md-8" >
+                    {#<p class="copyright">Copyright &copy; ELSA 2017</p>#}
+                    <p class="fineprint">Early Learning STEM Australia has been developed by the University of Canberra, through funding provided by the Australian Government Department of Education and Training under the National Innovation and Science Agenda. Copyright in the material on this website is owned by the Commonwealth of Australia unless otherwise indicated. This material may be used in accordance with the Creative Commons BY 4.0 licence (excluding images), unless otherwise indicated. Photography by Carl Davies.</p>
+                </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-xs-offset-1 col-md-offset-2 col-xs-10 col-md-8" >
-                {#<p class="copyright">Copyright &copy; ELSA 2017</p>#}
-                <p class="fineprint">Early Learning STEM Australia has been developed by the University of Canberra, through funding provided by the Australian Government Department of Education and Training under the National Innovation and Science Agenda. Copyright in the material on this website is owned by the Commonwealth of Australia unless otherwise indicated. This material may be used in accordance with the Creative Commons BY 4.0 licence (excluding images), unless otherwise indicated. Photography by Carl Davies.</p>
-                <ul class="list-unstyled quicklinks">
-                    <li>
-                        <a href="https://canberraelsa.au1.qualtrics.com/jfe/form/SV_064dy5LMMfsBj6J">Provide Feedback</a>
-                    </li>                
-                    <li>
-                        <a href="/privacy.html">Privacy Policy</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </footer>
 
     

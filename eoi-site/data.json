@@ -145,6 +145,7 @@
                     "url": "/img/photos/elsa/ELSA_web_educator_carpet_small.jpg",
                     "alt": "Child and Educator on the floor"
                 },
+                "id": "becomeapproved",
                 "title": "Become an approved ELSA Pilot user",
                 "body": [
                     "Only nominated staff of a participating ELSA Pilot centre can log into the ELSA apps. To add your details to the list, please ask your director to contact us:",
@@ -203,7 +204,7 @@
                 "body": [
                     "When the first ELSA apps are released, you will receive an email notifying you to download them from the App Store or Google Play, and a quickstart guide for setting up the apps. ",
                     "",
-                    "The first thing to do is to log in with your details and verify your identity. Make sure you are a nominated staff at your centre, as we need to have your details in the ELSA system to give you access. See become an approved ELSA Pilot user above for more information."
+                    "The first thing to do is to log in with your details and verify your identity. Make sure you are a nominated staff at your centre, as we need to have your details in the ELSA system to give you access. See <a class='page-scroll' href='#becomeapproved'>become an approved ELSA Pilot user</a> above for more information."
                 ]
             }
         ]
