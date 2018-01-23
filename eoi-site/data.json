@@ -33,8 +33,8 @@
             {
                 "id": "elsa",
                 "menu": "About",
-                "title": "Early Learning STEM Australia",
-                "subtitle": "A new learning initiative for Australia",
+                "title": "",
+                "subtitle": "",
                 "blurbs": [
                     {
                         "icon": "fa-flash",
@@ -137,7 +137,7 @@
                 "body": [
                     "We're collecting information from each pilot preschool service about the devices they'll be using. For example, how many devices they have, what type of devices and which operating system they run.",
                     "",
-                    "Please complete the online [device survey](http://someform)."
+                    "Please complete the online [device survey](https://canberraelsa.au1.qualtrics.com/jfe/form/SV_ebNo8FQuZXVAUPr)."
                 ]
             },
             {
@@ -164,7 +164,7 @@
                 "body": [
                     "All children participating in the ELSA Pilot need a signed consent form from a parent or legal guardian. This consent form needs to be completed before children use the apps.",
                     "",
-                    "Parents and legal guardians can access the online [ELSA pilot consent form - children](http://someform). Alternatively, educators can email parents and legal guardians a link to the form: http://someform"
+                    "Parents and legal guardians can access the online [ELSA Pilot consent form - children](https://canberraelsa.au1.qualtrics.com/jfe/preview/SV_6WPKxaTdCB8K3pr?Q_CHL=preview). Alternatively, educators can email parents and legal guardians a link to the form: https://canberraelsa.au1.qualtrics.com/jfe/preview/SV_6WPKxaTdCB8K3pr?Q_CHL=preview"                    
                 ]
             },
             {
