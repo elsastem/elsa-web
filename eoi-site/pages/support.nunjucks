@@ -24,9 +24,12 @@ We will get back to you as soon as possible about your issue.
     {%- endcall %}
 
     {% call uibits.page_section("Support", "", 1) -%}
-        {% call uibits.page_section_content(false) -%}
-            {% include 'partials/feedback_form.nunjucks' %}
-        {%- endcall %}
+        {# {% call uibits.page_section_content(false) -%} #}
+            {# {% include 'partials/feedback_form.nunjucks' %} #}
+            <div class="text-center">
+                <a href="https://canberraelsa.au1.qualtrics.com/jfe/form/SV_29UDSmXY3Ser6ex" class="btn btn-xl" target="_blank">Get Support from the ELSA team</a>                
+            </div>
+        {# {%- endcall %} #}
     {%- endcall %}
 
     {% call uibits.page_section("FAQ", "Responses to frequently asked questions about ELSA", 2) -%}
