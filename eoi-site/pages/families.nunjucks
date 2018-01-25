@@ -10,7 +10,7 @@
         {% call uibits.page_section_markdown() -%}
             {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1700676.jpg", "4 Kids on a rocks with iPad") -%}
 # Your child and ELSA
-If your child is attending a preschool service taking part in the ELSA pilot, you may be wondering what this means for your family.
+If your child is attending a preschool service taking part in the ELSA Pilot, you may be wondering what this means for your family.
 
 ELSA is a new pilot designed to help children explore science, technology, engineering and mathematics (STEM) through hands-on and digital activities. The digital activities are delivered via ELSA children apps, which are available at the preschool service on their iPad and/or Android tablets. 
             {%- endcall %}

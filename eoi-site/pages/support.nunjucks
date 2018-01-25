@@ -9,7 +9,7 @@
     {% call uibits.page_section("", "", 0) -%}    
         {% call uibits.page_section_markdown() -%}
             {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1701589.jpg", "Educator working with children on iPads") -%}
-<h2 id="general-enquiry" style="margin-top: 0px">General enquiry</h2>If you have a question about the ELSA pilot, please contact [team@elsa.edu.au](team@elsa.edu.au). 
+<h2 id="general-enquiry" style="margin-top: 0px">General enquiry</h2>If you have a question about the ELSA Pilot, please contact [team@elsa.edu.au](team@elsa.edu.au). 
 
 ## Technical assistance 
 If you need help using one of the ELSA apps, please click on the orange support button below or contact ELSA support:
@@ -23,7 +23,7 @@ We will get back to you as soon as possible about your issue.
         {%- endcall %}
     {%- endcall %}
 
-    {% call uibits.page_section("Support", "", 1) -%}
+    {% call uibits.page_section("Support", "The ELSA team can help you run the pilot in your preschool service", 1) -%}
         {# {% call uibits.page_section_content(false) -%} #}
             {# {% include 'partials/feedback_form.nunjucks' %} #}
             <div class="text-center">
