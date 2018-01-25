@@ -90,11 +90,11 @@ Below are some ways you can contribute to ELSA Pilot activities at your preschoo
 Talk to your educator about how you can be involved in bringing ELSA to life.   
         {%- endcall %}
     {%- endcall %}
-    {% call uibits.page_section("Feedback", "", 1) -%}
+    {% call uibits.page_section("Feedback", "We would love to hear your feedback about the ELSA Pilot. This helps us improve ELSA.", 1) -%}
         {% call uibits.page_section_content(false) -%}
-            <p>We would love to hear your feedback about ELSA.</p>
-            {% include 'partials/feedback_form.nunjucks' %}
-            <p>Your feedback helps us improve ELSA.</p>
+            <div class="text-center">
+                <a href="https://canberraelsa.au1.qualtrics.com/jfe/form/SV_064dy5LMMfsBj6J" class="btn btn-xl" target="_blank">Provide Feedback</a>                
+            </div>
         {%- endcall %}
     {%- endcall %}
 {%- endcall %}
