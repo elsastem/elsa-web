@@ -35,7 +35,8 @@ var SubscribeForm = function () {
                     label.addClass("valid").closest(".form-group").removeClass("has-error").addClass("has-success");
                 },
                 submitHandler: function (form) {
-                    var url = "https://api.elsa.edu.au/web/subscribe"; //mailchimp
+                    //var url = "https://api.elsa.edu.au/web/subscribe"; //mailchimp
+                    var url = "https://ed5h9uai93.execute-api.ap-southeast-2.amazonaws.com/prod/subscribe";
                     var apiKey = "huwyil4DTkGbPxduj8062871TorMtjM3CaSRS5Kh";
                     var formData = $("#signup-form").serializeObject();
                     //formData.listId = '45f25b63ab';
