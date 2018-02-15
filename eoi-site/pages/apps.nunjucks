@@ -4,12 +4,62 @@
 {% block content %}
 {% include 'partials/nav.nunjucks' %}
 
+{# https://dribbble.com/shots/1649942-eventtus-app-download-page might be better #}
+
 {% call uibits.page_wrapper() -%}
-    {{ uibits.page_header("Apps") }}    
+    {{ uibits.page_header("ELSA Apps") }}    
     {% call uibits.page_section("", "", 0) -%}
-        <div class="text-center">
-            <h1>COMING SOON</h1>
-        </div>
+        {% call uibits.page_section_markdown() -%}
+# Quickstart guide
+
+We’ve put together a quickstart guide to help you download, log in and connect the ELSA apps. 
+
+Download the [quickstart guide](/docs/Quickstart guide A4.pdf).
+
+# Download ELSA apps
+
+Click on the store icons below to download ELSA apps for iPad (App Store) and Android (Google Play).
+
+## ELSA Patterns and Relationships
+ELSA Patterns and Relationships is the first children’s app for the 2018 ELSA Pilot. 
+
+<a href=''>
+    <img class="apple-badge" alt='Download on the App Store' src='/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' />
+</a>
+<a href=''>
+    <img class="google-badge" alt='Get it on Google Play' src='/img/google-play-badge.png' />
+</a>
+
+## ELSA Educator
+ELSA Educator is an app for educators from preschool services taking part in the 2018 ELSA Pilot. This app works on tablets and phones. 
+
+<a href=''>
+    <img class="apple-badge" alt='Download on the App Store' src='/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' />
+</a>
+<a href=''>
+    <img class="google-badge" alt='Get it on Google Play' src='/img/google-play-badge.png' />
+</a>
+
+## ELSA Families 
+ELSA Families is an app for families of children taking part in the 2018 ELSA Pilot.
+
+<a href=''>
+    <img class="apple-badge" alt='Download on the App Store' src='/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' />
+</a>
+<a href=''>
+    <img class="google-badge" alt='Get it on Google Play' src='/img/google-play-badge.png' />
+</a>
+
+## ELSA Location and Arrangement
+Term 2.
+
+## ELSA Representations
+Term 3.
+
+## ELSA Investigations
+Term 4. 
+
+        {%- endcall %}
     {%- endcall %}
 {%- endcall %}
 
