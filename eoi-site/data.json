@@ -168,7 +168,7 @@
                     "",
                     "#### Consent from educators",
                     "",
-                    "Each educator also needs to to fill in an [educator consent form](https://canberraelsa.au1.qualtrics.com/jfe/form/SV_a2wgyzZX44i9F0F) to participate in the pilot."                    
+                    "Each educator also needs to to fill in an [educator consent form](https://canberraelsa.au1.qualtrics.com/jfe/form/SV_a2wgyzZX44i9F0F) to participate in the pilot."
                 ]
             },
             {
@@ -228,12 +228,12 @@
                     "",
                     "STEM practices include:",
                     "+ exploring and challenging",
-                    "+ problem finding and solving", 
+                    "+ problem finding and solving",
                     "+ generating ideas",
                     "+ using tools to produce artefacts",
                     "+ curiosity",
                     "+ team work.",
-                    "", 
+                    "",
                     "Exploring STEM practices helps children develop strong skills in problem solving and communication that can be used later in life."
                 ]
             },
@@ -298,6 +298,189 @@
                     "Yes. Families of an ELSA Pilot preschool service are encouraged to participate. We are developing a Families app to support a strong connection between children's homes and preschools. ",
                     "",
                     "Find out more about how families can be involved on our [For Families page](/families.html). "
+                ]
+            }
+        ]
+    },
+    "techfaq": {
+        "questions": [
+            {
+                "q": "I've lost my password. What can I do?",
+                "a": [
+                    "You can reset your password using the Educator app:",
+                    "+ Enter your mobile number (make sure you use the same mobile number you provided to ELSA initially, as this is connected to your account).",
+                    "+ On the 'Sign in to ELSA' screen, tap 'Forgot your password?'",
+                    "+ On the 'Reset Password' screen, enter a new password. Then touch 'Update password'.",
+                    "+ A verification code will be sent to the mobile number you entered.",
+                    "+ Enter the verification code on the 'Verify your phone number' screen.",
+                    "+ Touch 'Get started'.",
+                    "",
+                    "Note: if you do not remember your mobile number, or have new accounts that are not already linked to ELSA, please call our support team on 1800 931 042. We will need to set up your new details to give you access."
+                ]
+            },
+            {
+                "q": "How do I set up another team member to access the Educator app?",
+                "a": [
+                    "Privacy is important to us. To keep your preschool service's information secure, we keep a list of approved staff at each centre.",
+                    "",
+                    "To add someone to the list, please fill out a [support form](https://elsa.au1.qualtrics.com/jfe/form/SV_29UDSmXY3Ser6ex) or call the ELSA team on 1800 931 042 and provide:",
+                    "+ your preschool service's name",
+                    "+ the educator's name",
+                    "+ fill different containers with water or sand",
+                    "+ the educator's mobile number and/or email address, so they can verify their account.",
+                    "",
+                    "We will double-check your request with our primary contact at the preschool service before adding a new educator to the list. This process can take up to a week. Once the new team member is added, we will notify them via their mobile number or email address."
+                ]
+            },
+            {
+                "q": "Do I need WiFi to use the ELSA apps?",
+                "a": [
+                    "You can use all the ELSA apps without WiFi, but we ask that you access WiFi at least monthly to upload usage data and check for updates. Some features on the Educator app do require WiFi.",
+                    "",
+                    "Features that require WiFi:",
+                    "+ downloading apps",
+                    "+ signing up to apps and logging in",
+                    "+ uploading usage data",
+                    "+ finding out how much time children have spent on the apps",
+                    "+ accessing new reflections and data from the Educator app on the ELSA website",
+                    "+ sending and receiving messages on the Educator app",
+                    "+ downloading new content."
+                ]
+            },
+            {
+                "q": "What if a child accidentally uses someone else's player profile?",
+                "a": [
+                    "The ELSA apps are designed to support each child's unique progression by offering certain tasks and activities once they are ready to work through various levels of complexity. So it's a better experience for the children if they play using their own profile.",
+                    "",
+                    "You can reduce the likelihood that a child will accidentally use someone else's player profile by supervising children at the start of each session. This is when the apps will prompt children to make sure their picture is selected before playing."
+                ]
+            },
+            {
+                "q": "Where is the ELSA data stored?",
+                "a": [
+                    "ELSA data is stored in Amazon Web Services (AWS) Sydney data centre."
+                ]
+            },
+            {
+                "q": "Can families access the ELSA session data on their child?",
+                "a": [
+                    "The ELSA Families app does not contain session data. However, if parents or legal guardians want to know how much time their child is spending on ELSA each week, this information is available via each child's profile in the Educator app.",
+                    "",
+                    "We encourage educators to share ELSA content that children have created with their families."
+                ]
+            },
+            {
+                "q": "Why do I need to connect the Educator app with the ELSA apps for children?",
+                "a": [
+                    "By connecting the apps, session data and ELSA content can be sent from the children's apps to the educator app.",
+                    "",
+                    "Educators can then view session times and ELSA content created by the children participating in the pilot."
+                ]
+            },
+            {
+                "q": "How can I see how much time each child has spent on the ELSA apps for children?",
+                "a": [
+                    "Follow these steps to see how long each child has spent on the ELSA apps for children:",
+                    "",
+                    "1. In the Educator app, tap to the 'Children' tab in the main menu at the bottom of the screen.",
+                    "2. Tap the profile picture of the relevant child to view their details.",
+                    "3. Under the child's profile image is a section called 'Activity'. This displays time spent during the current week, and total time spent, for each activity.",
+                    "",
+                    "![Child's activity in Educator app](/img/techfaq/Child's activity in Educator app.jpg)"
+                ]
+            },
+            {
+                "q": "I have a STEM question. Who can I ask?",
+                "a": [
+                    "Ask our support team at ELSA. We are ready to assist you with any STEM questions. Call 1800 931 042 or get in touch via our [support](https://elsa.edu.au/support.html) page.",
+                    "",
+                    "If you want advice from other educators in the pilot, you might like to try posting your question in the Messages section of the Educator app. Your question can be read by all the educators in the pilot, and some may be able to help you. You need to have WiFi switched on to use Messages."
+                ]
+            },
+            {
+                "q": "How do I mute the audio in the ELSA children's apps?",
+                "a": [
+                    "To mute the audio (music and voice) in one of the ELSA children's apps, follow these steps:",
+                    "1. Go to the main menu screen of the children's app.",
+                    "2. Tap the button at the bottom of the screen that says 'Educators'.",
+                    "![App 1 menu screen](/img/techfaq/Giving permission to camera microphone and camera roll_1.PNG)",
+                    "3. Answer the math question to get access.",
+                    "4. Locate the 'Device Settings' section.",
+                    "5. Next to 'Music enabled' and 'Voice enabled' tap the buttons so they say 'off'.",
+                    "![Educator's Area](/img/techfaq/Giving permission to camera microphone and camera roll_2.PNG)"
+                ]
+            },
+            {
+                "q": "How do I select the class for the day in the ELSA children's apps?",
+                "a": [
+                    "Tap the 'Educators' tab on the main menu in the children's app. You can access the educator settings by responding to a simple addition question.",
+                    "![Educator tab to access settings](/img/techfaq/Educator tab to access settings.jpg)",
+                    "Choose the class for the day by tapping 'Select active class'. This will allow you to change the class.",
+                    "![App 1 settings daily class](/img/techfaq/App1_settings daily class.jpg)",
+                    "If you would like to be automatically prompted to select the class for the day, ensure that the 'Prompt startup daily active class selection' button is on.",
+                    "![App 1 settings daily class prompt](/img/techfaq/App1_settings daily class_prompt.jpg)"
+                ]
+            },
+            {
+                "q": "How do I edit a child's profile?",
+                "a": [
+                    "You can edit a child's profile via the Educator app or the children's apps. We've explained each method below.",
+                    "",
+                    "*In the Educator app*",
+                    "",
+                    "1. Tap the 'Children' tab in the main menu at the bottom of the screen.",
+                    "2. Tap the profile picture of the relevant child to view their details.",
+                    "3. Tap 'Edit' in the top left of the profile to make changes.",
+                    "4. You can update the following details in the Educator app: child's name, month and year of birth, child's class, and delete profile.",
+                    "5. When you have finished, tap 'Done' in the top left of the profile or 'Cancel' in the top right to discard changes.",
+                    "![Edit child Educator app](/img/techfaq/Edit child_ed_app.png)",
+                    "Choose the class for the day by tapping 'Select active class'. This will allow you to change the class.",
+                    "",
+                    "*In the children's apps*",
+                    "",
+                    "1. Tap the 'Educators' tab at the bottom of the screen on the main menu of the children's app. You can access the educator settings by responding to a simple addition question.",
+                    "![Educator tab to access settings](/img/techfaq/Educator tab to access settings.jpg)",
+                    "2. In the educator settings, select 'Edit children details'.",
+                    "![App 1 settings child details edit](/img/techfaq/App1_settings child edit.jpg)",
+                    "3. You can edit 'Name' and 'Appearance'. The image choices for 'Appearance' are: child's initials, animal avatar or a photo.",
+                    "4. Once you have made changes, tap the back arrow button and changes will be saved.",
+                    "![Edit child avatar app 1](/img/techfaq/Edit Child_avatar_app1.jpg)"
+                ]
+            },
+            {
+                "q": "How do I connect the camera, microphone and camera roll to an app?",
+                "a": [
+                    "When you first log in to one of the ELSA children's apps, you will be guided through three steps to give access to the camera, microphone and camera roll. On each screen touch 'Grant Permission'. Then touch 'OK' on the pop-up windows.",
+                    "",
+                    "If you accidentally touch 'Don't Allow' on one of the pop-up windows, or need to update permissions later on, follow the steps below.",
+                    "",
+                    "*iPad*",
+                    "",
+                    "1. Go to the main menu screen of the children's app.",
+                    "2. Tap the button at the bottom of the screen that says 'Educators'.",
+                    "![Giving permission to camera microphone and camera roll 1](/img/techfaq/Giving permission to camera microphone and camera roll_1.PNG)",
+                    "3. Answer the math question to get access.",
+                    "4. Locate the 'Permission Settings' section and tap the 'Settings' button.",
+                    "![Giving permission to camera microphone and camera roll 2](/img/techfaq/Giving permission to camera microphone and camera roll_2.PNG)",
+                    "5. Locate the Microphone and Camera icons on the right side of the screen.",
+                    "6. Move each button to the right to allow access.",
+                    "7. Tap the Photos icon.",
+                    "8. Select 'Read and Write' (this gives access to the camera roll).",
+                    "![Giving permission to camera microphone and camera roll 3](/img/techfaq/Giving permission to camera microphone and camera roll_3.PNG)",
+                    "",
+                    "*Android*",
+                    "",
+                    "1. Go to the main menu screen of the children's app.",
+                    "2. Tap the button at the bottom of screen that says 'Educators'.",
+                    "![App 1 home screen Android device](/img/techfaq/App 1 home screen Android device.png)",
+                    "3. Answer the math question to get access.",
+                    "4. Locate the 'Permission Settings' section and tap the 'Settings' button.",
+                    "![App 1 settings screen on Android device ](/img/techfaq/App 1 settings screen on Android device.png)",
+                    "5. Locate the ELSA app in the list of apps on the right side of the screen.",
+                    "6. Tap the ELSA app.",
+                    "![Apps list on Android device ](/img/techfaq/Apps list on Android device.png)",
+                    "7. Move the 'Camera', 'Microphone' and 'Storage' (photos) buttons to the right to allow access.",
+                    "![About to change app 1 settings on Android device](/img/techfaq/About to change app 1 settings on Android device.png)"
                 ]
             }
         ]

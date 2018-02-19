@@ -35,5 +35,9 @@ We will get back to you as soon as possible about your issue.
     {% call uibits.page_section("FAQ", "Responses to frequently asked questions about ELSA", 2) -%}
         {{ uibits.render_faq(faq) }}
     {%- endcall %}
+
+    {% call uibits.page_section("Technical FAQ", "Information to help educators use the ELSA apps", 3) -%}
+        {{ uibits.render_faq(techfaq, "techfaq") }}
+    {%- endcall %}
 {%- endcall %}
 {% endblock %}

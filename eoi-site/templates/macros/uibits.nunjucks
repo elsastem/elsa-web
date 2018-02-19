@@ -52,18 +52,18 @@
         <div id="{{qId}}" class="panel-collapse collapse question" role="tabpanel" aria-labelledby="{{headingId}}">
             <div class="panel-body">
                 {% markdown %}
-{{ q.a | join("\n") }}
+{{ q.a | join("\n") | safe }}
                 {% endmarkdown %}
             </div>
         </div>
     </div>
 {% endmacro %}
 
-{% macro render_faq(context) %}
+{% macro render_faq(context, faqPrefix = '') %}
     <div class="row faq">
         {%for items in context.questions | slice(2)%}
         <div class="col-md-6">
-            {% set accordionId="faq" + loop.index %}
+            {% set accordionId="faq_" + faqPrefix + loop.index %}
             <div class="panel-group" id="{{accordionId}}" role="tablist" aria-multiselectable="true">
             {%for quest in items%}
                 {{ question(accordionId + "question" + loop.index, quest, accordionId) }}
