@@ -1,39 +1,25 @@
 // Mixins
-
 // Bootstrap Button Variant
-
-.button-variant(@color; @background; @border) {
+.button-variant(@color;
+@background;
+@border) {
   color: @color;
   background-color: @background;
   border-color: @border;
-
-  &:hover,
-  &:focus,
-  &:active,
-  &.active,
-  .open .dropdown-toggle& {
+  &:hover, &:focus, &:active, &.active, .open .dropdown-toggle& {
     color: @color;
     background-color: darken(@background, 5%);
-        border-color: darken(@border, 6%);
+    border-color: darken(@border, 6%);
   }
-  &:active,
-  &.active,
-  .open .dropdown-toggle& {
+  &:active, &.active, .open .dropdown-toggle& {
     background-image: none;
   }
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    &,
-    &:hover,
-    &:focus,
-    &:active,
-    &.active {
+  &.disabled, &[disabled], fieldset[disabled] & {
+    &, &:hover, &:focus, &:active, &.active {
       background-color: @background;
       border-color: @border;
     }
   }
-
   .badge {
     color: @background;
     background-color: @color;
@@ -41,16 +27,14 @@
 }
 
 // Background Cover Mixin
-
 .background-cover() {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 // Font Mixins
-
 .serif-font() {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -69,19 +53,20 @@
 }
 
 .placeholder(@rules) {
-
-    ::-webkit-input-placeholder {
-        @rules();
-    }
-    :-moz-placeholder {
-        @rules();
-    }
-    ::-moz-placeholder {
-        @rules();
-    }
-    :-ms-input-placeholder {
-        @rules();
-    }
+  ::-webkit-input-placeholder {
+    @rules();
+  }
+  :-moz-placeholder {
+    @rules();
+  }
+  ::-moz-placeholder {
+    @rules();
+  }
+  :-ms-input-placeholder {
+    @rules();
+  }
 }
 
-    
+.video {
+  margin: 40px 0;
+}

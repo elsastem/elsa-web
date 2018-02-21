@@ -16,8 +16,8 @@ The ELSA Pilot is a key early childhood initiative of the Australian Government.
 ELSA is led by [Professor Tom Lowrie](https://www.canberra.edu.au/about-uc/faculties/estem/contacts-estem/staff/tom-lowrie) and built on community involvement. The pilot collaborates with early learning educators, preschool program providers and families.
             {%- endcall %}
         {%- endcall %}
-    {%- endcall %}
-    
+        {{ uibits.page_section_video("https://player.vimeo.com/video/255483334") }}            
+    {%- endcall %}    
     {% call uibits.page_section("2018 ELSA Pilot", "", 0) -%}
         {% call uibits.page_section_content() -%}
             {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1700911.jpg", "Educator with child and iPad") -%}
