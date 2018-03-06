@@ -13,6 +13,12 @@
     <div class="text-center" style="margin-top: 85px;">
         <h1>Download ELSA apps</h1>
         <p>Click on the store icons below to download ELSA apps for iPad (App Store) and Android (Google Play).</p>
+        <p>
+            We’ve put together a quickstart guide to help you download, log in and connect the ELSA apps. 
+        </p>
+        <p>
+            Download the <a href="/docs/Quickstart guide_ELSA_final.pdf">quickstart guide</a>.
+        </p>
     </div>
         {%- endcall %}
     {%- endcall %}
@@ -36,7 +42,7 @@
                 </div>
                 <div class="coming-soon">
                     <h4>Coming soon</h4>
-                    <div>ELSA Family - Term 1</div>
+                    <div>ELSA Families - Term 1</div>
                 </div>
             </div>
             <div class="col-sm-6 text-center kids-app">
@@ -64,20 +70,6 @@
     </div>
 </section>
 
-    {% call uibits.page_section("", "", 0) -%}
-        {% call uibits.page_section_markdown() -%}
-    <div class="text-center">
-        <h1>Quickstart guide</h1>
-        <p>
-            We’ve put together a quickstart guide to help you download, log in and connect the ELSA apps. 
-        </p>
-        <p>
-            Download the <a href="/docs/Quickstart guide_ELSA_final.pdf">quickstart guide</a>.
-        </p>
-    </div>
-
-        {%- endcall %}
-    {%- endcall %}
     
 {%- endcall %}
 
