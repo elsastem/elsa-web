@@ -386,7 +386,7 @@
                     "2. Tap the profile picture of the relevant child to view their details.",
                     "3. Under the child's profile image is a section called 'Activity'. This displays time spent during the current week, and total time spent, for each activity.",
                     "",
-                    "![Child's activity in Educator app](/img/techfaq/Child's activity in Educator app.jpg)"
+                    "![Adding notes to portfolio](/img/techfaq/Adding notes to portfolio.png)"
                 ]
             },
             {
@@ -430,11 +430,13 @@
                     "",
                     "1. Tap the 'Children' tab in the main menu at the bottom of the screen.",
                     "2. Tap the profile picture of the relevant child to view their details.",
+                    "![select child](/img/techfaq/select child.png)",
                     "3. Tap 'Edit' in the top left of the profile to make changes.",
+                    "![edit](/img/techfaq/edit.png)",
                     "4. You can update the following details in the Educator app: child's name, month and year of birth, child's class, and delete profile.",
                     "5. When you have finished, tap 'Done' in the top left of the profile or 'Cancel' in the top right to discard changes.",
-                    "![Edit child Educator app](/img/techfaq/Edit child_ed_app.png)",
-                    "Choose the class for the day by tapping 'Select active class'. This will allow you to change the class.",
+                    "![edit details](/img/techfaq/edit details.png)",
+                    "When you have finished, tap 'Done' in the top left of the profile or 'Cancel' in the top right to discard changes.",
                     "",
                     "**In the children's apps**",
                     "",
@@ -482,6 +484,84 @@
                     "7. Move the 'Camera', 'Microphone' and 'Storage' (photos) buttons to the right to allow access.",
                     "![About to change app 1 settings on Android device](/img/techfaq/About to change app 1 settings on Android device.png)"
                 ]
+            },
+            {
+                "q": "How do I add a child in the Educator app?",
+                "a": [
+                    "Follow these steps to add a child in the Educator app:",
+                    "",
+                    "1. Tap on the 'Children' menu tab at the bottom of the screen.", 
+                    "2. Tap 'Add...' in the top right hand corner of the screen.",
+                    "3. Tap 'Add Child' from the drop-down menu.",
+                    "![Add child](/img/techfaq/Add child.png)",
+                    "4. Type the child’s first name and first letter of their last name.",
+                    "5. Type their year and month of birth in the next field.",
+                    "6. Check that the child is assigned to the correct group/class. If they are not, tap 'change' and follow the prompts.",
+                    "![Add child assign to class](/img/techfaq/Add child_assign to class.png)",
+                    "7. Choose an option for how to identify a child with an avatar image. We suggest using a photo of a personal artefact (such as a their backpack or a favourite toy) that is easily recognised by the child. Alternatively, you can use one of the preset ELSA animal symbols or default to the child’s initials.",
+                    "When you have finished, tap 'Done' in the top right corner of the screen."
+                ]
+            },
+            {
+                "q": "How do I add a class or group in the Educator app?",
+                "a": [
+                    "Follow these steps to add a class or group in the Educator app:",
+                    "",
+                    "1. Tap on the 'Children' menu tab at the bottom of the screen.",
+                    "2. Tap 'Add...' in the top right hand corner of the screen.",
+                    "3. Tap 'Add Group' from the drop-down menu.",
+                    "![Add group](/img/techfaq/Add group.png)",
+                    "4. Type the group or class name.",
+                    "5. You can enter notes in the box below.",
+                    "6. Add an image to represent the class or choose a preset ELSA animal avatar."
+                ]
+            },
+            {
+                "q": "How do I edit a class?",
+                "a": [
+                    "Follow these steps to edit a class you have created in the Educator app:",
+                    "",
+                    "1. Tap on the 'Children' menu tab at the bottom of the screen.",
+                    "2. Tap the 'edit' button on the right side of the screen next to the class you would like to edit.",
+                    "3. Update the name and image and then tap 'Done'",
+                    "Note: a class with children cannot be deleted. To delete a class, the child must first be moved to another class.",
+                    "![edit class](/img/techfaq/edit class.png)"
+                ]
+            },
+            {
+                "q": "Can I add reflections and notes in the ELSA Educator app?",
+                "a": [
+                    "Yes you can. Follow these steps to add reflections and notes in the Educator app:",
+                    "",
+                    "1. Tap on the 'Children' menu tab at the bottom of the screen.",
+                    "2. Tap on a child's profile image to view their profile detais.",
+                    "3. Select an activity and view the content created by the child.",
+                    "4. Tap on the section called 'Portfolio', and add notes and observations.",
+                    "![Add notes](/img/techfaq/add notes.png)"
+                ]
+            },
+            {
+                "q": "How can I view content created by a child in my group?",
+                "a": [
+                    "Follow these steps to view content created by a child in your group:",
+                    "",
+                    "1. Tap on the 'Children' menu tab at the bottom of the screen.",
+                    "2. Tap on a child's profile image to view their profile detais.",
+                    "3. Select an activity and view the content created by the child. You can listen to audio descriptions and view content that has been created in each activity.",
+                    "![Portfolio](/img/techfaq/portfolio.png)",
+                    "4. Tap on any image to view details.",
+                    "![view user generated pattern](/img/techfaq/view_user generated pattern.png)"
+                ] 
+            },
+            {
+                "q": "How can I approve photo stories created by my class to be published in the ELSA Patterns app?",
+                "a": [
+                    "Children and educators can create photo stories in the ELSA Patterns app. These will then appear in the Educator app for educator approval. ",
+                    "",
+                    "If a child has created a photo story, the educator will see a notification in the child’s profile under the 'Photo story' activity.",
+                    "![review content story](/img/techfaq/review_content_story.png)",
+                    "Educators can either approve or decline the content. If the photo story is approved, the group will be able to access the story from the app."
+                ]   
             }
         ]
     }
