@@ -21,6 +21,6 @@ if [[ -z "${AWS_SECRET_ACCESS_KEY}" ]]; then
     aws s3 sync $LOCAL_SITE_DIR $S3_BUCKET_DEST --profile $AWS_PROFILE --delete
 else
     echo "Using AWS_ACCESS_KEY_ID(${AWS_ACCESS_KEY_ID})"
-    aws s3 sync $LOCAL_SITE_BUILD_DIR $S3_BUCKET_DEST --delete 
+    aws s3 sync $LOCAL_SITE_DIR $S3_BUCKET_DEST --delete 
 fi
 
