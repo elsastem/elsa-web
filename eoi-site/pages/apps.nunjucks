@@ -13,12 +13,14 @@
     <div class="text-center" style="margin-top: 85px;">
         <h1>Download ELSA apps</h1>
         <p>Click on the store icons below to download ELSA apps for iPad (App Store) and Android (Google Play).</p>
+        <h4>Quickstart Guides</h4>
         <p>
-            We’ve put together a quickstart guide to help you download, log in and connect the ELSA apps. 
+            Download the <a href="/docs/Quickstart guide_ELSA_final.pdf">quickstart guide to setting up your ELSA apps</a>.
         </p>
         <p>
-            Download the <a href="/docs/Quickstart guide_ELSA_final.pdf">quickstart guide</a>.
+            Download the <a href="/docs/How to set up classes and children_V3.pdf">quickstart guide to setting up your classes and children</a>.
         </p>
+
     </div>
         {%- endcall %}
     {%- endcall %}
@@ -36,7 +38,7 @@
                     <a href='https://itunes.apple.com/us/app/elsa-educator/id1349577817?ls=1&mt=8'>
                         <img class="apple-badge" alt='Download on the App Store' src='/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' />
                     </a>
-                    <a href=''>
+                    <a href='https://play.google.com/store/apps/details?id=au.edu.elsa.educator&hl=en'>
                         <img class="google-badge" alt='Get it on Google Play' src='/img/google-play-badge.png' />
                     </a>
                 </div>
