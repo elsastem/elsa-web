@@ -151,6 +151,10 @@ Day two PowerPoint presentations:
         <i class="fa fa-file-pdf-o file-icon" aria-hidden="true"></i>
          [ELSA Pilot email 4 (27 February 2018) (PDF)](/docs/ELSA 2018 Email 4.pdf)
     </li>
+    <li> 
+        <i class="fa fa-file-pdf-o file-icon" aria-hidden="true"></i>
+         [ELSA Pilot email 5 (20 March 2018) (PDF)](/docs/ELSA Email 5 to pilot educators.pdf)
+    </li>
 </ul>
 
         {%- endcall %}
