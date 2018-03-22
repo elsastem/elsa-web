@@ -1,0 +1,38 @@
+{% extends 'partials/index/section.nunjucks' %}
+
+{% block body %} 
+    <div class="row">
+        <div class="col-lg-12">
+            <form name="sentMessage" id="subscribeForm" novalidate="novalidate" action="//elsa.us15.list-manage.com/subscribe/post?u=e53a67afd496b56ee24b3cf99&amp;id=45f25b63ab" method="post">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6">
+                        <div class="form-group">
+                            <label for="contact_email" class="sr-only">Email address</label>
+                            <input type="email" class="form-control" placeholder="{{context.form.email.placeholder}}" name="EMAIL" id="contact_email" aria-required="true">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        {#<div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" name="name">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Preschool or Business" name="business">
+                            <p class="help-block text-danger"></p>
+                        </div>#}
+                    </div>
+                    <div class="clearfix"></div>
+                    <p class="unsubscribe">You can unsubscribe at any time by emailing <a href='mailto:team@elsa.edu.au'>team@elsa.edu.au</a>.</p>
+                    <div class="col-lg-12 text-center">
+                        <div class="alert alert-danger display-none">
+                            <button class="close" data-dismiss="alert">&times;</button> {{context.form.errorText}} 
+                        </div>
+                        <div class="alert alert-success display-none">
+                            <button class="close" data-dismiss="alert">&times;</button> {{context.form.successText}}
+                        </div>
+                        <button class="btn btn-xl" id="subscribe" type="submit"><span class="text"> {{context.form.submitText}} </span> <span class="spinner hide"><i class="fa fa-refresh fa-spin fa-1x fa-fw"></i><span class="sr-only">Loading...</span></span></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}         

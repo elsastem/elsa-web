@@ -1,0 +1,106 @@
+{% set page_name="pilot" %}
+{% extends 'layout.nunjucks' %}
+{% import 'macros/uibits.nunjucks' as uibits %}
+
+{% block scriptsExt %}
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap.js"></script>
+    <script src="js/pilot_page.js"></script>
+{% endblock %}
+
+{% block content %}
+{% include 'partials/nav.nunjucks' %}
+{% call uibits.page_wrapper() -%}
+    {{ uibits.page_header("2018 ELSA Pilot") }}    
+    {% call uibits.page_section("", "", 0) -%}
+        {% call uibits.page_section_content() -%}
+            {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1701916.jpg", "3 Kids around iPads", 8) -%}
+One hundred preschool services from across Australia have been selected to take part in the 2018 ELSA Pilot. 
+
+Explore the tables below to discover ELSA Pilot preschool services and user experience evaluation centres in your area. 
+
+- [Preschool services](#schoolTableNav)
+- [User experience evaluation centres](#evalTableNav)
+
+            {%- endcall %}
+        {%- endcall %}
+        {% call uibits.page_section_markdown() -%}
+
+## How pilot centres were selected
+
+An expression of interest process occurred in 2017. We received applications from services across Australia in a wide range of locations, including remote, regional and urban areas in every state and territory. 
+
+Pilot preschool services were selected to create a group that reflects the diversity of preschools and communities around the country. 
+
+## Get updates on the ELSA Pilot
+
+The ELSA Pilot will start in preschool services during Term 1, 2018. To stay updated with the latest news about ELSA and information about STEM practices, please [sign up to our newsletter](#signup).
+If you have any questions, please contact [ELSA support](/support.html).
+
+        {%- endcall %}
+    {%- endcall %}        
+    {% call uibits.page_section("Preschool services", "", 1) -%}
+        <div class="row text-muted" id="schoolTableNav">
+            <div class="col-xs-12">
+                <div class="">
+                    <table id="schoolTable" class="table table-darker-color" tab-index="-1">
+                        <thead>
+                            <tr>
+                                {% for key, value in schoolData[0] %}
+                                <th>
+                                    {{ key }}
+                                </th>
+                                {% endfor %}
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for school in schoolData %}
+                            <tr>
+                                {% for key, value in school %}
+                                <td>
+                                    {{ value }}
+                                </td>
+                                {% endfor %}
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    {%- endcall %}        
+    {% call uibits.page_section("User experience evaluation centres", "", 2) -%}
+        {% call uibits.page_section_markdown() -%}
+As well as pilot preschool services, ELSA is also available at a small group of user experience evaluation centres. These centres are helping the ELSA team at the University of Canberra to develop the program, and have given their time to try out software and provide feedback during development of the ELSA apps.  
+        {%- endcall %}
+        <div class="row text-muted" id="evalTableNav">
+            <div class="col-xs-12">
+                <div class="schools-table">
+                    <table id="evalTable" class="table" tab-index="-1">
+                        <thead>
+                            <tr>
+                                {% for key, value in evalData[0] %}
+                                <th>
+                                    {{ key }}
+                                </th>
+                                {% endfor %}
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for school in evalData %}
+                            <tr>
+                                {% for key, value in school %}
+                                <td>
+                                    {{ value }}
+                                </td>
+                                {% endfor %}
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    {%- endcall %}
+{%- endcall %}
+{% endblock %}

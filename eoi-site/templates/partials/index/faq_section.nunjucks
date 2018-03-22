@@ -1,0 +1,6 @@
+{% extends 'partials/index/section.nunjucks' %}
+{% import "macros/uibits.nunjucks" as uibits %}
+
+{% block body %} 
+    {{ uibits.render_faq(context) }}
+{% endblock %}         

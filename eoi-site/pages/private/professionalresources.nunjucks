@@ -1,0 +1,163 @@
+{% extends 'layout.nunjucks' %}
+{% import 'macros/uibits.nunjucks' as uibits %}
+
+{% block content %}
+{% include 'partials/nav.nunjucks' %}
+
+{% call uibits.page_wrapper() -%}
+    {{ uibits.page_header("Professional Resources") }}    
+    {% call uibits.page_section("", "", 0) -%}
+        {% call uibits.page_section_markdown() -%}
+            {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1712873.jpg", "Educator with child and iPads") -%}
+These videos and PowerPoint slides are from the two-day ELSA workshops held in 2017. 
+
+The videos and slides will be particularly helpful to any new educators and those who were unable to attend a workshop, as well as anyone who would like a refresher. 
+
+We’ve also included a list of emails to ELSA Pilot educators in 2018 for your reference.
+            {%- endcall %}
+        {%- endcall %}
+    {%- endcall %}
+    {% call uibits.page_section("Videos from ELSA workshops", "", 1) -%}        
+        {% call uibits.page_section_markdown() -%}
+Day one video presentations:
+
+* [Welcome to the ELSA Pilot](https://vimeo.com/251414179/9262ae0f3c)
+* [Why early years educators already embrace STEM](https://vimeo.com/251414328/9dced3c40b)
+* [STEM in early childhood education](https://vimeo.com/251414981/7dc1e2fae5)
+* [Spatial reasoning](https://vimeo.com/251566035/19d1acfcbe)
+* [Asking good questions](https://vimeo.com/251566156/0da4b0db4f)
+* [What is early learning STEM Australia](https://vimeo.com/251567746/e62bf08949)
+* [ELSA apps in practice - Patterns and Relationships](https://vimeo.com/252248068/300403969b)
+* [STEM practices](https://vimeo.com/252250175/7d48946719)
+
+Day two video presentations:
+
+* [STEM in picture books: part 1](https://vimeo.com/251568729/b67dcb118f)
+* [STEM in picture books: part 2](https://vimeo.com/252255085/172fe24826)
+* [Digital technology in early childhood learning](https://vimeo.com/252255225/23684353ec)
+* [ELSA for educators](https://vimeo.com/252255317/d0bcb9eb99)
+* [ELSA apps in practice - Location and Arrangement: part 1](https://vimeo.com/252255987/b5bed656f4)
+* [Augmented reality](https://vimeo.com/251568762/b341d6ee42)
+* [ELSA apps in practice - Location and Arrangement: part 2](https://vimeo.com/252256168/23b647b05b)
+        {%- endcall %}
+    {%- endcall %}
+
+    {% call uibits.page_section("PowerPoint slides from ELSA workshops", "", 2) -%}
+        {% call uibits.page_section_markdown() -%}
+
+Day one PowerPoint presentations:
+
+<ul class="file-list">
+    <li> 
+        <i class="fa fa-file-powerpoint-o file-icon" aria-hidden="true"></i>
+         [Part 1 (PPTX)](/docs/SYD_Day 1_1 ELSA workshop.pptx)
+    </li>
+    <ul>
+        <li>Welcome</li>
+        <li>Postcard matching</li>
+        <li>Why early years educators already embrace STEM practices</li>
+        <li>STEM in early childhood education</li>
+        <li>Why STEM in the early years?</li>
+        <li>Spatial reasoning</li>
+        <li>STEM practices</li>
+    </ul>
+</ul>
+
+<ul class="file-list">
+    <li> 
+        <i class="fa fa-file-powerpoint-o file-icon" aria-hidden="true"></i>
+         [Part 2 (PPTX)](/docs/SYD_Day 1_2 ELSA workshop.pptx)
+    </li>
+    <ul>
+        <li>What is Early Learning STEM Australia?</li>
+        <li>ELSA apps in practice - Patterns and Relationships</li>
+    </ul>
+</ul>
+
+<ul class="file-list">
+    <li> 
+        <i class="fa fa-file-powerpoint-o file-icon" aria-hidden="true"></i>
+         [Part 3 (PPTX)](/docs/SYD_Day 1_3 ELSA workshop.pptx)
+    </li>
+    <ul>
+        <li>STEM practices and children's literature</li>
+        <li>ELSA action plan</li>
+        <li>Day one reflection</li>
+    </ul>
+</ul>
+
+Day two PowerPoint presentations: 
+
+<ul class="file-list">
+    <li> 
+        <i class="fa fa-file-powerpoint-o file-icon" aria-hidden="true"></i>
+         [Part 1 (PPTX)](/docs/SYD_Day 2_1 ELSA Workshops.pptx)
+    </li>
+    <ul>
+        <li>Welcome</li>
+        <li>STEM practices - applying our knowledge </li>
+        <li>Digital technology in early childhood learning</li>
+    </ul>
+</ul>
+
+<ul class="file-list">
+    <li> 
+        <i class="fa fa-file-powerpoint-o file-icon" aria-hidden="true"></i>
+         [Part 2 (PPTX)](/docs/SYD_Day 2_2 ELSA Workshops.pptx)
+    </li>
+    <ul>
+        <li>Preparing for the ELSA Pilot</li>
+        <li>ELSA apps in practice - Location and Arrangement</li>
+    </ul>
+</ul>
+
+<ul class="file-list">
+    <li> 
+        <i class="fa fa-file-powerpoint-o file-icon" aria-hidden="true"></i>
+         [Part 3 (PPTX)](/docs/SYD_Day 2_3_ELSA Workshop.pptx)
+    </li>
+    <ul>
+        <li>An introduction to communities of practice in the ELSA Pilot</li>
+        <li>ELSA action plan</li>
+        <li>Final reflections</li>
+    </ul>
+</ul>
+
+        {%- endcall %}
+    {%- endcall %}
+    {% call uibits.page_section("Emails to ELSA Pilot educators", "", 3) -%}
+        {% call uibits.page_section_markdown() -%}
+
+<ul class="file-list">
+    <li> 
+        <i class="fa fa-file-pdf-o file-icon" aria-hidden="true"></i>
+         [ELSA Pilot email 1 (2 February 2018) (PDF)](/docs/ELSA 2018 Email 1.pdf)
+    </li>
+    <li> 
+        <i class="fa fa-file-pdf-o file-icon" aria-hidden="true"></i>
+         [ELSA Pilot email 2 (9 February 2018) (PDF)](/docs/ELSA 2018 Email 2.pdf)
+    </li>
+    <li> 
+        <i class="fa fa-file-pdf-o file-icon" aria-hidden="true"></i>
+         [ELSA Pilot email 3 (19 February 2018) (PDF)](/docs/ELSA 2018 Email 3.pdf)
+    </li>
+    <ul class="file-list">
+        <li> 
+            <i class="fa fa-file-pdf-o file-icon" aria-hidden="true"></i>
+            [Sorting activities for email 3 (PDF)](/docs/ELSA 2018 Sorting activities - for Email 3.pdf)
+        </li>
+    </ul>
+    <li> 
+        <i class="fa fa-file-pdf-o file-icon" aria-hidden="true"></i>
+         [ELSA Pilot email 4 (27 February 2018) (PDF)](/docs/ELSA 2018 Email 4.pdf)
+    </li>
+    <li> 
+        <i class="fa fa-file-pdf-o file-icon" aria-hidden="true"></i>
+         [ELSA Pilot email 5 (20 March 2018) (PDF)](/docs/ELSA Email 5 to pilot educators.pdf)
+    </li>
+</ul>
+
+        {%- endcall %}
+    {%- endcall %}
+{%- endcall %}
+{% endblock %}

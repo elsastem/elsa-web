@@ -1,0 +1,18 @@
+{
+    "Version": "$LATEST",
+    "CodeSha256": "7JCskf81iyqsFu+tUmWe73ZRfbH0cvKpaps/ZXFcfCE=",
+    "FunctionName": "elsaEOINotifier",
+    "VpcConfig": {
+        "SubnetIds": [],
+        "SecurityGroupIds": []
+    },
+    "MemorySize": 128,
+    "CodeSize": 2057,
+    "FunctionArn": "arn:aws:lambda:ap-southeast-2:531028396584:function:elsaEOINotifier",
+    "Handler": "index.handler",
+    "Role": "arn:aws:iam::531028396584:role/elsaEOINotifier",
+    "Timeout": 60,
+    "LastModified": "2017-03-04T09:37:32.329+0000",
+    "Runtime": "nodejs4.3",
+    "Description": "An Amazon DynamoDB trigger that notifies people when we've received an EOI"
+}

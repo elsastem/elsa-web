@@ -1,0 +1,47 @@
+{
+  "name": "agency",
+  "title": "Agency",
+  "version": "3.3.7+1",
+  "homepage": "http://startbootstrap.com/template-overviews/agency",
+  "author": "Start Bootstrap",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
+  },
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.18.13",
+    "font-awesome": "^4.6.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-data": "^1.2.1",
+    "gulp-header": "^1.8.9",
+    "gulp-less": "^3.1.0",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "jquery": "^1.11.3",
+    "jquery-validation": "^1.17.0",
+    "marked": "^0.3.6",
+    "nunjucks-markdown": "^2.0.1",
+    "select2": "^4.0.5",
+    "twitter-bootstrap-wizard": "^1.2.0",
+    "gulp-cache-bust": "^1.1.0",
+    "mkpath": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlackrockDigital/startbootstrap-agency.git"
+  },
+  "dependencies": {
+    "contentful": "^5.0.5",
+    "csvtojson": "^1.1.9",
+    "datatables.net": "^1.10.16",
+    "datatables.net-bs": "^1.10.16",
+    "image-downloader": "^3.3.0"
+  }
+}

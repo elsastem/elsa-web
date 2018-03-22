@@ -1,0 +1,9 @@
+{% extends 'partials/index/section.nunjucks' %}
+{% block head %}{% endblock %}         
+{% block body %} 
+    <div class="row">
+        <div class="col-lg-12">
+            <a href="{{context.notice.url}}" class="page-scroll">{{context.notice.text}}</a>
+        </div>
+    </div>
+{% endblock %}         

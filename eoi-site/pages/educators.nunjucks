@@ -1,0 +1,35 @@
+{% extends 'layout.nunjucks' %}
+{% import 'macros/uibits.nunjucks' as uibits %}
+
+{% block content %}
+{% include 'partials/nav.nunjucks' %}
+
+{% call uibits.page_wrapper() -%}
+    {{ uibits.page_header("For Educators") }}    
+    {% call uibits.page_section("", "", 0) -%}
+        {% call uibits.page_section_markdown() -%}
+Welcome to all educators taking part in the ELSA Pilot. We hope you're as excited as we are!
+
+To help you prepare for the pilot, we've included some key information and resources below. 
+
+{{ uibits.page_section_video("https://player.vimeo.com/video/255483170") }}
+
+## Get ready for launch
+
+Before ELSA launches, we need a few things from you to make sure you're ready to start when the apps are released. 
+        {%- endcall %}
+
+        <div class="text-muted" style="margin: 100px 0;">
+            {{ uibits.timeline(educatorsContent.timeline, linkUrls) }}
+        </div>        
+ 
+        {% call uibits.page_section_markdown() -%}
+## ELSA support
+
+If you have any questions or need help with these steps, please contact [ELSA support](/support.html).
+
+        {%- endcall %}
+    {%- endcall %}
+{%- endcall %}
+
+{% endblock %}

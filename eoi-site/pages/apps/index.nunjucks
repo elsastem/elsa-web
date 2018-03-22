@@ -1,0 +1,78 @@
+{% extends 'layout.nunjucks' %}
+{% import 'macros/uibits.nunjucks' as uibits %}
+
+{% block content %}
+{% include 'partials/nav.nunjucks' %}
+
+{# https://dribbble.com/shots/1649942-eventtus-app-download-page might be better #}
+
+{% call uibits.page_wrapper() -%}
+    {# {{ uibits.page_header("ELSA Apps") }}     #}
+    {% call uibits.page_section("", "", 0) -%}
+        {% call uibits.page_section_markdown() -%}
+    <div class="text-center" style="margin-top: 85px;">
+        <h1>Download ELSA apps</h1>
+        <p>Click on the store icons below to download ELSA apps for iPad (App Store) and Android (Google Play).</p>
+        <h4>Quickstart guides</h4>
+        <p>
+            Download the <a href="/docs/Quickstart guide_ELSA_final.pdf">quickstart guide to setting up your ELSA apps</a>.
+        </p>
+        <p>
+            Download the <a href="/docs/How to set up classes and children_V3.pdf">quickstart guide to setting up your classes and children</a>.
+        </p>
+
+    </div>
+        {%- endcall %}
+    {%- endcall %}
+
+<section class="apps-section">
+    <div class="container-fluid">
+        <div class="row apps-section row-eq-height">
+            <div class="col-sm-6 text-center educator-app">
+                <div class="app-icon">
+                    <img src="/img/educator_icon.png" alt="Educator app icon" />
+                </div>
+                <h2>ELSA Educator</h2>      
+                <p>ELSA Educator is an app for educators from preschool services taking part in the 2018 ELSA Pilot. This app works on tablets and phones.</p>
+                <div class="download-badges">
+                    <a href='https://itunes.apple.com/us/app/elsa-educator/id1349577817?ls=1&mt=8'>
+                        <img class="apple-badge" alt='Download on the App Store' src='/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' />
+                    </a>
+                    <a href='https://play.google.com/store/apps/details?id=au.edu.elsa.educator&hl=en'>
+                        <img class="google-badge" alt='Get it on Google Play' src='/img/google-play-badge.png' />
+                    </a>
+                </div>
+                <div class="coming-soon">
+                    <h4>Coming soon</h4>
+                    <div>ELSA Families - Term 1</div>
+                </div>
+            </div>
+            <div class="col-sm-6 text-center kids-app">
+                <div class="app-icon">
+                    <img src="/img/kids_app_icon.png" alt="Kids app icon" />
+                </div>
+                <h2>ELSA Patterns and Relationships</h2>
+                <p>ELSA Patterns and Relationships is the first children’s app for the 2018 ELSA Pilot.</p>
+                <div class="download-badges">
+                    <a href='https://itunes.apple.com/us/app/elsa-patterns-relationships/id1352118810?ls=1&mt=8'>
+                        <img class="apple-badge" alt='Download on the App Store' src='/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg' />
+                    </a>
+                    <a href='https://play.google.com/store/apps/details?id=au.edu.canberra.elsa.patterns'>
+                        <img class="google-badge" alt='Get it on Google Play' src='/img/google-play-badge.png' />
+                    </a>
+                </div>
+                <div class="coming-soon">
+                    <h4>Coming soon</h4>
+                    <div>ELSA Location and Arrangement - Term 2</div>
+                    <div>ELSA Representations - Term 3</div>
+                    <div>ELSA Investigations - Term 4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+{%- endcall %}
+
+{% endblock %}

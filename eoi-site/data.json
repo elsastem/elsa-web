@@ -1,0 +1,568 @@
+{
+    "version": "0.0.1",
+    "logo": {
+        "url": "/img/logos/ELSA-MAINLOGO.svg",
+        "text": "ELSA Logo"
+    },
+    "linkUrls": {
+        "childContentForm": "http://",
+        "deviceSurvey": "http://",
+        "sortingApp": "/app_sorting.html",
+        "tidyApp": "/app_tidy.html",
+        "orderApp": "/app_order.html",
+        "patternApp": "/app_pattern.html"
+    },
+    "content": {
+        "sections": [
+            {
+                "id": "header",
+                "menu": null,
+                "leadText": "Early Learning STEM Australia",
+                "subText": "",
+                "links": [
+                    {
+                        "text": "For Educators",
+                        "url": "/educators.html"
+                    },
+                    {
+                        "text": "For Families",
+                        "url": "/families.html"
+                    }
+                ]
+            },
+            {
+                "id": "elsa",
+                "menu": "About",
+                "title": "",
+                "subtitle": "",
+                "blurbs": [
+                    {
+                        "icon": "fa-flash",
+                        "title": "Preschool",
+                        "body": "Early Learning STEM Australia (ELSA) is a play-based digital learning program for children in preschool to explore science, technology, engineering and mathematics (STEM) practices."
+                    },
+                    {
+                        "icon": "fa-mobile",
+                        "title": "Digital",
+                        "body": "ELSA apps will go beyond the screen to encourage active play that supports STEM practices, such as creativity and problem solving. Our apps act as a springboard for children to explore the natural world. [Take a peek at the first app](/video)."
+                    },
+                    {
+                        "icon": "fa-graduation-cap",
+                        "title": "Pilot",
+                        "body": "One hundred preschool services from across Australia are taking part in the 2018 ELSA Pilot. The pilot program includes professional learning for educators, and real-world play for children to complement the apps. [Discover the ELSA Pilot preschools](/pilot.html) in your area."
+                    }
+                ]
+            },
+            {
+                "id": "stem",
+                "menu": "STEM",
+                "title": "Learning outcomes",
+                "subtitle": "Benefits of the ELSA Pilot",
+                "image": {
+                    "url": "/img/photos/elsa/ELSA_web_plants_resized.jpg",
+                    "alt": "Child with big smile"
+                },
+                "content": [
+                    "Educators from the 100 preschool services selected to take part in the ELSA Pilot will have opportunities to attend free workshops and will be the first to use the ELSA apps. They'll also receive resources to incorporate STEM practices into their preschool program.",
+                    "",
+                    "STEM practices are the ideas, methods and values that underpin STEM, such as curiosity, team work and creativity. Exploring STEM practices helps children develop strong skills in many areas - like problem solving and communication - that are useful later in life.",
+                    "",
+                    "ELSA can help educators to explore STEM practices as part of their preschool program and provide the best learning outcomes for children.",
+                    "",
+                    "ELSA will also provide:",
+                    "+ a host of resources aligned with the Early Years Learning Framework (EYLF) and linked to the Australian Curriculum, plus ways to share ideas with a supportive network of early learning professionals",
+                    "+ new ways to engage families through the ELSA Families app, which will extend learning into homes",
+                    "+ innovative ideas for children to explore, investigate and have meaningful experiences in the natural world.",
+                    "",
+                    "ELSA is free and operates on a bring your own device (BYOD) basis."
+                ]
+            },
+            {
+                "id": "pilot",
+                "menu": "Pilot",
+                "title": "Pilot",
+                "subtitle": "Bringing ELSA to a preschool service near you",
+                "timeline": [
+                    {
+                        "image": {
+                            "url": "/img/photos/elsa/ELSA_web_group_point_square_small.jpg",
+                            "alt": "Child pointing"
+                        },
+                        "title": "ONE HUNDRED PRESCHOOL SERVICES",
+                        "body": [
+                            "One hundred preschool services across Australia are taking part in the ELSA Pilot. Pilot preschool services were selected from an expression of interest process in 2017, and are from a range of urban, regional, and remote areas in every state and territory.",
+                            "",
+                            "[Discover the ELSA Pilot preschool services](/pilot.html) in your area."
+                        ]
+                    },
+                    {
+                        "image": {
+                            "url": "/img/photos/elsa/ELSA_web_circle2_square_small.jpg",
+                            "alt": "Children in a circle"
+                        },
+                        "title": "LINKED TO BEST PRACTICE",
+                        "body": [
+                            "ELSA is aligned with the Early Years Learning Framework (EYLF), which supports and enhances young children's learning from birth to five years of age, as well as their transition to school. ELSA supports play-based learning in a variety of early childhood settings."
+                        ]
+                    },
+                    {
+                        "image": {
+                            "url": "/img/photos/elsa/ELSA_web_educators2_square_small.jpg",
+                            "alt": "Educators"
+                        },
+                        "title": "CONNECTED TO COMMUNITY",
+                        "body": [
+                            "Educators in the ELSA Pilot contribute to a community of practice, sharing ideas, skills and knowledge. ELSA also supports educators to connect with families. Learning can be extended from the preschool to home, with the ELSA Families app coming in early 2018. [Sign up to our newsletter](#signup) to receive all the latest news about the ELSA Pilot and information about STEM practices in early learning."
+                        ]
+                    },
+                    {
+                        "linkonly": true,
+                        "link": {
+                            "url": "#signup",
+                            "text": "Sign up<br>for news"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "educatorsContent": {
+        "timeline": [
+            {
+                "image": {
+                    "url": "/img/photos/elsa/ELSA_web_educators2_square_small.jpg",
+                    "alt": "Educators sharing"
+                },
+                "title": "Device survey",
+                "body": [
+                    "We're collecting information from each pilot preschool service about the devices they'll be using. For example, how many devices they have, what type of devices and which operating system they run.",
+                    "",
+                    "Please complete the online [device survey](https://canberraelsa.au1.qualtrics.com/jfe/form/SV_ebNo8FQuZXVAUPr)."
+                ]
+            },
+            {
+                "image": {
+                    "url": "/img/photos/elsa/ELSA_web_educator_carpet_small.jpg",
+                    "alt": "Child and Educator on the floor"
+                },
+                "id": "becomeapproved",
+                "title": "Become an approved ELSA Pilot user",
+                "body": [
+                    "Only nominated staff of a participating ELSA Pilot centre can log into the ELSA apps. To add your details to the list, please ask your director to contact us:",
+                    "",
+                    "Email: [team@elsa.edu.au](mailto:team@elsa.edu.au)",
+                    "",
+                    "Phone: 1800 931 042"
+                ]
+            },
+            {
+                "image": {
+                    "url": "/img/photos/elsa/ELSA_web_unit-blocks-table_small.jpg",
+                    "alt": "Educator and child with tablet"
+                },
+                "title": "Consent for children to participate in the ELSA Pilot",
+                "body": [
+                    "All children participating in the ELSA Pilot need a signed consent form from a parent or legal guardian. This consent form needs to be completed before children use the apps.",
+                    "",
+                    "Parents and legal guardians can access the online [ELSA Pilot consent form - children](https://tinyurl.com/consentELSA). Alternatively, educators can email parents and legal guardians a link to the form: https://tinyurl.com/consentELSA",
+                    "",
+                    "#### Consent from educators",
+                    "",
+                    "Each educator also needs to to fill in an [educator consent form](https://canberraelsa.au1.qualtrics.com/jfe/form/SV_a2wgyzZX44i9F0F) to participate in the pilot."
+                ]
+            },
+            {
+                "image": {
+                    "url": "/img/photos/elsa/ELSA_boy_yellow_hat_small.jpg",
+                    "alt": "Educator with boy on iPad"
+                },
+                "title": "Professional resources",
+                "body": [
+                    "If you have not attended an ELSA workshop, or you need a refresher, take some time to explore our professional resources to help you run the ELSA Pilot in your centre. [Contact ELSA](/support.html) for access to professional resources.",
+                    "",
+                    "ELSA recommends you follow the **Experience**, **Represent**, **Apply** model to implement the pilot. Enable children to **Experience** a concept first with a hands-on activity. Then **Represent this concept** on the ELSA children app in a game format. Then follow this engagement with opportunities to **Apply** this concept to their own environment."
+                ]
+            },
+            {
+                "image": {
+                    "url": "/img/photos/elsa/ELSA_girl_jump_small.jpg",
+                    "alt": "Child jumping"
+                },
+                "title": "Activities",
+                "body": [
+                    "Before you start using the ELSA apps, try out these activities. They will help you and the children get familiar with STEM practices.",
+                    "",
+                    "Here are four activities you can use in the lead up to app launch:",
+                    "* [Books about sorting](/activities/5c2QP64hIIKkiy6COEe6UY.html)",
+                    "* [Let's tidy up](/activities/5Ek0hMejxSu6cIWqK4Ga42.html)",
+                    "* [Books about ordering](/activities/6C4XYXDacoYyEiaUKc8cOI.html)",
+                    "* [Extending a pattern](/activities/KVu3RxrVsWis8gCAWWuqC.html)"
+                ]
+            },
+            {
+                "image": {
+                    "url": "/img/photos/elsa/ELSA_web_group_point_square_small.jpg",
+                    "alt": "Child pointing"
+                },
+                "title": "What's next",
+                "body": [
+                    "When the first ELSA apps are released, you will receive an email notifying you to download them from the App Store or Google Play, and a quickstart guide for setting up the apps. ",
+                    "",
+                    "The first thing to do is to log in with your details and verify your identity. Make sure you are a nominated staff member at your centre, as we need to have your details in the ELSA system to give you access. See <a class='page-scroll' href='#becomeapproved'>become an approved ELSA Pilot user</a> above for more information."
+                ]
+            }
+        ]
+    },
+    "faq": {
+        "questions": [
+            {
+                "q": "What is STEM?",
+                "a": [
+                    "STEM is an integrated approach to teaching science, technology, engineering and mathematics by exploring the real world.",
+                    "",
+                    "Children learn STEM through play when they:",
+                    "+ create a community garden",
+                    "+ build structures that are strong or tall",
+                    "+ fill different containers with water or sand",
+                    "+ create patterns or draw designs.",
+                    "",
+                    "STEM practices include:",
+                    "+ exploring and challenging",
+                    "+ problem finding and solving",
+                    "+ generating ideas",
+                    "+ using tools to produce artefacts",
+                    "+ curiosity",
+                    "+ team work.",
+                    "",
+                    "Exploring STEM practices helps children develop strong skills in problem solving and communication that can be used later in life."
+                ]
+            },
+            {
+                "q": "What do you mean by a preschool service?",
+                "a": [
+                    "We define a preschool service as a structured, play-based learning program, delivered by a degree-qualified early childhood teacher, aimed primarily at children in the year before they commence full-time schooling. Preschool services are also known as kindergartens, child and parent centres, and early learning centres.",
+                    ""
+                ]
+            },
+            {
+                "q": "How can I join the pilot?",
+                "a": [
+                    "Applications for the 2018 ELSA Pilot have closed. ",
+                    "",
+                    "If you would like to receive updates about ELSA, please [sign up to our newsletter](#signup)."
+                ]
+            },
+            {
+                "q": "When does the pilot start?",
+                "a": [
+                    "The ELSA Pilot will start in preschool services in Term 1, 2018. Apps and further workshops for educators will be rolled out during 2018."
+                ]
+            },
+            {
+                "q": "Which tablet devices support ELSA?",
+                "a": [
+                    "ELSA apps will operate on iPad and Android tablets."
+                ]
+            },
+            {
+                "q": "Do educators need to have a science background to be involved?",
+                "a": [
+                    "Not at all. ELSA is all about STEM concepts and practices. Educators already adopt this approach by encouraging children to ask questions, make predictions, try things, and reflect on what happened and why. By participating in the pilot, educators and families will find new ways for children to engage with STEM concepts and practices."
+                ]
+            },
+            {
+                "q": "Can I get help with tablets and digital technology?",
+                "a": [
+                    "Absolutely. The ELSA Pilot supports educators to incorporate tablets and digital learning within existing preschool programs. Contact [ELSA support](/support.html) with any technical questions you might have."
+                ]
+            },
+            {
+                "q": "What about screen time?",
+                "a": [
+                    "ELSA will use tablet apps to create meaningful opportunities for children to explore rich digital learning environments.",
+                    "",
+                    "Children are expected to spend a maximum of 40 minutes per week engaging with the ELSA apps. This is likely to occur across multiple shorter sessions, and is consistent with screen time guidelines from the Australian Government. The apps are being carefully designed with early childhood experts to support active play."
+                ]
+            },
+            {
+                "q": "Is my privacy protected? What data will be collected?",
+                "a": [
+                    "We take privacy seriously. The privacy of all participants - including children, educators and families - will be protected when participating in the ELSA Pilot.",
+                    "",
+                    "For example, data on app usage will be collected to help us improve the program. This data will be stored securely on Australian servers. If you have any questions about privacy, please contact us at [team@elsa.edu.au](mailto:team@elsa.edu.au)."
+                ]
+            },
+            {
+                "q": "Can children's families participate?",
+                "a": [
+                    "Yes. Families of an ELSA Pilot preschool service are encouraged to participate. We are developing a Families app to support a strong connection between children's homes and preschools. ",
+                    "",
+                    "Find out more about how families can be involved on our [For Families page](/families.html). "
+                ]
+            }
+        ]
+    },
+    "techfaq": {
+        "questions": [
+            {
+                "q": "I've lost my password. What can I do?",
+                "a": [
+                    "You can reset your password using the Educator app:",
+                    "+ Enter your mobile number (make sure you use the same mobile number you provided to ELSA initially, as this is connected to your account).",
+                    "+ On the 'Sign in to ELSA' screen, tap 'Forgot your password?'",
+                    "+ On the 'Reset Password' screen, enter a new password. Then touch 'Update password'.",
+                    "+ A verification code will be sent to the mobile number you entered.",
+                    "+ Enter the verification code on the 'Verify your phone number' screen.",
+                    "+ Touch 'Get started'.",
+                    "",
+                    "Note: if you do not remember your mobile number, or have new accounts that are not already linked to ELSA, please call our support team on 1800 931 042. We will need to set up your new details to give you access."
+                ]
+            },
+            {
+                "q": "How do I set up another team member to access the Educator app?",
+                "a": [
+                    "Privacy is important to us. To keep your preschool service's information secure, we keep a list of approved staff at each centre.",
+                    "",
+                    "To add someone to the list, please fill out a [support form](https://elsa.au1.qualtrics.com/jfe/form/SV_29UDSmXY3Ser6ex) or call the ELSA team on 1800 931 042 and provide:",
+                    "+ your preschool service's name",
+                    "+ the educator's name",
+                    "+ fill different containers with water or sand",
+                    "+ the educator's mobile number and/or email address, so they can verify their account.",
+                    "",
+                    "We will double-check your request with our primary contact at the preschool service before adding a new educator to the list. This process can take up to a week. Once the new team member is added, we will notify them via their mobile number or email address."
+                ]
+            },
+            {
+                "q": "Do I need WiFi to use the ELSA apps?",
+                "a": [
+                    "You can use all the ELSA apps without WiFi, but we ask that you access WiFi at least monthly to upload usage data and check for updates. Some features on the Educator app do require WiFi.",
+                    "",
+                    "Features that require WiFi:",
+                    "+ downloading apps",
+                    "+ signing up to apps and logging in",
+                    "+ uploading usage data",
+                    "+ finding out how much time children have spent on the apps",
+                    "+ accessing new reflections and data from the Educator app on the ELSA website",
+                    "+ sending and receiving messages on the Educator app",
+                    "+ downloading new content."
+                ]
+            },
+            {
+                "q": "What if a child accidentally uses someone else's player profile?",
+                "a": [
+                    "The ELSA apps are designed to support each child's unique progression by offering certain tasks and activities once they are ready to work through various levels of complexity. So it's a better experience for the children if they play using their own profile.",
+                    "",
+                    "You can reduce the likelihood that a child will accidentally use someone else's player profile by supervising children at the start of each session. This is when the apps will prompt children to make sure their picture is selected before playing."
+                ]
+            },
+            {
+                "q": "Where is the ELSA data stored?",
+                "a": [
+                    "ELSA data is stored in Amazon Web Services (AWS) Sydney data centre."
+                ]
+            },
+            {
+                "q": "Can families access the ELSA session data on their child?",
+                "a": [
+                    "The ELSA Families app does not contain session data. However, if parents or legal guardians want to know how much time their child is spending on ELSA each week, this information is available via each child's profile in the Educator app.",
+                    "",
+                    "We encourage educators to share ELSA content that children have created with their families."
+                ]
+            },
+            {
+                "q": "Why do I need to connect the Educator app with the ELSA apps for children?",
+                "a": [
+                    "By connecting the apps, session data and ELSA content can be sent from the children's apps to the educator app.",
+                    "",
+                    "Educators can then view session times and ELSA content created by the children participating in the pilot."
+                ]
+            },
+            {
+                "q": "How can I see how much time each child has spent on the ELSA apps for children?",
+                "a": [
+                    "Follow these steps to see how long each child has spent on the ELSA apps for children:",
+                    "",
+                    "1. In the Educator app, tap to the 'Children' tab in the main menu at the bottom of the screen.",
+                    "2. Tap the profile picture of the relevant child to view their details.",
+                    "3. Under the child's profile image is a section called 'Activity'. This displays time spent during the current week, and total time spent, for each activity.",
+                    "",
+                    "![Adding notes to portfolio](/img/techfaq/Adding notes to portfolio.png)"
+                ]
+            },
+            {
+                "q": "I have a STEM question. Who can I ask?",
+                "a": [
+                    "Ask our support team at ELSA. We are ready to assist you with any STEM questions. Call 1800 931 042 or get in touch via our [support](https://elsa.edu.au/support.html) page.",
+                    "",
+                    "If you want advice from other educators in the pilot, you might like to try posting your question in the Messages section of the Educator app. Your question can be read by all the educators in the pilot, and some may be able to help you. You need to have WiFi switched on to use Messages."
+                ]
+            },
+            {
+                "q": "How do I mute the audio in the ELSA children's apps?",
+                "a": [
+                    "To mute the audio (music and voice) in one of the ELSA children's apps, follow these steps:",
+                    "1. Go to the main menu screen of the children's app.",
+                    "2. Tap the button at the bottom of the screen that says 'Educators'.",
+                    "![App 1 menu screen](/img/techfaq/Giving permission to camera microphone and camera roll_1.PNG)",
+                    "3. Answer the math question to get access.",
+                    "4. Locate the 'Device Settings' section.",
+                    "5. Next to 'Music enabled' and 'Voice enabled' tap the buttons so they say 'off'.",
+                    "![Educator's Area](/img/techfaq/Giving permission to camera microphone and camera roll_2.PNG)"
+                ]
+            },
+            {
+                "q": "How do I select the class for the day in the ELSA children's apps?",
+                "a": [
+                    "Tap the 'Educators' tab on the main menu in the children's app. You can access the educator settings by responding to a simple addition question.",
+                    "![Educator tab to access settings](/img/techfaq/Educator tab to access settings.jpg)",
+                    "Choose the class for the day by tapping 'Select active class'. This will allow you to change the class.",
+                    "![App 1 settings daily class](/img/techfaq/App1_settings daily class.jpg)",
+                    "If you would like to be automatically prompted to select the class for the day, ensure that the 'Prompt startup daily active class selection' button is on.",
+                    "![App 1 settings daily class prompt](/img/techfaq/App1_settings daily class_prompt.jpg)"
+                ]
+            },
+            {
+                "q": "How do I edit a child's profile?",
+                "a": [
+                    "You can edit a child's profile via the Educator app or the children's apps. We've explained each method below.",
+                    "",
+                    "**In the Educator app**",
+                    "",
+                    "1. Tap the 'Children' tab in the main menu at the bottom of the screen.",
+                    "2. Tap the profile picture of the relevant child to view their details.",
+                    "![select child](/img/techfaq/select child.png)",
+                    "3. Tap 'Edit' in the top left of the profile to make changes.",
+                    "![edit](/img/techfaq/edit.png)",
+                    "4. You can update the following details in the Educator app: child's name, month and year of birth, child's class, and delete profile.",
+                    "5. When you have finished, tap 'Done' in the top left of the profile or 'Cancel' in the top right to discard changes.",
+                    "![edit details](/img/techfaq/edit details.png)",
+                    "When you have finished, tap 'Done' in the top left of the profile or 'Cancel' in the top right to discard changes.",
+                    "",
+                    "**In the children's apps**",
+                    "",
+                    "1. Tap the 'Educators' tab at the bottom of the screen on the main menu of the children's app. You can access the educator settings by responding to a simple addition question.",
+                    "![Educator tab to access settings](/img/techfaq/Educator tab to access settings.jpg)",
+                    "2. In the educator settings, select 'Edit children details'.",
+                    "![App 1 settings child details edit](/img/techfaq/App1_settings child edit.jpg)",
+                    "3. You can edit 'Name' and 'Appearance'. The image choices for 'Appearance' are: child's initials, animal avatar or a photo.",
+                    "4. Once you have made changes, tap the back arrow button and changes will be saved.",
+                    "![Edit child avatar app 1](/img/techfaq/Edit Child_avatar_app1.jpg)"
+                ]
+            },
+            {
+                "q": "How do I connect the camera, microphone and camera roll to an app?",
+                "a": [
+                    "When you first log in to one of the ELSA children's apps, you will be guided through three steps to give access to the camera, microphone and camera roll. On each screen touch 'Grant Permission'. Then touch 'OK' on the pop-up windows.",
+                    "",
+                    "If you accidentally touch 'Don't Allow' on one of the pop-up windows, or need to update permissions later on, follow the steps below.",
+                    "",
+                    "** iPad **",
+                    "",
+                    "1. Go to the main menu screen of the children's app.",
+                    "2. Tap the button at the bottom of the screen that says 'Educators'.",
+                    "![Giving permission to camera microphone and camera roll 1](/img/techfaq/Giving permission to camera microphone and camera roll_1.PNG)",
+                    "3. Answer the math question to get access.",
+                    "4. Locate the 'Permission Settings' section and tap the 'Settings' button.",
+                    "![Giving permission to camera microphone and camera roll 2](/img/techfaq/Giving permission to camera microphone and camera roll_2.PNG)",
+                    "5. Locate the Microphone and Camera icons on the right side of the screen.",
+                    "6. Move each button to the right to allow access.",
+                    "7. Tap the Photos icon.",
+                    "8. Select 'Read and Write' (this gives access to the camera roll).",
+                    "![Giving permission to camera microphone and camera roll 3](/img/techfaq/Giving permission to camera microphone and camera roll_3.PNG)",
+                    "",
+                    "** Android**",
+                    "",
+                    "1. Go to the main menu screen of the children's app.",
+                    "2. Tap the button at the bottom of screen that says 'Educators'.",
+                    "![App 1 home screen Android device](/img/techfaq/App 1 home screen Android device.png)",
+                    "3. Answer the math question to get access.",
+                    "4. Locate the 'Permission Settings' section and tap the 'Settings' button.",
+                    "![App 1 settings screen on Android device ](/img/techfaq/App 1 settings screen on Android device.png)",
+                    "5. Locate the ELSA app in the list of apps on the right side of the screen.",
+                    "6. Tap the ELSA app.",
+                    "![Apps list on Android device ](/img/techfaq/Apps list on Android device.png)",
+                    "7. Move the 'Camera', 'Microphone' and 'Storage' (photos) buttons to the right to allow access.",
+                    "![About to change app 1 settings on Android device](/img/techfaq/About to change app 1 settings on Android device.png)"
+                ]
+            },
+            {
+                "q": "How do I add a child in the Educator app?",
+                "a": [
+                    "Follow these steps to add a child in the Educator app:",
+                    "",
+                    "1. Tap on the 'Children' menu tab at the bottom of the screen.", 
+                    "2. Tap 'Add...' in the top right hand corner of the screen.",
+                    "3. Tap 'Add Child' from the drop-down menu.",
+                    "![Add child](/img/techfaq/Add child.png)",
+                    "4. Type the child’s first name and first letter of their last name.",
+                    "5. Type their year and month of birth in the next field.",
+                    "6. Check that the child is assigned to the correct group/class. If they are not, tap 'change' and follow the prompts.",
+                    "![Add child assign to class](/img/techfaq/Add child_assign to class.png)",
+                    "7. Choose an option for how to identify a child with an avatar image. We suggest using a photo of a personal artefact (such as a their backpack or a favourite toy) that is easily recognised by the child. Alternatively, you can use one of the preset ELSA animal symbols or default to the child’s initials.",
+                    "When you have finished, tap 'Done' in the top right corner of the screen."
+                ]
+            },
+            {
+                "q": "How do I add a class or group in the Educator app?",
+                "a": [
+                    "Follow these steps to add a class or group in the Educator app:",
+                    "",
+                    "1. Tap on the 'Children' menu tab at the bottom of the screen.",
+                    "2. Tap 'Add...' in the top right hand corner of the screen.",
+                    "3. Tap 'Add Group' from the drop-down menu.",
+                    "![Add group](/img/techfaq/Add group.png)",
+                    "4. Type the group or class name.",
+                    "5. You can enter notes in the box below.",
+                    "6. Add an image to represent the class or choose a preset ELSA animal avatar."
+                ]
+            },
+            {
+                "q": "How do I edit a class?",
+                "a": [
+                    "Follow these steps to edit a class you have created in the Educator app:",
+                    "",
+                    "1. Tap on the 'Children' menu tab at the bottom of the screen.",
+                    "2. Tap the 'edit' button on the right side of the screen next to the class you would like to edit.",
+                    "3. Update the name and image and then tap 'Done'",
+                    "Note: a class with children cannot be deleted. To delete a class, the child must first be moved to another class.",
+                    "![edit class](/img/techfaq/edit class.png)"
+                ]
+            },
+            {
+                "q": "Can I add reflections and notes in the ELSA Educator app?",
+                "a": [
+                    "Yes you can. Follow these steps to add reflections and notes in the Educator app:",
+                    "",
+                    "1. Tap on the 'Children' menu tab at the bottom of the screen.",
+                    "2. Tap on a child's profile image to view their profile detais.",
+                    "3. Select an activity and view the content created by the child.",
+                    "4. Tap on the section called 'Portfolio', and add notes and observations.",
+                    "![Add notes](/img/techfaq/add notes.png)"
+                ]
+            },
+            {
+                "q": "How can I view content created by a child in my group?",
+                "a": [
+                    "Follow these steps to view content created by a child in your group:",
+                    "",
+                    "1. Tap on the 'Children' menu tab at the bottom of the screen.",
+                    "2. Tap on a child's profile image to view their profile detais.",
+                    "3. Select an activity and view the content created by the child. You can listen to audio descriptions and view content that has been created in each activity.",
+                    "![Portfolio](/img/techfaq/Portfolio.png)",
+                    "4. Tap on any image to view details.",
+                    "![view user generated pattern](/img/techfaq/view_user generated pattern.png)"
+                ] 
+            },
+            {
+                "q": "How can I approve photo stories created by my class to be published in the ELSA Patterns app?",
+                "a": [
+                    "Children and educators can create photo stories in the ELSA Patterns app. These will then appear in the Educator app for educator approval. ",
+                    "",
+                    "If a child has created a photo story, the educator will see a notification in the child’s profile under the 'Photo story' activity.",
+                    "![review content story](/img/techfaq/review_content_story.png)",
+                    "Educators can either approve or decline the content. If the photo story is approved, the group will be able to access the story from the app."
+                ]   
+            }
+        ]
+    }
+}

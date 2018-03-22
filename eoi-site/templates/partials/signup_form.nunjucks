@@ -1,0 +1,32 @@
+<div class="dropdown">
+    <ul id="signup-dp" class="dropdown-menu">
+        <li>
+            <div class="row">
+                <div class="col-xs-12">
+                    <span class="glyphicon glyphicon-remove-circle close-btn"></span>                                        
+                    <div id="signup_main">
+                        <h1>Newsletter Sign up</h1>
+                        <p>Sign up to the ELSA newsletter and receive regular updates on the Pilot and articles about STEM in early learning.</p>
+                        <form id="signup-form" name="mc-embedded-subscribe-form" class="validate form-inline" novalidate>
+                            <div class="form-group">
+                                <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL" placeholder="youremail@youremail.com.au" >
+                            </div>
+                            <input type="text" name="b_e53a67afd496b56ee24b3cf99_45f25b63ab" tabindex="-1" value="" style="display:none">
+                            {#<input type="submit" value="GO" name="subscribe" id="signup-form-subscribe" class="btn btn-primary">#}
+                            <button id="signup-form-subscribe" class="btn btn-primary" type="submit">
+                                <span id="goBtn">GO</span>
+                                <span id="loadingBtn"class="glyphicon glyphicon-repeat normal-right-spinner hide"></span>
+                            </button>
+                            <span id="mce-exists-error" class="help-block help-block-error" style="display:none;color: #e74c3c;"></span>
+                        </form>
+                    </div>
+                    <div id="signup_thankyou" class="hide">
+                        <h1>Thank you</h1>
+                        <p>A confirmation email has been sent to your address. To complete your sign up, please click through the link in the confirmation email.</p>
+                        <p>You can unsubscribe at any time by emailing <a href="mailto:team@elsa.edu.au">team@elsa.edu.au</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

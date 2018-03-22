@@ -1,0 +1,14 @@
+{% extends 'partials/index/section.nunjucks' %}
+
+{% block body %} 
+    <div class="row">
+        <div class="col-md-6">
+        {% markdown %}
+        {{context.content | join("\n") }}
+        {% endmarkdown %}
+        </div>
+        <div class="col-md-6">
+            <img class="img-responsive" src="{{context.image.url}}" alt="{{context.image.alt}}">
+        </div>
+    </div>
+{% endblock %}         

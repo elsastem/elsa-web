@@ -1,0 +1,12 @@
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">{{context.leadText}}</div>
+                <div class="intro-heading">{{context.subText}}</div>
+                {#<a href="#elsa" class="page-scroll btn btn-xl">Tell Me More</a>#}
+                {%for link in context.links %}
+                    <a href="{{link.url}}" class="{{link.class}} btn btn-xl">{{link.text}}</a>
+                {%endfor%}
+            </div>
+        </div>
+    </header>

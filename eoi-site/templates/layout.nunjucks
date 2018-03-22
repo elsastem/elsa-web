@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include 'partials/head.nunjucks' %}
+        {% block head %} {% endblock %} 
+    </head>
+
+    <body id="page-top" class="index">
+        <div id='SI_3ObHKvPJ0Vtfgfb'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+        {% block content %} {% endblock %} 
+    
+        {% block footer %} 
+            {% include 'partials/footer.nunjucks'%}
+        {% endblock %} 
+
+        {% block scripts %} 
+            {% include 'partials/scripts.nunjucks' %}    
+        {% endblock %} 
+
+        {% block scriptsExt %} {% endblock %} 
+
+    </body>
+</html>

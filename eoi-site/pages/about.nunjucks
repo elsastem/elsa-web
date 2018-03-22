@@ -1,0 +1,68 @@
+{% extends 'layout.nunjucks' %}
+{% import 'macros/uibits.nunjucks' as uibits %}
+
+{% block content %}
+{% include 'partials/nav.nunjucks' %}
+
+{% call uibits.page_wrapper() -%}
+    {{ uibits.page_header("About") }}    
+    {% call uibits.page_section("", "", 0) -%}
+        {% call uibits.page_section_content() -%}
+            {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1701595.jpg", "Educator with children around table") -%}
+Early Learning STEM Australia (ELSA) is a play-based digital learning program for children in preschool to explore science, technology, engineering and mathematics (STEM). ELSA allows children to play, experiment and make sense of the world around them - which is part of science, and also part of being a child. ELSA's STEM practices encourage children to ask questions, make predictions, experiment, and reflect on what happened and why. 
+
+The ELSA Pilot is a key early childhood initiative of the Australian Government. ELSA has been developed by the University of Canberra through funding provided by the Australian Government Department of Education and Training under the National Innovation and Science Agenda. It supports the "Inspiring all Australians in digital literacy and STEM" measure, which seeks to increase the participation of Australian children in STEM and improve their digital literacy. 
+
+ELSA is led by [Professor Tom Lowrie](https://www.canberra.edu.au/about-uc/faculties/estem/contacts-estem/staff/tom-lowrie) and built on community involvement. The pilot collaborates with early learning educators, preschool program providers and families.
+            {%- endcall %}
+        {%- endcall %}
+    {%- endcall %}    
+    {% call uibits.page_section("", "", 1) -%}
+        {{ uibits.page_section_video("https://player.vimeo.com/video/255483334") }}            
+    {%- endcall %}    
+    {% call uibits.page_section("2018 ELSA Pilot", "", 0) -%}
+        {% call uibits.page_section_content() -%}
+            {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1700911.jpg", "Educator with child and iPad") -%}
+The 2018 ELSA Pilot will include 100 preschool services across Australia, providing opportunities for early learning educators to engage preschool children in STEM practices. 
+
+The pilot will be delivered via a series of educational apps on tablets, hands-on activities on and off the apps, and educator workshops to create a play-based learning environment rich in STEM practices. These include: exploring locations, patterns, problem solving, designing, making and spatial reasoning.
+
+Find out more about the [ELSA Pilot](/pilot.html). 
+            {%- endcall %}
+        {%- endcall %}
+    {%- endcall %}
+    
+    {% call uibits.page_section("", "", 1) -%}
+        {% call uibits.page_section_markdown() -%}
+# Media enquiries
+
+All media enquiries and interview requests can be directed to the ELSA team.
+
+Email: [team@elsa.edu.au](mailto:team@elsa.edu.au)
+
+Phone: 1800 931 042
+
+# ELSA Partners
+
+ELSA has partnered with industry experts and talented individuals to create a suite of digital apps for preschool-aged children, early learning educators and families.  
+        {%- endcall %}
+        {% call uibits.page_section_content() -%}
+            {% call uibits.page_section_markdown_with_image("/img/photos/elsa/CMD1712824.jpg", "Child on device") -%}
+Our partners include:
+
+* [Mode Games](http://mode-games.com/) - developing the ELSA children apps
+* [Stripy Sock](http://stripysock.com.au/) - developing the ELSA Educator and Families apps
+* [Griffith University](https://www.griffith.edu.au/) - providing pedagogy advice
+* [The DA's Office](http://thedasoffice.com/) - creating all audio for the ELSA children apps 
+* [CMD Photographics](http://www.cmdphotographics.com.au/) - providing images for the ELSA website and apps 
+* [Kirrah Amosa](http://www.kirrahamosa.com/) - writing and performing songs for the ELSA children apps
+* [Cleo Rose](http://www.rmk.com.au/cleo_rose/) - voicing the ELSA character Piper
+* [Charlie Dowling](http://kathyevans.com.au/voice/charlie-dowling/) - voicing the ELSA character Elliot
+* [Finley Greig-Byrne](http://kathyevans.com.au/voice/finley-greig-byrne/) - voicing the ELSA character Amy
+* Oliver Sofo - voicing the character ELSA Remy        
+            {%- endcall %}
+        {%- endcall %}
+    {%- endcall %}
+{%- endcall %}
+
+{% endblock %}

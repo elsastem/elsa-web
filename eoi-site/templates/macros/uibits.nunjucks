@@ -1,0 +1,161 @@
+{% macro timeline(timelineData) %}
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="timeline">
+                {%for entry in timelineData %}
+                    {%if entry.linkonly%}
+                        <li class="timeline-inverted">
+                            <a href="{{entry.link.url}}" role="button" class="{{entry.link.class}}">
+                                <div class="timeline-image callout">
+                                    <h4>{{entry.link.text | safe}}</h4>
+                                </div>
+                            </a>
+                        </li>
+                    {%else%}
+                        <li class="{%if loop.index % 2 %}timeline-inverted{%endif%}" id="{{entry.id if entry.id}}">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="{{entry.image.url}}" alt="{{entry.image.alt}}">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>{{entry.title}}</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">
+                                    {% markdown %}
+{{entry.body | join("\n") | safe}}
+                                    {% endmarkdown %}
+                                    </p>
+                                    {% if entry.link %}
+                                        <a href="{{entry.link.url}}" class="{{entry.link.class}}">{{entry.link.text}}</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </li>
+                    {%endif%}
+                {%endfor%}
+            </ul>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro question(qId, q, accordionId) %}
+    <div class="panel panel-default ">
+        {% set headingId="heading_" + qId %}
+        <div class="panel-heading accordion-toggle question-toggle collapsed" role="tab" id="{{headingId}}">
+            <h4 class="panel-title">
+                <a role="button" class="ing" data-toggle="collapse" data-parent="#{{accordionId}}" data-target="#{{qId}}" aria-controls="{{qId}}">
+                {{q.q}}
+                </a>
+            </h4>
+        </div>
+        <div id="{{qId}}" class="panel-collapse collapse question" role="tabpanel" aria-labelledby="{{headingId}}">
+            <div class="panel-body">
+                {% markdown %}
+{{ q.a | join("\n") | safe }}
+                {% endmarkdown %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro render_faq(context, faqPrefix = '') %}
+    <div class="row faq">
+        {%for items in context.questions | slice(2)%}
+        <div class="col-md-6">
+            {% set accordionId="faq_" + faqPrefix + loop.index %}
+            <div class="panel-group" id="{{accordionId}}" role="tablist" aria-multiselectable="true">
+            {%for quest in items%}
+                {{ question(accordionId + "question" + loop.index, quest, accordionId) }}
+            {%endfor%}
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+{% endmacro %}
+
+{% macro page_wrapper() %}
+<div class="text-page">
+    {{ caller() }}
+</div>
+{% endmacro%}
+
+{% macro page_header(title) %}
+    <header class="just-pic">
+        <div class="container">
+            <div class="banner-heading">{{title}}</div>
+        </div>
+    </header>
+{% endmacro%}
+
+{% macro page_header_activity(title, subtitle, imgName, titleStyle = 'Dark') %}
+    <header class="activity-heading" style="background: none;">
+        <div class="{{ 'light-bg' if titleStyle != 'Dark' else 'dark-bg'}}"></div>
+        <div class="full-image {{ 'dark' if titleStyle == 'Dark'}}" style="background-image: url('/img/activities/{{imgName}}')"></div>
+        <div class="text-box">
+            <div class="container">
+                <div class="banner-heading {{ 'dark-text' if titleStyle != 'Dark' else 'light-text'}}" >{{title}}</div>
+                <div class="banner-subheading {{ 'dark-text' if titleStyle != 'Dark' else 'light-text'}}" >{{subtitle}}</div>
+            </div>
+        </div>
+    </header>
+{% endmacro%}
+
+{% macro page_section(title = "", subtitle = "", sectionNumber = 0) %}
+    <section class="{{ 'bg-light-gray' if sectionNumber % 2 == 1 }}" tabindex="-1">
+        <div class="container">
+            {% if title != "" %}
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{title}}</h2>
+                    <h3 class="section-subheading text-muted">{{subtitle}}</h3>
+                </div>
+            </div>
+            {% endif %}
+
+            {{ caller() }}
+        </div>
+    </section>
+{% endmacro%}
+
+{% macro page_section_markdown_with_image(imgUrl, altText = '', contentCols = 6) %}    
+    <div class="row">
+        <div class="col-md-{{ contentCols }}">
+            {% markdown %}
+{{ caller() }}            
+            {% endmarkdown %}
+        </div>
+        <div class="col-md-{{ 12 - contentCols }}">
+            <img class="img-responsive" src="{{imgUrl}}" alt="{{altText}}">
+        </div>
+    </div>
+{% endmacro%}
+
+{% macro page_section_markdown() %}
+   <div class="row text-muted">
+        <div class="col-lg-offset-1 col-lg-10">
+            {% markdown %}
+{{ caller() }}            
+            {% endmarkdown %}
+        </div>
+    </div>   
+{% endmacro%}
+
+{% macro page_section_content(muted = true) %}
+   <div class="row {{ 'text-muted' if muted }}">
+        <div class="col-lg-offset-1 col-lg-10">
+{{ caller() }}            
+        </div>
+    </div>   
+{% endmacro%}
+
+
+{% macro page_section_video(url) %}
+    <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+            <div class="embed-responsive embed-responsive-16by9 video">
+                <iframe class="embed-responsive-item" src="{{url}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+{% endmacro%}

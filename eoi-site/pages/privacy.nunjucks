@@ -1,0 +1,55 @@
+{% extends 'layout.nunjucks' %}
+{% import 'macros/uibits.nunjucks' as uibits %}
+
+{% block content %}
+{% include 'partials/nav.nunjucks' %}
+
+{% call uibits.page_wrapper() -%}
+    {{ uibits.page_header("Website Disclaimer, Privacy and Accessibility") }}    
+    {% call uibits.page_section("", "", 0) -%}
+        <div class="row text-muted">
+            <div class="col-lg-offset-1 col-lg-10">                    
+                <h1>Disclaimer</h1>
+                <p>While the University of Canberra (UC) attempts to ensure the information on this website is as accurate as possible, it provides no guarantee that the material, information or publication made accessible is accurate, complete, current, or fit for any use whatsoever. No reliance should be made by a user of the material, information or publication accessed via this website. The user should instead seek confirmation with the originating business area, faculty or other body within UC before making use of the material, information or publication.</p>
+                <p>UC accepts no liability or responsibility for any loss or damage suffered as a result of direct or indirect use or application of any material, publication or information made accessible via its website.</p>
+                <p>UC provides links to companies, organisations and information external to UC. In providing such links, UC does not accept responsibility for, or endorse the content or condition of, any linked site.</p>
+                <p>UC reserves the right to vary the material, information or publication on this website without notice.</p>
+                <p>UC strives to protect information you provide via this website and uses reasonable endeavours to ensure the information you submit is not compromised. However, where industry standard security protocols and information encryption methods are not being used, UC cannot guarantee that information you submit over the internet is not subject to interception or attack.  You should be aware of the risks when submitting information to UC in these cases and UC cannot take responsibility for any information compromised that you submit. We recommend that you use appropriate and up-to-date firewall and anti-virus software to protect your computer systems and information.</p>
+                <h1>Privacy</h1>
+                <h2>Web Privacy Statement</h2>
+                <p>UC is committed to protecting and maintaining the privacy of personal information that you submit. This statement and details following below advise visitors to UC's website of the information collected when they visit, how this information may be used and whether or not it may be disclosed.</p>
+                <p>UC is bound by the Information Privacy Act 2014 (ACT) (the Act). UC complies with the obligation of the Act, including the Territory Privacy Principles outlined in the Act.</p>
+                <h2>Visiting this Website</h2>
+                <h3>Logging of Information</h3>
+                <p>When you visit this website our server makes a record of your visit and logs the following information:</p>
+                <ul>
+                    <li>your browser's internet address;</li>
+                    <li>the date and time of your visit to the site;</li>
+                    <li>the pages you accessed and documents downloaded;</li>
+                    <li>the previous site visited;</li>
+                    <li>the type of browser you are using; and</li>
+                    <li>the username entered if accessing a restricted site.</li>
+                </ul>
+                <p>UC uses this information for statistical purposes and for system administration tasks to maintain this service. We do not attempt to identify individuals as part of our regular business practices however in the unlikely event of an investigation, UC, a law enforcement agency or other government agency may exercise its legal authority to inspect our server's logs.</p>
+                <p>Apart from the Australian Government Department of Education and Training, UC will not disclose personal information unless with the consent of the person concerned or where otherwise stated at the point of collection.</p>
+                <h3>Sending emails to UC</h3> 
+                <p>If at any stage you provide us with your email address either as part of a message or by completing a web form, we will only use your email address for the purposes for which it was provided. We will not subscribe your email address to any mailing list without your consent.</p>
+                <a href="https://guard.canberra.edu.au/policy/policy.php?pol_id=3234">University of Canberra email Policy</a>
+                <h3>External sites</h3>
+                <p>External sites that are linked to or from this website are generally not under our control or responsibility and you are advised to review their privacy statement.</p>
+                <p>For more information regarding UC's Privacy Policy, please refer to the <a href="https://guard.canberra.edu.au/policy/policy.php?pol_id=3234">Privacy at UC</a> page.  For more information regarding UCC's Privacy Statement, please refer to <a href="http://www.canberra.edu.au/future-students/courses/pathways/policies-and-procedures">Policies and Procedures</a>.</p>
+                <h1>Accessibility</h1>
+                <p>'Web Content Accessibility' aims to make content accessible by everyone regardless of any disability or ability they may have. It is also about making content more usable to users in general.</p>
+                <p>UC is committed to providing web content and web services which are accessible to the widest possible audience and to provide, as far as possible, the same experience to everyone.</p>
+                <p>Unfortunately, it is not always possible to enable accessibility and usability to all areas of the website given the varying software or technology users may have.</p>
+                <p>UC acknowledges that while attempting to ensure information is as up to date and as accessible as possible, some content may not be as accessible to some users.</p>
+                <ul>
+                    <li>More information about <a href="http://www.canberra.edu.au/about-uc/policy-and-legislation/disclaimer-copyright-privacy-accessibility/accessibility">UC's Accessibility policy</a>.</li>
+                </ul>
+                <p>If you have any difficulties, questions or suggestions regarding the accessibility of this site, please refer to the UC Inclusion and Welfare pages, or contact the <a href="http://www.canberra.edu.au/current-students/student-support/inclusion-welfare">UC Inclusion and Welfare Unit</a> by phone on (02) 6201 5233.</p>
+            </div>
+        </div>
+    {%- endcall %}
+{%- endcall %}
+
+{% endblock %}
